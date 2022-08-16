@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="section gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1 class="font-weight-bold">{{.Title}}</h1>
+      </div>
+      {{ range (where .Site.RegularPages "Section" "people") }}
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="block">
+          <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+        </div>
+        <div class="product-info">
+        <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
+        <p>{{.Params.designation}}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

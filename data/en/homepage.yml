@@ -1,0 +1,123 @@
+############################# banner ############################
+banner:
+  enable: true
+  title: "Centre for Responsible AI"
+  content: "Centre for Responsible AI is a virtual interdisciplinary research centre at IIT Madras. The centre envisions to be a premier research centre for both fundamental and applied research in Responsible AI with immediate impact in deploying AI systems in the Indian ecosystem. The centre aims to pursue research in the domains of Ethical and Responsible AI and become the standard body in the country to recommend guidelines and policies to make deployable AI models/ systems more accountable, explainable and responsible."
+  image: "images/crai-banner.jpg"
+  button:
+    enable: false
+    label: "Browse All Products"
+    link: "products/"
+
+############################# Feature ############################
+features:
+  enable: false
+  title: "Our Core Features"
+  image: "images/watch-2.png"
+
+  # feature at the left of the image
+  left_side:
+    # feature item loop
+    - title: "Smooth Touch"
+      icon: "tf-ion-ios-alarm-outline"
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+      # feature item loop
+    - title: "Elegant Design"
+      icon: "tf-ion-ios-bell-outline"
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+      # feature item loop
+    - title: "Easy Pricing"
+      icon: "tf-ion-ios-cart-outline"
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+  # feature at the right of the image
+  right_side:
+    # feature item loop
+    - title: "Smooth Touch"
+      icon: "tf-ion-ios-alarm-outline"
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+      # feature item loop
+    - title: "Elegant Design"
+      icon: "tf-ion-ios-bell-outline"
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+      # feature item loop
+    - title: "Easy Pricing"
+      icon: "tf-ion-ios-cart-outline"
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+############################# promo ############################
+promo:
+  enable: false
+  image: "images/watch.png"
+  title: "Designed by professional , the benefit for creative gigs"
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima
+    nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum.
+    <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis commodi odit, illo, qui aliquam dol"
+
+############################# About Product #######################
+about_product:
+  enable: false
+  title: "Why Choose Apple Watch"
+  items:
+    # about product item loop
+    - image: "images/showcase/showcase-4.png"
+      title: "Lorem ipsum dolor sit amet."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur
+        sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit
+        quas, quo harum deserunt consequatur cumque!"
+      button:
+        enable: false
+        label: "Check Features"
+        link: "#/"
+
+    # about product item loop
+    - image: "images/showcase/showcase-3.png"
+      title: "Lorem ipsum dolor sit amet."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur
+        sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit
+        quas, quo harum deserunt consequatur cumque!"
+      button:
+        enable: false
+        label: "Check Features"
+        link: "#/"
+
+#################################### Products ########################
+products:
+  enable: false
+  title: "Checkout Our All Products"
+
+################################## Subscription ###################
+subscription:
+  enable: false
+  bg_image: "images/call-to-action.jpg"
+  title: "Get Product Updates"
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+  placeholder: "Your Email Address Here"
+
+############################## Testimonial ##########################
+activities:
+  enable: true
+  title: "Recent Activities"
+  activity_item:
+    # testimonial item loop
+    - event_name: "Workshop of Safe AI"
+      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80"
+      link: "#"
+
+    # testimonial item loop
+    - event_name: "Talk on Responsible AI"
+      image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      link: "#"
+
+    # testimonial item loop
+    - event_name: "Publication ref"
+      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+      link: "#"
