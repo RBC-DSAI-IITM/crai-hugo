@@ -1,7 +1,7 @@
 ---
 
 title: "AI and Ethics for the Indian Context"
-image: "https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
+image: "https://rbcdsai.iitm.ac.in/images/NF3-Brochure-Version-3_02.jpg"
 draft: false
 ---
 
