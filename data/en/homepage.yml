@@ -105,19 +105,14 @@ subscription:
 ############################## Testimonial ##########################
 activities:
   enable: true
-  title: "Recent Activities"
+  title: "Highlights"
   activity_item:
     # testimonial item loop
-    - event_name: "Workshop of Safe AI"
+    - event_name: "Research Verticals"
       image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80"
-      link: "#"
+      link: "research/"
 
     # testimonial item loop
-    - event_name: "Talk on Responsible AI"
+    - event_name: "Key Projects"
       image: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-      link: "#"
-
-    # testimonial item loop
-    - event_name: "Publication ref"
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-      link: "#"
+      link: "projects/"
