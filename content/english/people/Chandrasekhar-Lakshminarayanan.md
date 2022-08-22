@@ -4,7 +4,7 @@ date: 2022-08-16T15:45:00+05:30
 image: "https://rbcdsai.iitm.ac.in/images/people/chandrashekarL.jpg"
 
 designation : "Assistant Professor"
-weblink: http://www.cse.iitm.ac.in/~ravi/
+weblink: https://sites.google.com/view/chandrashekar-lakshminarayanan
 
 draft: false
 ---
