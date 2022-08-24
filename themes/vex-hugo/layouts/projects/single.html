@@ -6,8 +6,11 @@
         <div class="col-md-12 mb-4 mb-md-0">
             <img class="mb-40" src="{{ .Params.image }}" width="75%" />
             <h1 class="mb-4">{{ .Title }}</h1>
+            {{ with .Params.subtitle }}
+            <h2>{{ . }}</h2><br>
+            {{ end }}
             {{ with .Params.pis }}
-            <h4 class="mb-4"><strong>PI:</strong> {{ . | markdownify }}</h4>
+            <h4 class="mb-4"><strong>PI(s):</strong> {{ . | markdownify }}</h4>
             {{ end }}
             <div class="content mb-4">{{.Content}}</div>
         </div>
