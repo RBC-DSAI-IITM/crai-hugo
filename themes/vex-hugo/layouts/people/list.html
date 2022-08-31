@@ -13,7 +13,7 @@
         </div>
         <div class="product-info">
         <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
-        <p>{{.Params.designation}}</p>
+        <p>{{.Params.designation}}<br>{{.Params.affiliation | markdownify}}</p>
         </div>
       </div>
       {{ end }}

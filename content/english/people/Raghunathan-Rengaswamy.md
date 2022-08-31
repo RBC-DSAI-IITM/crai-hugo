@@ -5,6 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/raghur.jpg"
 
 designation : "Professor"
 weblink: "https://iitm.irins.org/profile/51416"
+affiliation: Dept. of ChemE, IIT Madras <br> RBCDSAI, IIT Madras
 
 draft: false
 ---

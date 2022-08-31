@@ -5,6 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/arun-rajkumar.png"
 
 designation : "Assistant Professor"
 weblink: "https://sites.google.com/view/arun-rajkumar/home?authuser=0"
+affiliation: Dept. of CSE, IIT Madras <br> RBCDSAI, IIT Madras
 
 draft: false
 ---

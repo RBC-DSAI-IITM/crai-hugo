@@ -5,6 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/chandrashekarL.jpg"
 
 designation : "Assistant Professor"
 weblink: https://sites.google.com/view/chandrashekar-lakshminarayanan
+affiliation: Dept. of CSE, IIT Madras <br> RBCDSAI, IIT Madras
 
 draft: false
 ---
