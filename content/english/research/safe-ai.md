@@ -4,5 +4,6 @@ title: "AI & Safety"
 description: "To focus on aspects such as data privacy, security, data consent, data anonymization, adversarial robustness, performance guarantees, model monitoring and maintenance."
 label: "Check Features"
 link: "#/"
+weight: 3
 
 ---
