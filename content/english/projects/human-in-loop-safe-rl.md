@@ -3,6 +3,7 @@
 title: "Human-in-the-loop for Safe and Verifiable Reinforcement Learning"
 image: "https://rbcdsai.iitm.ac.in/images/research/humans-in-loop-safe-ai.jpg"
 draft: false
+tags: ["reinforcement-learning", "human-in-loop", "safe-ai"]
 pis: "Nirav Bhatt <br> **Co-PI:**  Balaraman Ravindran"
 ---
 

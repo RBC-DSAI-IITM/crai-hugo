@@ -148,3 +148,7 @@ weight = 2
 # copyright
 copyright2 = "Powered By [Themefisher](https://themefisher.com/) & [Gethugothemes](https://gethugothemes.com/)"
 copyright1 = "Centre for Responsible AI | IIT Madras &copy; 2022"
+
+################################### Taxonomies #####################################
+[taxonomies]
+    tags = "tags"

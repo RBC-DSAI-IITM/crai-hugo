@@ -18,6 +18,13 @@
           <a href="{{.Permalink}}"><img class="mb-40" height="60%" width="95%" src="{{ .Params.image | absURL }}" alt=""></a>
           <div class="content">
             <a href="{{.Permalink}}" style="text-decoration: none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . }}" style="text-decoration: none;">
+            <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
+              <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
+            </div>
+            </a>
+            {{ end }}
           </div>
         </div>
 
