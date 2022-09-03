@@ -20,6 +20,9 @@
           <h4 class="subheading">{{ .Title | markdownify }}</h4>
           <p>{{ .Content | markdownify }}</p>
           <p>{{ .Description | markdownify }}</p>
+          {{ range .Params.tags }}
+          <p><a href="/tags/{{ . }}" class="btn btn-main btn-main-sm">{{ i18n "view_projects" }}</a></p>
+          {{ end }}
         </div>
       </div>
     </div>
@@ -30,6 +33,9 @@
           <h4 class="subheading">{{ .Title | markdownify }}</h4>
           <p>{{ .Content | markdownify }}</p>
           <p>{{ .Description | markdownify }}</p>
+          {{ range .Params.tags }}
+          <p><a href="/tags/{{ . }}" class="btn btn-main btn-main-sm">{{ i18n "view_projects" }}</a></p>
+          {{ end }}
         </div>
       </div>
       <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">

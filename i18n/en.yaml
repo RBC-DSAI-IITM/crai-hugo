@@ -9,6 +9,9 @@
   
 - id: "read_more"
   translation: "Read More"
+
+- id: "view_projects"
+  translation: "View Projects"
   
 - id: "subscribe"
   translation: "Subscribe"
