@@ -3,7 +3,8 @@
 title: "Paradigms, Interpretable Models, Algorithms for AI-based Human in the Loop Learning"
 image: "https://rbcdsai.iitm.ac.in/images/research/Paradigms-Interpretable-Models-and-Algorithms-for-AI-based-Human-in-the-Loop-Learning.jpg"
 draft: false
-tags: ["human-in-loop", "explainable-ai"]
+# tags: ["human-in-loop", "explainable-ai"]
+tags: ["making-ai-understandable"]
 pis: "Arun Rajkumar, Harish Guruprasad and Chandrasekhar L"
 ---
 
