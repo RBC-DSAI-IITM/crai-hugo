@@ -1,7 +1,7 @@
 ---
 
 title: "Responsible AI Policy Study"
-image: "images/NITI-logo.png"
+image: "images/AI-shake.JPG"
 draft: false
 # tags: ["artificial-intelligence", "responsible-ai"]
 tags: ["ai-and-society"]
