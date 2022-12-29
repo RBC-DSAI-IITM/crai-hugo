@@ -3,7 +3,7 @@ title: "Contact"
 description : "this is a meta description"
 
 office:
-  title : "Center for Responsible AI"
+  title : "Center for"
   desc: "<a href='https://rbcdsai.iitm.ac.in/' target='_blank'>Robert Bosch Centre for Data Science and AI (RBCDSAI)</a> is currently acting as the nodal agency for Centre for Responsible AI.
   <br><br>
   Contact: <b>Prof. Balaraman Ravindran</b>"
