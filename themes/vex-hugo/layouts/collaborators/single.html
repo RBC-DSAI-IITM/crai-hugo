@@ -4,15 +4,12 @@
     <div class="container">
         <div class="row">
         <div class="col-md-12 mb-4 mb-md-0">
-            <center><img class="mb-40" src="{{ .Params.image }}" height="70%" />
+            <center><img class="mb-40" src="{{ .Params.image }}" height="200px" />
             <h1 class="mb-4">{{ .Title }}</h1>
             {{ with .Params.subtitle }}
             <h2>{{ . }}</h2><br>
             {{ end }}
             </center>
-            {{ with .Params.pis }}
-            <h4 class="mb-4"><strong>PI(s):</strong> {{ . | markdownify }}</h4>
-            {{ end }}
             <div class="content mb-4" style="text-align: justify;">{{.Content}}</div>
         </div>
         </div>

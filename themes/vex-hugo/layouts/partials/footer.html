@@ -3,7 +3,6 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <!-- <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a> -->
           <ul class="list-inline footer-menu">
             {{ range site.Menus.footer }}
             <li class="list-inline-item">
@@ -13,8 +12,8 @@
           </ul>
           <br><br>
           <p>
-            <span class="copyright-text" style="float: left;">{{ site.Params.copyright1 | markdownify }}</span>
-            <span class="copyright-text" style="float: right;">{{ site.Params.copyright2 | markdownify }}</span>
+            <span class="copyright-text" style="float: left;">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>
+            <span class="copyright-text" style="float: right;">{{ site.Params.copyright | markdownify }}</span>
           </p>
         </div>
       </div>

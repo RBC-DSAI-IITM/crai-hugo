@@ -135,8 +135,7 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 # copyright
-copyright2 = "Powered By [Themefisher](https://themefisher.com/) & [Gethugothemes](https://gethugothemes.com/)"
-copyright1 = "Centre for Responsible AI | IIT Madras &copy; 2022"
+copyright = "Powered By [Themefisher](https://themefisher.com/) & [Gethugothemes](https://gethugothemes.com/)"
 
 
 ################################### French language #####################################
@@ -146,8 +145,7 @@ languageCode = "fr-fr"
 contentDir = "content/french"
 weight = 2
 # copyright
-copyright2 = "Powered By [Themefisher](https://themefisher.com/) & [Gethugothemes](https://gethugothemes.com/)"
-copyright1 = "Centre for Responsible AI | IIT Madras &copy; 2022"
+copyright = "Powered By [Themefisher](https://themefisher.com/) & [Gethugothemes](https://gethugothemes.com/)"
 
 ################################### Taxonomies #####################################
 [taxonomies]
