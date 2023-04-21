@@ -1,5 +1,5 @@
 ################################### Default Configuration ############################
-baseurl = "https://rbcdsai.iitm.ac.in/"
+baseurl = "/"
 title = "Centre for Responsible AI"
 theme = "vex-hugo"
 # post excert
@@ -100,8 +100,8 @@ weight = 5
 
 ########################### Default parameters ##########################
 [params]
-logo = ""
-logo_width = "100px"
+logo = "/images/cerai-logo.jpeg"
+logo_width = "250px"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"

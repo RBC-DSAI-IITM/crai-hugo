@@ -2,14 +2,26 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-md-12">
-        <div class="block">
-          <ul class="list-inline footer-menu">
-            {{ range site.Menus.footer }}
-            <li class="list-inline-item">
-              <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
+        <div style="display: flex; align-items: center; text-align: center;">
+          <div class="col-md-3">
+            <a href="https://www.iitm.ac.in/" target="_blank"><img src="/images/IIT_Madras_Logo.png" height="75px" /></a>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline footer-menu" style="margin-top: auto; margin-bottom: auto;">
+              {{ range site.Menus.footer }}
+              <li class="list-inline-item">
+                <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <br>
+          <div class="col-md-3">
+            <a href="https://rbcdsai.iitm.ac.in" target="_blank"><img src="/images/rbcdsai-logo.svg" height="75px" /></a>
+          </div>
+          <br>
+        </div>
+        <div>
           <br><br>
           <p>
             <span class="copyright-text" style="float: left;">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>

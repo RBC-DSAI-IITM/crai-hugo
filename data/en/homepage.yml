@@ -2,7 +2,7 @@
 banner:
   enable: true
   title: "Centre for Responsible AI"
-  content: "Centre for Responsible AI is a virtual interdisciplinary research centre at IIT Madras. The centre envisions to be a premier research centre for both fundamental and applied research in Responsible AI with immediate impact in deploying AI systems in the Indian ecosystem. The centre aims to pursue research in the domains of Ethical and Responsible AI and become the standard body in the country to recommend guidelines and policies to make deployable AI models/ systems more accountable, explainable and responsible."
+  content: "Centre for Responsible AI is a virtual interdisciplinary research centre at [IIT Madras](https://www.iitm.ac.in/). The centre envisions to be a premier research centre for both fundamental and applied research in Responsible AI with immediate impact in deploying AI systems in the Indian ecosystem. The centre aims to pursue research in the domains of Ethical and Responsible AI and become the standard body in the country to recommend guidelines and policies to make deployable AI models/ systems more accountable, explainable and responsible."
   image: "images/AI_brain.png"
   button:
     enable: false
@@ -102,7 +102,7 @@ subscription:
   content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
   placeholder: "Your Email Address Here"
 
-############################## Testimonial ##########################
+############################## Highlights ##########################
 activities:
   enable: true
   title: "Highlights"
