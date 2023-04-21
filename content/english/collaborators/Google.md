@@ -1,9 +1,10 @@
 ---
-
 title: "Google"
-subtitle: "Founding Collaborator"
+subtitle: "Platinum Consortium Member"
+type: consortium
 image: "/images/Google_Logo.png"
 draft: false
+
 ---
 
 Google LLC is an American multinational technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, artificial intelligence and consumer electronics. Google’s mission is to organise the world’s information and make it universally accessible and useful.

@@ -1,9 +1,10 @@
 ---
-
 title: "NITI Aayog"
 subtitle: "Founding Collaborator"
+type: collaborator
 image: "/images/NITI-logo.png"
 draft: false
+
 ---
 
 The NITI Aayog serves as the apex public policy think tank of the Government of India, and the nodal agency tasked with catalyzing economic development, and fostering cooperative federalism through the involvement of State Governments of India in the economic policy-making process using a bottom-up approach.
