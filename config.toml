@@ -103,8 +103,8 @@ weight = 5
 logo = "/images/cerai-logo.jpeg"
 logo_width = "250px"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Centre for Responsible AI is a virtual interdisciplinary research centre at IIT Madras. The centre envisions to be a premier research centre for both fundamental and applied research in Responsible AI with immediate impact in deploying AI systems in the Indian ecosystem."
+author = "Senthamizhan"
 # currency
 currency = "$"
 # contact form action
