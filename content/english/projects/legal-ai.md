@@ -1,7 +1,7 @@
 ---
 
 title: "Legal AI"
-image: "images/AI-shake.JPG"
+image: "images/legal-ai.jpeg"
 draft: false
 # tags: ["artificial-intelligence", "responsible-ai"]
 tags: ["ai-and-society"]
