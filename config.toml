@@ -100,7 +100,7 @@ weight = 5
 
 ########################### Default parameters ##########################
 [params]
-logo = "/images/cerai-logo.jpeg"
+logo = "/images/logo-green-final.png"
 logo_width = "250px"
 # Meta data
 description = "Centre for Responsible AI is a virtual interdisciplinary research centre at IIT Madras. The centre envisions to be a premier research centre for both fundamental and applied research in Responsible AI with immediate impact in deploying AI systems in the Indian ecosystem."

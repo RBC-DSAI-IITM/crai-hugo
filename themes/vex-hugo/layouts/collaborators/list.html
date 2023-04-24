@@ -7,51 +7,48 @@
           <div class="heading">
             <h2>Collaborators</h2>
           </div>
+        
+          <div class="mb-40">
+    
+            {{ range (where .Site.RegularPages "Section" "collaborators") }}
+              {{ if eq .Params.type "collaborator" }}
+              <div class="text-center mb-40 mb-lg-40">
+                <a href="{{.Permalink}}"><img class="mb-40" height="60%" width="30%" src="{{ .Params.image | absURL }}" alt=""></a>
+                <div class="content">
+                  <a href="{{.Permalink}}" style="text-decoration: none;">
+                    <h4 class="subheading">{{ .Title | markdownify }}</h4>
+                  </a>
+                  <h5 class="content">{{ .Params.subtitle | markdownify }}</h5>
+                </div>
+              </div>
+              {{ end }}
+    
+            {{ end }}
+          </div>
         </div>
 
         <div class="col-md-6">
           <div class="heading">
             <h2>Consortium Members</h2>
           </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6 mb-40">
+          <div class="mb-40">
 
-        {{ range (where .Site.RegularPages "Section" "collaborators") }}
-          {{ if eq .Params.type "collaborator" }}
-          <div class="text-center mb-40 mb-lg-40">
-            <a href="{{.Permalink}}"><img class="mb-40" height="60%" width="30%" src="{{ .Params.image | absURL }}" alt=""></a>
-            <div class="content">
-              <a href="{{.Permalink}}" style="text-decoration: none;">
-                <h4 class="subheading">{{ .Title | markdownify }}</h4>
-              </a>
-              <h5 class="content">{{ .Params.subtitle | markdownify }}</h5>
-            </div>
+            {{ range (where .Site.RegularPages "Section" "collaborators") }}
+              {{ if eq .Params.type "consortium" }}
+              <div class="text-center mb-40 mb-lg-40">
+                <a href="{{.Permalink}}"><img class="mb-40" height="60%" width="30%" src="{{ .Params.image | absURL }}" alt=""></a>
+                <div class="content">
+                  <a href="{{.Permalink}}" style="text-decoration: none;">
+                    <h4 class="subheading">{{ .Title | markdownify }}</h4>
+                  </a>
+                  <h5 class="content">{{ .Params.subtitle | markdownify }}</h5>
+                </div>
+              </div>
+              {{ end }}
+
+            {{ end }}
           </div>
-          {{ end }}
-
-        {{ end }}
-      </div>
-
-
-        <div class="col-md-6 mb-40">
-
-        {{ range (where .Site.RegularPages "Section" "collaborators") }}
-          {{ if eq .Params.type "consortium" }}
-          <div class="text-center mb-40 mb-lg-40">
-            <a href="{{.Permalink}}"><img class="mb-40" height="60%" width="30%" src="{{ .Params.image | absURL }}" alt=""></a>
-            <div class="content">
-              <a href="{{.Permalink}}" style="text-decoration: none;">
-                <h4 class="subheading">{{ .Title | markdownify }}</h4>
-              </a>
-              <h5 class="content">{{ .Params.subtitle | markdownify }}</h5>
-            </div>
-          </div>
-          {{ end }}
-
-        {{ end }}
         </div>
     </div>
 
