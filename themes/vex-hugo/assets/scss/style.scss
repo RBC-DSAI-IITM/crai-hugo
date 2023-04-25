@@ -177,14 +177,14 @@ a:active {
 .centered {
   position: absolute;
   text-align: center;
-  top: 75%;
-  width: 40%;
+  top: 67.5%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 768px) {
   .centered {
-    top: 70%;
-    width: 80%;
+    top: 67.5%;
+    width: 90%;
   }
 }
 

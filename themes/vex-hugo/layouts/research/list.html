@@ -15,8 +15,8 @@
           <img height="100%" src="/images/research-themes/all-themes.png" />
         </div>
         {{ range $index, $element := .Pages }}
-        <div class="pushin-layer">1
-          <img height="70%" src="{{ .Params.image | absURL }}" />
+        <div class="pushin-layer">
+          <img height="40%" src="{{ .Params.image | absURL }}" />
           <div class="centered">
             {{ .Content }}
             <a href="/tags/{{ index .Params.reftags 0 }}" class="btn btn-main btn-main-sm">View Projects</a>
