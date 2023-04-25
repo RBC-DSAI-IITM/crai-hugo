@@ -7,6 +7,7 @@ designation : "Associate Professor"
 weblink: "https://hss.iitm.ac.in/team-members/sudarsan-p/"
 affiliation: Dept. of HSS, IIT Madras <br> RBCDSAI, IIT Madras
 
+type: core
 draft: false
 ---
 

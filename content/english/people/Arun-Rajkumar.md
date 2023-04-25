@@ -7,6 +7,7 @@ designation : "Assistant Professor"
 weblink: "https://sites.google.com/view/arun-rajkumar/home?authuser=0"
 affiliation: Dept. of CSE, IIT Madras <br> RBCDSAI, IIT Madras
 
+type: core
 draft: false
 ---
 

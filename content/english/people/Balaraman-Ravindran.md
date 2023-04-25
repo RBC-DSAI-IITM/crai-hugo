@@ -7,6 +7,7 @@ designation : "Professor"
 weblink: http://www.cse.iitm.ac.in/~ravi/
 affiliation: Dept. of CSE, IIT Madras <br> RBCDSAI, IIT Madras
 
+type: core
 draft: false
 ---
 
