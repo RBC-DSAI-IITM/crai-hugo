@@ -4,49 +4,27 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="heading">
+        <div class="heading" style="padding-bottom: 0px;">
           <h2>{{ .Title | markdownify }}</h2>
         </div>
-        <div class="text-center mb-5">
-          <img src="/images/themes-overview.jpeg" height="500px" />
-        </div>
       </div>
     </div>
-    {{ range $index, $element := .Pages }}
-    {{- if ne (mod $index 2) 1 }}
-    <div class="row mb-40">
-      <div class="col-md-6 text-center mb-5 mb-lg-0">
-        <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="">
-      </div>
-      <div class="col-md-6 align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .Title | markdownify }}</h4>
-          <p>{{ .Content | markdownify }}</p>
-          <p>{{ .Description | markdownify }}</p>
-          {{ range .Params.reftags }}
-          <p><a href="/tags/{{ . }}" class="btn btn-main btn-main-sm">{{ i18n "view_projects" }}</a></p>
-          {{ end }}
+    <div class="pushin">
+      <div class="pushin-scene">
+        <div class="pushin-layer">
+          <img height="100%" src="/images/research-themes/all-themes.png" />
         </div>
+        {{ range $index, $element := .Pages }}
+        <div class="pushin-layer">1
+          <img height="70%" src="{{ .Params.image | absURL }}" />
+          <div class="centered">
+            {{ .Content }}
+            <a href="/tags/{{ index .Params.reftags 0 }}" class="btn btn-main btn-main-sm">View Projects</a>
+          </div>
+        </div>
+        {{ end }}
       </div>
     </div>
-    {{- else }}
-    <div class="row mb-40">
-      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-right">
-        <div class="content">
-          <h4 class="subheading">{{ .Title | markdownify }}</h4>
-          <p>{{ .Content | markdownify }}</p>
-          <p>{{ .Description | markdownify }}</p>
-          {{ range .Params.reftags }}
-          <p><a href="/tags/{{ . }}" class="btn btn-main btn-main-sm">{{ i18n "view_projects" }}</a></p>
-          {{ end }}
-        </div>
-      </div>
-      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
-        <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="">
-      </div>
-    </div>
-    {{ end }}
-    {{ end }}
   </div>
 </section>
 

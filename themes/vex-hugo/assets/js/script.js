@@ -3,6 +3,30 @@ $(window).on('load', function () {
   $('.preloader').fadeOut(100);
 });
 
+var config = {
+  target: document.querySelector('pushin'),
+  scene: {
+    breakpoints: [768, 1440, 1920],
+    inpoints: [200, 300],
+    outpoints: [600, 700],
+    layerDepth: 800
+  },
+  composition: {
+    ratio: [1,1]
+  },
+  layers: [
+    // Layer 1
+    {
+      inpoints: [100, 300],
+      outpoints: [300, 600],
+      speed: 25
+    },
+  ],
+};
+
+// Method 1: Using global function
+pushInStart(config);
+
 (function ($) {
   'use strict';
 

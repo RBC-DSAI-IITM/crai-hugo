@@ -173,6 +173,21 @@ a:active {
   text-align: center;
 }
 
+/* Centered text */
+.centered {
+  position: absolute;
+  text-align: center;
+  top: 75%;
+  width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .centered {
+    top: 70%;
+    width: 80%;
+  }
+}
+
 .heading {
   text-align: center;
   color: #777777;
@@ -296,7 +311,7 @@ a:active {
 --*/
 .feature-list {
   .btn-main {
-    margin-top: 15px;
+    margin-top: 0px;
   }
 }
 
