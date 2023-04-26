@@ -15,3 +15,5 @@ As AI models are increasingly becoming part of real world solutions across vario
 1. Detect fairness/bias issues in Legal AI models
 
 2. Mitigate the bias observed in Legal AI models
+
+Read our latest paper on arXiv [here](https://arxiv.org/abs/2303.07247).
