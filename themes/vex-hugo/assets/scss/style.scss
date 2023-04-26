@@ -390,6 +390,12 @@ a:active {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .people {
+    width: 100%;
+  }
+}
+
 /*--
     service start
 --*/
