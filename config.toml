@@ -109,6 +109,7 @@ logo_width = "250px"
 # Meta data
 description = "Centre for Responsible AI is a virtual interdisciplinary research centre at IIT Madras. The centre envisions to be a premier research centre for both fundamental and applied research in Responsible AI with immediate impact in deploying AI systems in the Indian ecosystem."
 author = "Senthamizhan"
+social_card_image = "/images/social-logo.png"
 # currency
 currency = "$"
 # contact form action

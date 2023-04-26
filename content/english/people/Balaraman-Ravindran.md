@@ -1,13 +1,13 @@
 ---
 title: "Balaraman Ravindran"
-date: 2022-08-16T15:45:00+05:30
+date: 2023-04-27T11:30:00+05:30
 image: "https://rbcdsai.iitm.ac.in/images/people/ravi.jpg"
 
 designation : "Professor"
 weblink: http://www.cse.iitm.ac.in/~ravi/
 affiliation: Dept. of CSE, IIT Madras <br> RBCDSAI, IIT Madras
 
-type: core
+type: head
 draft: false
 ---
 

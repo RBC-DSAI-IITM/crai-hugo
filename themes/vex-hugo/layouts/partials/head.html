@@ -21,7 +21,7 @@
   <link rel="shortcut icon" href="{{ `images/logo-favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/logo-favicon.png` | absURL }} " type="image/x-icon">
 
-  {{ with .Params.image }}
+  {{ with site.Params.social_card_image }}
   <meta property="og:image" content="{{ . | absURL }}" />
   {{ end }}
   {{ template "_internal/opengraph.html" . }}
