@@ -9,3 +9,6 @@ builds
 package-lock.json
 Public
 resources
+
+# Hugo build files
+public/
