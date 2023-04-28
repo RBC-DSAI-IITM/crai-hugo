@@ -15,7 +15,7 @@
       {{ range (where .Site.RegularPages "Section" "projects") }}
 
         <div class="col-md-6 text-center mb-40 mb-lg-40" style="display: inline-table;">
-          <a href="{{.Permalink}}"><img class="mb-40" width="95%" src="{{ .Params.image | absURL }}" alt=""></a>
+          <a href="{{.Permalink}}"><img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt=""></a>
           <div class="contents">
             <a href="{{.Permalink}}" style="text-decoration: none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
             {{ range .Params.tags }}
