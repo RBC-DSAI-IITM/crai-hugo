@@ -1,13 +1,13 @@
 ---
 title: "Raghunathan Rengaswamy"
-date: 2022-08-16T15:45:00+05:30
+date: 2023-05-08T15:45:00+05:30
 image: "https://rbcdsai.iitm.ac.in/images/people/raghur.jpg"
 
-designation : "Professor"
+designation : "**Member**"
 weblink: "https://iitm.irins.org/profile/51416"
-affiliation: Dept. of ChemE, IIT Madras <br> RBCDSAI, IIT Madras
+affiliation: Dean, Global Engagement, IIT Madras
 
-type: advisor
+type: council
 draft: false
 ---
 

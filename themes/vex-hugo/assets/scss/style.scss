@@ -381,12 +381,12 @@ a:active {
 
 .people {
   width: 33%;
-  flex-wrap: wrap;
+  display: inline-block;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 
   img {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
