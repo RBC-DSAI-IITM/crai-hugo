@@ -1,0 +1,103 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading">
+          <h2>News</h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+    <div class="col-md-10 u-margin-bottom-small">
+      {{ $all_pages := where .Site.RegularPages "Section" "in" (slice "news")}}
+      {{ $years := slice}}
+      {{ $years_tags := dict}}
+      {{range $all_pages.GroupByDate "2006"}}
+        {{ $years = $years | append .Key}}
+        {{ $category_tags := dict}}
+        {{range .Pages.GroupBy "Section"}}
+          {{$temp_tags := slice}}
+          {{range .Pages}}
+            {{ range .Params.tags}}
+              {{ $temp_tags = $temp_tags | uniq | append ( . ) }}
+            {{end}}
+          {{end}}
+          {{$category_tags = merge $category_tags (dict .Key $temp_tags)}}
+        {{end}}
+        {{$years_tags = merge $years_tags (dict .Key $category_tags)}}
+      {{end}}
+      {{$checked := ""}}
+      <ul class="nav nav-pills mb-4" id="year-tab" role="tablist">
+        {{ range $key,$value := ($years | uniq ) }}
+          {{if not $key}}
+            {{$checked = "active"}}
+          {{else}}
+           {{$checked = ""}}
+          {{end}}
+        {{end}}
+      </ul>
+      <div class="tab-content" id="yeartabcontent">
+        {{ range $key,$yearValue := ($years | uniq ) }}
+          {{if not $key}}
+            {{$checked = "active show"}}
+          {{else}}
+            {{$checked = ""}}
+          {{end}}
+          <div class="tab-pane {{$checked}}" id="year-{{$yearValue}}" role="tabpanel">
+        </div>
+        {{end}}
+      </div>
+    </div>
+    <div class="col-md-10 u-margin-bottom-big">
+      <div class="timeline filter vertical">
+        {{ range $all_pages.ByDate }}
+          {{$class := ""}}
+          {{if eq .Section "news"}}
+          {{$class = "timeline-block--color1"}}
+          {{end}}
+          {{$groups := slice}}
+          {{range .Params.tags}}
+            {{$groups = $groups | append ( . )}}
+          {{end}}
+          <div class="timeline-block filter-item {{$class}} {{ range $groups }}{{. | urlize}} {{end}} {{.Section}} {{ dateFormat `2006` .Date }}">
+            <div class="inner-box">
+              <div class="inner">
+                <div class="date">
+                  {{ dateFormat "Jan 2" .Date }}<br>
+                  {{ dateFormat "2006" .Date }}<br>
+                </div>
+                {{if eq .Section "news"}}
+                  {{$link := .Permalink}}
+                  {{with .Params.link}}
+                    {{$link = .}}
+                  {{end}}
+                  <h4><a href="{{$link}}">{{.Title}}</a></h4>
+                  <div class="icon">
+                    {{with .Params.tags}}
+                      <i class="fas fa-tags"></i>
+                      {{range $key, $value := . }}
+                      <a href="/tags/{{ $value | urlize}}" class="tag-link">{{ $value }}</a>
+                      {{end}}
+                    {{end}}
+                  </div>
+                  <div class="btn-box">
+                    {{ if .Params.link }}
+                      <a href="{{$link}}" target="_blank">Read More</a>
+                    {{ else }}
+                      <a href="{{.Permalink}}">Read More</a>
+                    {{ end }}
+                  </div>
+                {{end}}
+              </div>
+            </div>
+          </div>
+        {{end}}
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+{{ end }}

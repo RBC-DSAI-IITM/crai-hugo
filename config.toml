@@ -66,14 +66,32 @@ url = "research/"
 weight = 2
 
 [[menu.main]]
+name = "News & Events"
+url = "#"
+weight = 5
+hasChildren = "true"
+
+[[menu.main]]
+name = "Events"
+parent = "News & Events"
+url = "events/"
+weight = 1
+
+[[menu.main]]
+name = "News"
+parent = "News & Events"
+url = "news/"
+weight = 2
+
+[[menu.main]]
 name = "Collaborators"
 url = "collaborators/"
-weight = 5
+weight = 6
 
 [[menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7
 
 # footer menu
 [[menu.footer]]
