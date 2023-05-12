@@ -1,7 +1,7 @@
 ---
 title: "NITI Aayog"
 subtitle: "Founding Collaborator"
-type: collaborator
+type:
 image: "/images/NITI-logo.png"
 draft: false
 
