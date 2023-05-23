@@ -676,3 +676,10 @@ textarea.form-control {
     color: $primary-color;
   }
 }
+
+.news-card {
+  border: 1px solid #ccc;
+  box-shadow: 3px 5px rgb(230, 230, 230);
+  margin: 20px;
+  height: fit-content;
+}

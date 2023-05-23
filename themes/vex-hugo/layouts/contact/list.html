@@ -12,7 +12,11 @@
             {{ . }}</a></li>{{ end }}
           {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}"><i class="tf-ion-email mr-2"></i>
             {{ . }}</a></li>{{end }}
-          {{with .mobile}} <li class="mb-3"><a href="tel:{{ . }}"><i class="tf-ion-ios-telephone mr-2"></i>
+          <!-- {{with .mobile}} <li class="mb-3"><a href="tel:{{ . }}"><i class="tf-ion-ios-telephone mr-2"></i>
+            {{ . }}</a></li>{{ end }} -->
+          {{with .twitter}} <li class="mb-3"><a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-2"></i>
+              {{ . }}</a></li>{{ end }}
+          {{with .linkedin}} <li class="mb-3"><a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-2"></i>
             {{ . }}</a></li>{{ end }}
         </ul>
       </div>
