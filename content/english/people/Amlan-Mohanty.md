@@ -1,6 +1,6 @@
 ---
 title: "Amlan Mohanty"
-date: 2023-06-23T15:45:00+05:30
+date: 2022-07-26T15:45:00+05:30
 image: "https://www.nls.ac.in/wp-content/uploads/2023/05/Amlan-Mohanty.png"
 
 designation : "Lawyer & Policy Advisor"
