@@ -7,3 +7,8 @@ image: "/images/news-and-events/first-workshop.png"
 tags: []
 draft: false
 ---
+
+<br />
+## Videos from the workshop
+
+{{< youtube 5msciG82HYw >}}
