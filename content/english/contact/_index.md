@@ -13,7 +13,7 @@ office:
   Indian Institute of Technology Madras,<br>
   Chennai-600036, India."
   mobile : "+91-44-22578980"
-  email : "cerai.iitm@gmail.com"
+  email : "contact@cerai.in"
   location : "IIT Madras, India - 600 036"
   twitter: "@cerai_iitm"
   linkedin: "/company/cerai-iitm"
