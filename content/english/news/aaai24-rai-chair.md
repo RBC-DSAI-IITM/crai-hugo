@@ -1,5 +1,5 @@
 ---
-title: "Call For Papers: AAAI '24 Special Track on Safe, Robust and Responsible AI co-chaired by Dr. Ravindran"
+title: "Call For Papers: AAAI '24 Special Track on Safe, Robust and Responsible AI"
 date: 2023-08-08
 publisher: "AAAI '24"
 draft: false

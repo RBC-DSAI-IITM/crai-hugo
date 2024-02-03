@@ -7,7 +7,7 @@ designation : "Research Scientist"
 weblink: https://gsk1692.github.io
 affiliation: RBCDSAI, IIT Madras
 
-type: core
+type: researcher
 draft: false
 ---
 

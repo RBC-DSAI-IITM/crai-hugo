@@ -3,9 +3,9 @@ title: "Ponnurangam Kumaraguru 'PK'"
 date: 2022-08-16T15:45:00+05:30
 image: "https://rbcdsai.iitm.ac.in/images/people/ponnurangam-kumaraguru.png"
 
-designation : "Professor"
+designation : "Associate Faculty Fellow"
 weblink: http://www.cse.iitm.ac.in/~ravi/
-affiliation: IIIT Hyderabad
+affiliation: Professor of Computer Science, IIIT Hyderabad
 
 type: collaborator
 draft: false

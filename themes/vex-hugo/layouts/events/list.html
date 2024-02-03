@@ -53,7 +53,7 @@
     </div>
     <div class="col-md-10 u-margin-bottom-big">
       <div class="timeline filter vertical">
-        {{ range $all_pages.ByDate }}
+        {{ range $all_pages.ByDate.Reverse }}
           {{$class := ""}}
           {{if eq .Section "events"}}
           {{$class = "timeline-block--color1"}}

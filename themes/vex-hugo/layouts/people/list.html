@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <section class="section">
   <div class="container">
 
@@ -10,13 +9,25 @@
     <div class="col-12">
 
       <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation" style="width: 33%;">
+        <li class="nav-item" role="presentation" style="width: 15%;">
           <a class="nav-link active text-center" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
         </li>
-        <li class="nav-item" role="presentation" style="width: 33%;">
+        <li class="nav-item" role="presentation" style="width: 15%;">
           <a class="nav-link  text-center" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
         </li>
-        <li class="nav-item" role="presentation" style="width: 33%;">
+        <li class="nav-item" role="presentation" style="width: 15%;">
+          <a class="nav-link  text-center" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
+        </li>
+
+        <li class="nav-item" role="presentation" style="width: 15%;">
+          <a class="nav-link  text-center" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
+        </li>
+
+        <li class="nav-item" role="presentation" style="width: 15%;">
+          <a class="nav-link  text-center" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
+        </li>
+
+        <li class="nav-item" role="presentation" style="width: 15%;">
           <a class="nav-link  text-center" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Collaborators</a>
         </li>
       </ul>
@@ -78,7 +89,58 @@
           {{ end }}
         </div>
 
-        <div class="tab-pane fade" id="collab" role="tabpanel" aria-labelledby="collab-tab">
+        <div class="tab-pane fade" id="advisor" role="tabpanel" aria-labelledby="advisor-tab">
+          {{ range (where .Site.RegularPages "Section" "people") }}
+          {{ if eq .Params.type "advisor" }}
+          <div class="people mt-5">
+            <div>
+              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+            </div>
+            <div>
+            <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
+            <p>{{.Params.designation | markdownify}}<br>{{.Params.affiliation | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+
+
+        <div class="tab-pane fade" id="researcher" role="tabpanel" aria-labelledby="reseacher-tab">
+          {{ range (where .Site.RegularPages "Section" "people") }}
+          {{ if eq .Params.type "researcher" }}
+          <div class="people mt-5">
+            <div>
+              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+            </div>
+            <div>
+            <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
+            <p>{{.Params.designation | markdownify}}<br>{{.Params.affiliation | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+
+
+        <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">
+          {{ range (where .Site.RegularPages "Section" "people") }}
+          {{ if eq .Params.type "staff" }}
+          <div class="people mt-5">
+            <div>
+              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+            </div>
+            <div>
+            <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
+            <p>{{.Params.designation | markdownify}}<br>{{.Params.affiliation | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+
+
+	<div class="tab-pane fade" id="collab" role="tabpanel" aria-labelledby="collab-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
           {{ if eq .Params.type "collaborator" }}
           <div class="people mt-5">
@@ -87,7 +149,7 @@
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
-            <p>{{.Params.designation}}<br>{{.Params.affiliation | markdownify}}</p>
+            <p>{{.Params.designation | markdownify}}<br>{{.Params.affiliation | markdownify}}</p>
             </div>
           </div>
           {{ end }}
