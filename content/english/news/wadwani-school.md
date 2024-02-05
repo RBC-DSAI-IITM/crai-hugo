@@ -8,7 +8,7 @@ draft: false
 <h4>Official press release:</h4>
 https://www.ptinews.com/story/national/iit-m-receives-rs-110-cr-for-setting-up-wadhwani-school-of-data-science-and-ai/1252607
 <br></br>
-<h4>Ravi's article:</h4>
+<h4>Article by Professor Ravindran:</h4>
 https://indianexpress.com/article/education/with-iit-madrass-new-school-students-will-build-a-strong-foundation-in-data-science-ai-jee-main-2024-a-lesson-from-iit-9140167/
 <br></br>
 <h4>Other media coverage:</h4> 
