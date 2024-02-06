@@ -9,8 +9,6 @@ banner:
     label: "Browse All Products"
     link: "products/"
 
-    ############################# Ticker ############################
-
 ############################# Feature ############################
 features:
   enable: false
