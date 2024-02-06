@@ -4,7 +4,7 @@ date: 2024-01-06
 draft: false
 ---
 
-Thank you for your interest. We will release the application forms by February 25, 2024. Please write to us as contact@cerai.in in the meantime for any information!
+<p>Thank you for your interest. Click <a href="https://forms.gle/vqyAssiFFNBn4K1k6">here</a> to access the application form. Please write to us as contact@cerai.in if you have any further queries.</p>
 
 ![Internships](/images/news-and-events/intern24.jpg)
 ![Post-bacc fellowships](/images/news-and-events/postbacc24.jpg)

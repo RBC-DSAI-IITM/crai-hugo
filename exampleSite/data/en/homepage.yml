@@ -8,7 +8,6 @@ banner:
     enable: true
     label: "Browse All Products"
     link: "products/"
-
 ############################# Feature ############################
 features:
   enable: true
