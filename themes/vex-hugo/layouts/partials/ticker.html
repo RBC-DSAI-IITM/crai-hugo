@@ -1,0 +1,55 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.ticker.enable }}
+{{- with $data.homepage.ticker }}
+
+<style>
+    #ticker {
+        overflow: hidden;
+        height: 40px; /* Adjust height as needed */
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background-color: #f4f4f4;
+    }
+    .ticker {
+        list-style-type: none;
+        padding-left: 0;
+        height: 30%; 
+        text-align:center;
+    }
+    .ticker-item {
+        margin-right: 20px; /* Adjust spacing between items */
+        font-size: 150%; /* Increase font size by 50% */
+        font-weight: bold; /* Apply bold font style */
+        white-space: nowrap; /* Prevent line breaks */
+    }
+    .ticker-item a
+    {
+        text-decoration:none;
+        color:inherit;
+    }
+</style>
+
+<div id="ticker" class="ticker-wrapper">
+    <ul class="ticker">
+        {{ range .ticker_items }}
+        <li class="ticker-item"><a href="{{ .link }}">{{ .item }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    function tick() {
+        $('#ticker ul').animate({marginTop: '-=20px'}, 500, function(){
+            $(this).css({marginTop: 0}).find('li:first').appendTo(this);
+        });
+    }
+    setInterval(function(){ tick () }, 3000); // Adjust the interval as needed
+});
+</script>
+{{ end }}
+{{ end }}

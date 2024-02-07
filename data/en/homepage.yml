@@ -9,10 +9,14 @@ banner:
     label: "Browse All Products"
     link: "products/"
 
-############################# Feature ############################
-features:
-  enable: false
-  title: "IIT-Madras receives ₹110-crore endowment to establish Wadhwani School of Data Science & AI"
+############################# Ticker ############################
+ticker:
+    enable: true
+    ticker_items:
+      - item: "IIT-Madras receives ₹110-crore endowment to establish Wadhwani School of Data Science & AI"
+        link: https://www.iitm.ac.in/happenings/press-releases-and-coverages/iit-madras-receives-endowment-rs-110-crore-sunil-wadhwani
+      - item: "Summer internships, post-baccalaureate and post-doctoral fellowships at CeRAI for 2024"
+        link: https://forms.gle/vqyAssiFFNBn4K1k6
 ############################# promo ############################
 promo:
   enable: true
