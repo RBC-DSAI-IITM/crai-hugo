@@ -12,11 +12,15 @@
         align-items: center; /* Center vertically */
         background-color: #f4f4f4;
     }
+    .ticker-wrapper {
+        width: 100%; /* Ensure ticker takes full width */
+        overflow: hidden; /* Hide overflowing content */
+    }
     .ticker {
         list-style-type: none;
         padding-left: 0;
-        height: 30%; 
-        text-align:center;
+        display: flex; /* Use flexbox for horizontal layout */
+        margin: 0; /* Remove default margin */
     }
     .ticker-item {
         margin-right: 20px; /* Adjust spacing between items */
@@ -24,12 +28,25 @@
         font-weight: bold; /* Apply bold font style */
         white-space: nowrap; /* Prevent line breaks */
     }
-    .ticker-item a
-    {
-        text-decoration:none;
-        color:inherit;
+    .ticker-item a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Responsive adjustments */
+    @media only screen and (max-width: 768px) {
+        #ticker {
+            height: auto; /* Adjust height to fit content */
+            padding: 10px; /* Add padding for better spacing */
+        }
+        .ticker-item {
+            margin-right: 10px; /* Reduce spacing between items */
+            font-size: 100%; /* Reset font size */
+        }
     }
 </style>
+
+
 
 <div id="ticker" class="ticker-wrapper">
     <ul class="ticker">
@@ -39,17 +56,19 @@
     </ul>
 </div>
 
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function(){
-    function tick() {
-        $('#ticker ul').animate({marginTop: '-=20px'}, 500, function(){
-            $(this).css({marginTop: 0}).find('li:first').appendTo(this);
-        });
-    }
-    setInterval(function(){ tick () }, 3000); // Adjust the interval as needed
-});
+    $(document).ready(function(){
+        function tick() {
+            $('#ticker ul').animate({marginLeft: '-=5px'}, 20, function(){
+                if ($(this).css('margin-left').replace("px", "") < -$(this).width()) {
+                    $(this).css({marginLeft: 0}).find('li:first').appendTo(this);
+                }
+            });
+        }
+        setInterval(function(){ tick(); }, 50); // Adjust the interval as needed
+    });
 </script>
+
 {{ end }}
 {{ end }}
