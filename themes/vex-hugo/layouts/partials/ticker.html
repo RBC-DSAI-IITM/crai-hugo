@@ -54,11 +54,13 @@
 
 <div id="ticker" class="ticker-wrapper">
     <ul class="ticker">
-        {{ range .ticker_items }}
-        <li class="ticker-item"><a href="{{ .link }}">{{ .item }}</a></li>
-        {{ end }}
+        {{- $tickerLength := len .ticker_items -}}
+        {{- range $index, $element := .ticker_items -}}
+            <li class="ticker-item"><a href="{{ $element.link }}">{{ $element.item }}</a>{{ if lt $index (sub $tickerLength 1) }} | {{ end }}</li>
+        {{- end -}}
     </ul>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>

@@ -1,4 +1,26 @@
 {{ define "main" }}
+<style>
+
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center tabs */
+    height: auto !important;
+  }
+  .nav-item
+  {
+    width: 100% !important;
+  }
+
+  .nav-link {
+    padding: 10px 0 !important; /* Increase padding to show text fully */
+    white-space: normal !important; /* Allow text to wrap */
+    overflow: visible !important; /* Show full text */
+    text-overflow: clip !important; /* Show full text */
+  }
+}
+</style>
+
 <section class="section">
   <div class="container">
 
@@ -7,7 +29,6 @@
     </div>
 
     <div class="col-12">
-
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation" style="width: 15%;">
           <a class="nav-link active text-center" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>

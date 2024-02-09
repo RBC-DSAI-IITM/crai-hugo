@@ -9,7 +9,7 @@
       </div>
       {{ range ( where .Site.RegularPages "Type" "news" | first 3 ) }}
       <div class="mb-5 mb-lg-0 text-center card card-body" style="margin-left: auto; margin-right: auto; width: 60%; border-color: #316856;">
-        <a href="{{ .Params.link }}"><h4 class="mb-10">{{ .Params.title }}</h4></a>
+        <a href="/news/"><h4 class="mb-10">{{ .Params.title }}</h4></a>
         <p>{{ dateFormat "Jan 2, 2006" .Params.date }}</p>
       </div>
       <br>

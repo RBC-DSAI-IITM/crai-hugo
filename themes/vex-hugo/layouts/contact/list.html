@@ -3,24 +3,26 @@
 <section class="section">
   <div class="container">
     <div class="row justify-content-center">
-      {{ with .Params.office }}
-      <div class="col-lg-5 col-sm-6 mb-5">
-        <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
-        <p>{{ .desc | markdownify }}</p>
-        <ul class="list-unstyled contact-list">
-          {{with .address | markdownify}} <li class="mb-3"><a href="https://goo.gl/maps/MSGA3qZUNz2uH4fv8" target="_blank"><i class="tf-ion-ios-location mr-2"></i>
-            {{ . }}</a></li>{{ end }}
-          {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}"><i class="tf-ion-email mr-2"></i>
-            {{ . }}</a></li>{{end }}
-          <!-- {{with .mobile}} <li class="mb-3"><a href="tel:{{ . }}"><i class="tf-ion-ios-telephone mr-2"></i>
-            {{ . }}</a></li>{{ end }} -->
-          {{with .twitter}} <li class="mb-3"><a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-2"></i>
+      <div class="col-lg-5 col-sm-6 mb-5"> <!-- Moved col-lg-5 and col-sm-6 classes here -->
+        <div class="content-box text-center" style="background-color: #ECECEC; padding: 10%; width:100%;"> <!-- Added padding -->
+          {{ with .Params.office }}
+          <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
+          <p>{{ .desc | markdownify }}</p>
+          <ul class="list-unstyled contact-list">
+            {{with .address | markdownify}} <li class="mb-3"><a href="https://goo.gl/maps/MSGA3qZUNz2uH4fv8" target="_blank"><i class="tf-ion-ios-location mr-2"></i>
               {{ . }}</a></li>{{ end }}
-          {{with .linkedin}} <li class="mb-3"><a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-2"></i>
-            {{ . }}</a></li>{{ end }}
-        </ul>
-      </div>
-      {{ end }}
+            {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}"><i class="tf-ion-email mr-2"></i>
+              {{ . }}</a></li>{{end }}
+            <!-- {{with .mobile}} <li class="mb-3"><a href="tel:{{ . }}"><i class="tf-ion-ios-telephone mr-2"></i>
+              {{ . }}</a></li>{{ end }} -->
+            {{with .twitter}} <li class="mb-3"><a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-2"></i>
+                {{ . }}</a></li>{{ end }}
+            {{with .linkedin}} <li class="mb-3"><a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-2"></i>
+              {{ . }}</a></li>{{ end }}
+          </ul>
+          {{ end }}
+        </div> <!-- End of content-box -->
+      </div> <!-- End of col-lg-5 and col-sm-6 -->
     </div>
     <div id="basicMap"></div>
   </div>
