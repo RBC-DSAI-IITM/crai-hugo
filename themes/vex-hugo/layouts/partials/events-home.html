@@ -1,19 +1,20 @@
 <section class="testimonials section" id="testimonial">
   <div class="container">
     <div class="justify-content-center">
-      <div class="col-12">
-        <div class="heading">
-          <h2>Recent Events</h2>
+      <div class="heading">
+        <h2>Recent Events</h2>
           <a href="/events/"><h5>View All Events</h5></a>
         </div>
+      <div class="row">
+        {{ range (where .Site.RegularPages "Type" "events" | first 3 ) }}
+        <div class="col-md-4 mb-5">
+          <div class="text-center card card-body" style="border-color: #316856;">
+            <a href="/events/"><h4 class="mb-10">{{ .Params.title }}</h4></a>
+            <p>{{ dateFormat "Jan 2, 2006" .Params.date }}</p>
+          </div>
+        </div>
+        {{ end }}
       </div>
-      {{ range ( where .Site.RegularPages "Type" "events" | first 3 ) }}
-      <div class="mb-5 mb-lg-0 text-center card card-body" style="margin-left: auto; margin-right: auto; width: 60%; border-color: #316856;">
-        <a href="{{ .Params.link }}"><h4 class="mb-10">{{ .Params.title }}</h4></a>
-        <p>{{ dateFormat "Jan 2, 2006" .Params.date }}</p>
-      </div>
-      <br>
-      {{ end }}
     </div>
   </div>
 </section>
