@@ -1,3 +1,17 @@
+<style>
+  .events-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid #316856;
+    padding: 1rem;
+  }
+
+  .events-box h4 {
+    margin-bottom: 1rem;
+  }
+  </style>
 <section class="testimonials section" id="testimonial">
   <div class="container">
     <div class="justify-content-center">
@@ -7,8 +21,8 @@
         </div>
       <div class="row">
         {{ range (where .Site.RegularPages "Type" "events" | first 3 ) }}
-        <div class="col-md-4 mb-5">
-          <div class="text-center card card-body" style="border-color: #316856;">
+        <div class="col-md-4 mb-5 ">
+          <div class="text-center card card-body events-box" style="border-color: #316856;">
             <a href="/events/"><h4 class="mb-10">{{ .Params.title }}</h4></a>
             <p>{{ dateFormat "Jan 2, 2006" .Params.date }}</p>
           </div>
