@@ -1,25 +1,26 @@
 {{ define "main" }}
 <style>
 
-@media (max-width: 768px) {
-  .nav-tabs {
-    flex-wrap: wrap;
-    justify-content: space-around; /* Center tabs */
-    height: auto !important;
+  @media (max-width: 768px) {
+    .nav-tabs {
+      flex-wrap: wrap;
+      justify-content: space-around; /* Center tabs */
+      height: auto !important;
+    }
+    .nav-item
+    {
+      width: 100% !important;
+    }
+  
+    .nav-link {
+      padding: 10px 0 !important; 
+      white-space: normal !important; 
+      overflow: visible !important; 
+      text-overflow: clip !important; 
+    }
   }
-  .nav-item
-  {
-    width: 100% !important;
-  }
-
-  .nav-link {
-    padding: 10px 0 !important; 
-    white-space: normal !important; 
-    overflow: visible !important; 
-    text-overflow: clip !important; 
-  }
-}
-</style>
+  </style>
+  
 
 <section class="section">
   <div class="container">
