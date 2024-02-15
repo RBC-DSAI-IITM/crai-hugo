@@ -11,24 +11,27 @@ draft: false
 <br>
 
 <style>
-  .link_button
-  {
-    width:30%;
-    height:auto;
-
-  }
-  .button_text
-  {
-    text-decoration:none;
-    color:black;
-  }
-  .button_box
-  {
-    alignment:center;
-    height:auto;
+  .link_button {
+    width: 100%;
+    height: 100%;
+    border:none;
   }
 
-  </style>
+  .button_text {
+    text-decoration: none !important;
+    color: black;
+    font-size:5vh;
+  }
+
+  .button_box {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 10vh; /* Adjust height as needed */
+  }
+</style>
+
+
 
 The Global Technology Summit 2023 was a platform for industry experts, policymakers, scientists, and other stakeholders from all over the world to deliberate on the changing nature of technology and geopolitics. The summit covered a wide range of topics, such as the impact of artificial intelligence, the governance of digital platforms, the future of work, the role of technology in health and education, and the challenges and opportunities of digital cooperation.
 
@@ -41,6 +44,7 @@ The summit also addressed the future of work, and how technology is transforming
 The role of technology in health and education was another important theme of the summit. The panelists highlighted the potential and challenges of using technology to improve health and education outcomes, especially in the context of the COVID-19 pandemic and its aftermath. They also shared the best practices and lessons learned from various initiatives and innovations that leverage technology to enhance access, quality, and equity in health and education services. They also discussed the collaboration and coordination among different actors and sectors to harness technology for health and education.
 
 The summit also focused on the challenges and opportunities of digital cooperation, and how countries and regions can work together to shape the global digital order. The panelists discussed the existing and emerging frameworks and mechanisms for digital cooperation, such as the UN Secretary-General's Roadmap for Digital Cooperation, the G7 Digital and Technology Ministerial, and the EU Digital Agenda. They also explored the areas and issues that require more cooperation and coordination, such as digital trade, cybersecurity, digital taxation, and digital inclusion. They also emphasized the need for a multistakeholder and inclusive approach to digital cooperation, involving governments, the private sector, civil society, and academia.
+
 <br></br>
 
 <div class="button_box">
@@ -48,6 +52,7 @@ The summit also focused on the challenges and opportunities of digital cooperati
 <a class="button_text" href="https://carnegieindia.org/specialprojects/globaltechnologysummit">Read More</a>
 </button>
 </div>
+<br></br>
 
 <div class="container overflow-hidden">
     <div class="row gy-4 gy-md-0 gx-xxl-5">
@@ -61,7 +66,8 @@ The summit also focused on the challenges and opportunities of digital cooperati
           </div>
         </div>
       </div>
-
+      <br></br>
+      
 ### Video
 <section class="section">
 <div style="text-align: center;">
