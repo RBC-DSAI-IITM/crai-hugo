@@ -10,6 +10,26 @@ draft: false
 ---
 <br>
 
+<style>
+  .link_button
+  {
+    width:30%;
+    height:auto;
+
+  }
+  .button_text
+  {
+    text-decoration:none;
+    color:black;
+  }
+  .button_box
+  {
+    alignment:center;
+    height:auto;
+  }
+
+  </style>
+
 The Global Technology Summit 2023 was a platform for industry experts, policymakers, scientists, and other stakeholders from all over the world to deliberate on the changing nature of technology and geopolitics. The summit covered a wide range of topics, such as the impact of artificial intelligence, the governance of digital platforms, the future of work, the role of technology in health and education, and the challenges and opportunities of digital cooperation.
 
 One of the main topics of discussion was the transition of artificial intelligence (AI) to more advanced generative AI models, which are capable of creating novel and realistic content, such as text, images, audio, and video. The panelists explored the possibility of a global convergence on AI, and how different regulatory mechanisms will respond to the growing adoption of such AI systems. They also discussed how countries can prepare for a transition to increasingly AI-enabled economies and societies, and what are the ethical and social implications of generative AI.
@@ -21,10 +41,13 @@ The summit also addressed the future of work, and how technology is transforming
 The role of technology in health and education was another important theme of the summit. The panelists highlighted the potential and challenges of using technology to improve health and education outcomes, especially in the context of the COVID-19 pandemic and its aftermath. They also shared the best practices and lessons learned from various initiatives and innovations that leverage technology to enhance access, quality, and equity in health and education services. They also discussed the collaboration and coordination among different actors and sectors to harness technology for health and education.
 
 The summit also focused on the challenges and opportunities of digital cooperation, and how countries and regions can work together to shape the global digital order. The panelists discussed the existing and emerging frameworks and mechanisms for digital cooperation, such as the UN Secretary-General's Roadmap for Digital Cooperation, the G7 Digital and Technology Ministerial, and the EU Digital Agenda. They also explored the areas and issues that require more cooperation and coordination, such as digital trade, cybersecurity, digital taxation, and digital inclusion. They also emphasized the need for a multistakeholder and inclusive approach to digital cooperation, involving governments, the private sector, civil society, and academia.
+<br></br>
 
-<button>
-<a></a>
+<div class="button_box">
+<button class="link_button">
+<a class="button_text" href="https://carnegieindia.org/specialprojects/globaltechnologysummit">Read More</a>
 </button>
+</div>
 
 <div class="container overflow-hidden">
     <div class="row gy-4 gy-md-0 gx-xxl-5">
