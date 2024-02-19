@@ -69,11 +69,10 @@ The summit also focused on the challenges and opportunities of digital cooperati
                 <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
                 <blockquote class="bsb-blockquote-icon mb-4">My overall experience at GTS 2023 was eye-opening. It was an interesting opportunity to engage with stakeholders around the world across NGOs, Industries and Governments. Its a critical summit to engage in geopolitical issues and how they impact the technological growth around the world. It has made me rethink the mental models that I use about how the world is going to develop, accounting the responsibilities that one should uphold.</blockquote>
                 <h4 class="mb-2">- Jashaswimalya Acharjee</h4>
-                <h5 class="fs-6 text-secondary mb-0">PHD student of Prof. Ravindran (head of the Robert Bosch Centre for Data Science and Artificial Intelligence (RBC-DSAI)) in the CSE department of IITM</h5>
+                <h5 class="fs-6 text-secondary mb-0">PHD student of Prof. Ravindran  in the CSE department of IITM</h5>
           </div>
         </div>
       </div>
-
 <div style="margin: auto;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/SQTRporjNQ0" frameborder="0" allowfullscreen></iframe>
 </div>
