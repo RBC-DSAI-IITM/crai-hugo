@@ -19,6 +19,10 @@
       text-overflow: clip !important; 
     }
   }
+  .people-img {
+    width: 50%;
+    height: 52%;
+}
   </style>
   
 
@@ -61,7 +65,7 @@
           {{ if eq .Params.type "head" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="235px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -73,7 +77,8 @@
           {{ if eq .Params.type "core" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -89,7 +94,8 @@
           {{ if eq .Params.type "council" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -100,7 +106,8 @@
           {{ if eq .Params.type2 "council" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -116,7 +123,8 @@
           {{ if eq .Params.type "advisor" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -133,7 +141,8 @@
           {{ if eq .Params.type "researcher" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -150,7 +159,8 @@
           {{ if eq .Params.type "staff" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
@@ -167,7 +177,8 @@
           {{ if eq .Params.type "collaborator" }}
           <div class="people mt-5">
             <div>
-              <a href="{{.Permalink}}"><img width="230px" height="250px" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+              <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
+
             </div>
             <div>
             <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
