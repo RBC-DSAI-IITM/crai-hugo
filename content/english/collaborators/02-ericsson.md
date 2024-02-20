@@ -2,6 +2,7 @@
 title: "Ericsson"
 subtitle: "Platinum Consortium Member"
 type: consortium
+date: 2023-09-25
 image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ericsson_%282018%29.svg"
 draft: false
 
