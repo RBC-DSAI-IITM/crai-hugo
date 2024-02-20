@@ -1,7 +1,7 @@
 ---
 title: "Ramayya Krishnan"
 date: 2023-05-07T15:45:00+05:30
-image: "https://www.heinz.cmu.edu/faculty-research/profiles/profiles/ramayya-krishnan/_files/ramayya-krishnan-bio.jpg"
+image: "/images/people/scientific-advisory-board/ramayya-krishnan-bio.jpg"
 
 designation : "**Member**"
 weblink: "https://www.heinz.cmu.edu/faculty-research/profiles/krishnan-ramayya"
