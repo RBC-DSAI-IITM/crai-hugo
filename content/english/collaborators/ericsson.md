@@ -1,5 +1,5 @@
 ---
-title: "Ericcson"
+title: "Ericsson"
 subtitle: "Platinum Consortium Member"
 type: consortium
 image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ericsson_%282018%29.svg"
