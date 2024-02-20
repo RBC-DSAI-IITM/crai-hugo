@@ -48,7 +48,7 @@ How can various stakeholders engage in a nuanced conversation about the potentia
 
 How can we gain a deeper understanding of the technical factors underlying AI breakthroughs?
 
-In this panel, our student team from IITM and our keynote speaker, Professor Ravindran, participated in a discussion aimed at addressing these questions.
+In this panel, our keynote speaker, Professor Ravindran, participated in a discussion aimed at addressing these questions.
 
 One of the main topics of discussion was the transition of artificial intelligence (AI) to more advanced generative AI models, which are capable of creating novel and realistic content, such as text, images, audio, and video. The panelists explored the possibility of a global convergence on AI, and how different regulatory mechanisms will respond to the growing adoption of such AI systems. They also discussed how countries can prepare for a transition to increasingly AI-enabled economies and societies, and what are the ethical and social implications of generative AI.
 
@@ -69,7 +69,7 @@ The summit also focused on the challenges and opportunities of digital cooperati
                 <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
                 <blockquote class="bsb-blockquote-icon mb-4">My overall experience at GTS 2023 was eye-opening. It was an interesting opportunity to engage with stakeholders around the world across NGOs, Industries and Governments. Its a critical summit to engage in geopolitical issues and how they impact the technological growth around the world. It has made me rethink the mental models that I use about how the world is going to develop, accounting the responsibilities that one should uphold.</blockquote>
                 <h4 class="mb-2">- Jashaswimalya Acharjee</h4>
-                <h5 class="fs-6 text-secondary mb-0">PHD student of Prof. Ravindran  in the CSE department of IITM</h5>
+                <h5 class="fs-6 text-secondary mb-0">PhD student of Prof. Ravindran  in the CSE department of IITM</h5>
           </div>
         </div>
       </div>
