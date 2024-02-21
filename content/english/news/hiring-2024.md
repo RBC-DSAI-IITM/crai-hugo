@@ -31,26 +31,43 @@ draft: false
         color: black; 
     }
 
+.big-div {
+    margin-top: auto;
+    
+        
+    }
+
+    .divider {
+        width: 80%;
+        border-bottom: 0.5em dotted #46be89;
+    }
+
 
 </style>
 
-<h1>Internships</h1>
-
-<div class="hiring-div">
-    <a href="/images/news-and-events/intern24.jpg" target="_blank">
-        <img src="/images/news-and-events/intern24.jpg" alt="Internships" class="hiring-img">
-    </a>
+<div class="big-div">
+    <h1>Internships</h1>
+    <p>Thank you for your interest. Click <a href="https://forms.gle/vqyAssiFFNBn4K1k6">here</a> to access the application form. Please write to us as contact@cerai.in if you have any further queries.</p>
+    <div class="hiring-div">
+        <a href="/images/news-and-events/intern24.jpg" target="_blank">
+            <img src="/images/news-and-events/intern24.jpg" alt="Internships" class="hiring-img">
+        </a>
+    </div>
 </div>
+<div class="divider"></div>
 
+<div class="big-div">
+    <div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="https://forms.gle/vqyAssiFFNBn4K1k6">Click Here to Apply for Internships</a>
+        </button>
+    </div>
+</div>
+<div class="divider"></div>
 
-<div class="button-box" style="text-align:left;">
-<button class="link-button">
-<a class="button_text" href="https://forms.gle/vqyAssiFFNBn4K1k6">Click Here to Apply</a>
-</button>
-
-<h1>Post-baccalaureate and post-doctoral fellowships</h1>
-
-   <div class="row">
+<div class="big-div">
+    <h1>Post-baccalaureate and post-doctoral fellowships</h1>
+    <div class="row">
         <div class="col">
             <a href="/images/news-and-events/postbacc24.jpg" target="_blank">
                 <img src="/images/news-and-events/postbacc24.jpg" class="hiring-img" style="margin-right: 5%;">
@@ -60,12 +77,21 @@ draft: false
             </a>
         </div>
     </div>
+</div>
+<div class="divider"></div>
 
 
- <div class="button-box" style="text-align:left;">
-<button class="link-button">
-<a class="button_text" href="/contact/">Click Here to Apply</a>
-</button>
 
+<div class="big-div">
+    <div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="/contact/">Please write to contact@cerai.in for more details.</a>
+        </button>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="big-div">
 <p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="/contact/">contact@cerai.in</a> for more details.</p>
-</section>
+</div>
