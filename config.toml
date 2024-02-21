@@ -97,9 +97,15 @@ url = "collaborators/"
 weight = 5
 
 [[menu.main]]
+name = "Work with Us"
+url= "news/hiring-2024/"
+weight = 6
+
+[[menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 7
+
 
 # footer menu
 [[menu.footer]]
