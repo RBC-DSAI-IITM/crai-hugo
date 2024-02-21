@@ -1,5 +1,5 @@
 ---
-title: "Summer internships, post-baccalaureate and post-doctoral fellowships at CeRAI for 2024"
+title: "Openings at CeRAI "
 date: 2024-01-06
 draft: false
 ---
@@ -33,28 +33,27 @@ draft: false
 
 .big-div {
     margin-top: auto;
-    
         
     }
 
     .divider {
-        width: 80%;
+        width: 100%;
         border-bottom: 0.5em dotted #46be89;
     }
 
 
 </style>
 
+<div class="divider"></div>
+
 <div class="big-div">
     <h1>Internships</h1>
-    <p>Thank you for your interest. Click <a href="https://forms.gle/vqyAssiFFNBn4K1k6">here</a> to access the application form. Please write to us as contact@cerai.in if you have any further queries.</p>
     <div class="hiring-div">
         <a href="/images/news-and-events/intern24.jpg" target="_blank">
             <img src="/images/news-and-events/intern24.jpg" alt="Internships" class="hiring-img">
         </a>
     </div>
 </div>
-<div class="divider"></div>
 
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
@@ -78,19 +77,58 @@ draft: false
         </div>
     </div>
 </div>
-<div class="divider"></div>
-
-
-
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="/contact/">Please write to contact@cerai.in for more details.</a>
+            <a class="button_text" href="/contact/">Please write to contact@cerai.in for more details</a>
         </button>
     </div>
 </div>
 
+<div class="big-div">
+</div>
+
+
 <div class="divider"></div>
+<h1>IT Analyst</h1>
+<div class="big-div">
+    <div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="https://docs.google.com/document/d/1I65Z9CCE1vxy6bOCSOxl5oiyhAdS6QFp720S4VA-Kp4/edit">Click Here for Details</a>
+        </button>
+    </div>
+</div>
+
+<div class="big-div">
+<p>Are you looking for a technology career in an esteemed institution where you can experience how translational research is directly impacting the world? Do you want to work in an intellectually challenging environment where you can conceptualize and lead projects under the guidance of world’s brilliant minds and industry leaders?
+
+If you answered “yes” to these questions then CeRAI could be the perfect place for you. We are looking for brilliant and well-rounded technologists who can work on projects that will have direct impact on responsible AI.
+</p>
+</div>
+
+<div class="divider"></div>
+<h1>Policy Analyst</h1>
+<div class="big-div">
+    <div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="https://docs.google.com/document/d/1QHdraDNHL2ICHOvevHxN_6oAne4fv6PdCgcBe8uxuBQ/edit#heading=h.h6c7zw9jb9ze">Click Here for Details</a>
+        </button>
+    </div>
+</div>
+
+<div class="big-div">
+<p>The Policy Analyst will work as an integral part of CeRAI and will be required to undertake research, analysis, and drafting of whitepapers or briefs. The expected output from the research work will be in the form of research reports and policy briefs, draft legislation, rules and regulations.</p>
+</div>
+
+<div class="divider"></div>
+<h1>Researcher</h1>
+<div class="big-div">
+    <div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="/contact/">Please write to contact@cerai.in for more details</a>
+        </button>
+    </div>
+</div>
 
 <div class="big-div">
 <p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="/contact/">contact@cerai.in</a> for more details.</p>
