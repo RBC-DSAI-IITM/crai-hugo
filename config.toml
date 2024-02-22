@@ -97,7 +97,7 @@ url = "collaborators/"
 weight = 5
 
 [[menu.main]]
-name = "Work with Us"
+name = "Opportunities"
 url= "news/hiring-2024/"
 weight = 6
 

@@ -1,5 +1,5 @@
 ---
-title: "Openings at CeRAI "
+title: "Openings at CeRAI"
 date: 2024-01-06
 draft: false
 ---
@@ -40,11 +40,16 @@ draft: false
         width: 100%;
         border-bottom: 0.5em dotted #46be89;
     }
+    .first-divider
+    {
+        width:100%;
+        border-bottom: 0.25em solid #46be89;
+    }
 
 
 </style>
 
-<div class="divider"></div>
+<div class="first-divider"></div>
 
 <div class="big-div">
     <h1>Internships</h1>
@@ -58,7 +63,7 @@ draft: false
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="https://forms.gle/vqyAssiFFNBn4K1k6">Click Here to Apply for Internships</a>
+            <a class="button_text" href="https://forms.gle/vqyAssiFFNBn4K1k6" target="_blank">Click Here to Apply for Internships</a>
         </button>
     </div>
 </div>
@@ -80,7 +85,7 @@ draft: false
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="/contact/">Please write to contact@cerai.in for more details</a>
+            <a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in for more details</a>
         </button>
     </div>
 </div>
@@ -94,7 +99,7 @@ draft: false
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="https://docs.google.com/document/d/1I65Z9CCE1vxy6bOCSOxl5oiyhAdS6QFp720S4VA-Kp4/edit">Click Here for Details</a>
+            <a class="button_text" href="https://docs.google.com/document/d/1I65Z9CCE1vxy6bOCSOxl5oiyhAdS6QFp720S4VA-Kp4/edit" target="_blank">Click Here for Details</a>
         </button>
     </div>
 </div>
@@ -111,7 +116,7 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="https://docs.google.com/document/d/1QHdraDNHL2ICHOvevHxN_6oAne4fv6PdCgcBe8uxuBQ/edit#heading=h.h6c7zw9jb9ze">Click Here for Details</a>
+            <a class="button_text" href="https://docs.google.com/document/d/1QHdraDNHL2ICHOvevHxN_6oAne4fv6PdCgcBe8uxuBQ/edit#heading=h.h6c7zw9jb9ze" target="_blank">Click Here for Details</a>
         </button>
     </div>
 </div>
@@ -125,11 +130,11 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="/contact/">Please write to contact@cerai.in for more details</a>
+            <a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in for more details</a>
         </button>
     </div>
 </div>
 
 <div class="big-div">
-<p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="/contact/">contact@cerai.in</a> for more details.</p>
+<p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="/contact/" target="_blank">contact@cerai.in</a> for more details.</p>
 </div>
