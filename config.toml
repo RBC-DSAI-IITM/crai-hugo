@@ -93,6 +93,7 @@ weight = 2
 
 [[menu.main]]
 name = "Blogs"
+parent = "News & Events"
 url = "blogs/"
 weight = 3
 
