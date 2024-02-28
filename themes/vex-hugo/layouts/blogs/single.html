@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<style>
+  .title
+  {
+    text-align:center;
+  }
+</style>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-4 mb-md-0">
+        {{ if .Params.image}}
+          <center>
+            <img class="mb-40" src="{{ .Params.image | absURL }}" width="50%" />
+          <h1 class="mb-4 title">{{.Title | markdownify}}</h1>
+          <h2> {{ .Params.subtitle }}</h2>
+        </center> 
+        {{ end }}
+        <h4 class="mb-4"><strong>By:</strong> {{ .Params.author | markdownify }}</h4>
+        <span style="font-size: medium;">Tags: </span>
+            {{ range .Params.tags }}
+            <a href="" style="text-decoration: none;">
+            <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
+              <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
+            </div>
+            </a>
+            {{ end }}
+            <br><br>
+            <div class="content mb-4" style="text-align: justify;">{{.Content}}</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

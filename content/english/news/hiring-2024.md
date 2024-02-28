@@ -33,7 +33,6 @@ draft: false
 
 .big-div {
     margin-top: auto;
-        
     }
 
     .divider {

@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading">
+          <h2>CeRAI Blogs</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-40" style="display: flex; flex-wrap: wrap;">
+
+      {{ range .Pages }}
+
+        <div class="col-md-6 text-center mb-40 mb-lg-40" style="display: inline-table;">
+          <a href="{{.Permalink}}"><img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt=""></a>
+          <div class="contents">
+            <a href="{{.Permalink}}" style="text-decoration: none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
+            {{ range .Params.tags }}
+            <a href="" style="text-decoration: none;">
+            <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
+              <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
+            </div>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+
+      {{ end }}
+    </div>
+
+  </div>
+            
+          
+  </div>
+</section>
+{{ end }}
