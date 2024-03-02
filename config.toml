@@ -44,22 +44,22 @@ link = "plugins/pushin/pushin.min.js"
 
 ###################################### Navigation ######################################
 
-# homepage section menu
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
 
 [[menu.main]]
 name = "People"
 url = "people/"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Research"
 url = "#"
-weight = 2
+weight = 1
 hasChildren = "true"
+
+[[menu.main]]
+name = "Blogs"
+url = "blogs/"
+weight = 2
 
 [[menu.main]]
 name = "Themes"
@@ -76,7 +76,7 @@ weight = 2
 [[menu.main]]
 name = "News & Events"
 url = "#"
-weight = 4
+weight = 3
 hasChildren = "true"
 
 [[menu.main]]
@@ -92,25 +92,15 @@ url = "news/"
 weight = 2
 
 [[menu.main]]
-name = "Blogs"
-parent = "News & Events"
-url = "blogs/"
-weight = 3
-
-[[menu.main]]
 name = "Collaborators"
 url = "collaborators/"
 weight = 5
 
-[[menu.main]]
-name = "Opportunities"
-url= "news/hiring-2024/"
-weight = 6
 
 [[menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 8
 
 
 # footer menu
@@ -127,7 +117,7 @@ weight = 2
 [[menu.footer]]
 name = "People"
 url = "people/"
-weight = 3
+weight = 6
 
 [[menu.footer]]
 name = "Collaborators"

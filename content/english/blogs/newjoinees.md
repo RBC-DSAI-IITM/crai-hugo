@@ -18,30 +18,71 @@ draft: false
 *, ::after, ::before {
   box-sizing: border-box;
 }
+
+ .button-box
+{
+  text-align:center;
+}
+
+.link-button
+{
+  padding: .6rem 1.2rem;
+  line-height: 2.1rem;
+  font-size: 1.2rem;
+  color: #000;
+  border: 2px solid transparent;
+  border-radius: .5rem;
+  text-decoration: none;
+  transition: all .3s ease-in;
+  background-color: #4eadec !important;
+}
+    .link-button .button_text {
+        text-decoration: none; 
+        color: black; 
+    }
+
   </style>
- <div class="col-12">
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="pis" role="tabpanel" aria-labelledby="pis-tab">
-          <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="pis" role="tabpanel" aria-labelledby="pis-tab">
-        <div class="people mt-5">
-    <div>
-    <a href=""><img width="230px" height="235px" src="\images\profile.jpg" alt="Sitara Raman"></a>
-    </div>
-    <div>
-        <h4 class="mb-2"><a href="" class="link-title">Sitara Raman</a></h4>
-         Project Associate</p> <p>CeRAI, IIT Madras</p>
+
+In February, we welcomed three new members to the CeRAI team. We are delighted to introduce Krishna Narayan as our co-founder, Sivaramakrishnan R Guruvayur as our research advisor, and Sitara Raman as our project associate.
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://itihaasa.com/public/images/KrishnanNarayanan.jpg" class="card-img-top" alt="Placeholder Image">
+          <div class="card-body">
+            <h5 class="card-title">Krishna Narayan</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Co-Founder</h6>
+            <p class="card-text">Krishnan Narayanan is the co-founder and President of itihaasa Research and Digital, and studies the evolution of technology domains in India. He is an award-winning author, and has co-authored Against All Odds - The IT Story of India (Penguin India 2022) and Empowering India (Indian Academy of Sciences, 2023).</p>
+          </div>
         </div>
-    </div>
-        <div class="people mt-5">
-    <div>
-    <a href=""><img width="230px" height="235px" src="\images\0.jpg" alt="Dr. Sivaramakrishnan R Guruvayur"></a>
-    </div>
-    <div>
-        <h4 class="mb-2"><a href="" class="link-title">Dr. Sivaramakrishnan R Guruvayur</a></h4>
-         Research Advisor</p>Dept. of CSE, IIT Madras RBCDSAI, IIT Madras<p></p>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/people/researchers/0.jpg" class="card-img-top" alt="Placeholder Image">
+          <div class="card-body">
+            <h5 class="card-title">Sivaramakrishnan R Guruvayur</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Research Advisor</h6>
+            <p class="card-text">Dr. Sivaramakrishnan R Guruvayur holds a PhD in Computer Science (Machine Learning ) and management qualifications from Indian Institute of Management, Bangalore (IIMB), ESADE, Spain & SEI, Carnegie Mellon University, USA. He is also a member - Multistakeholder Experts Group (MEG) of Global Partnership for AI(GPAI)..</p>
+          </div>
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/people/staff/profile.jpg" class="card-img-top" alt="Placeholder Image">
+          <div class="card-body">
+            <h5 class="card-title">Sitara Raman</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Project Associate</h6>
+            <p class="card-text">Sitara Raman is a web designer with three years of experience in UX/UI design, graphic design, and front-end web development.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+Are you interested in joining the CeRAI team as a new member? We are currently seeking IT analysts, policy analysts, and researchers who are passionate about contributing to projects with a direct focus on responsible AI. 
+<br></br>
+ <div class="button-box" style="text-align:center;">
+        <button class="link-button">
+            <a class="button_text" href="/news/hiring-2024/" target="_blank">Click Here for Details</a>
+        </button>
     </div>
-          
-          
+</div>
