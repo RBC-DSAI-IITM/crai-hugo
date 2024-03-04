@@ -4,6 +4,7 @@ subtitle: "2024 March"
 image: "/images/iitm.jpg"
 tags: ["News", "Updates", "Open House", "IITM"]
 author: "Sitara Raman"
+date: 2024-03-04
 summary: "Cerai in the News"
 draft: false
 ---

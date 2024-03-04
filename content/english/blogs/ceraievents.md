@@ -1,12 +1,14 @@
 ---
 title: "Events at CeRAI"
-subtitle: "2024 March" 
+subtitle: "2024 February" 
 image:  "https://pbs.twimg.com/media/GHXuHZkW0AAlFbH?format=jpg&name=medium"
 tags: ["Events", "Updates","AAAI", "IITM"]
 author: "Sitara Raman"
-summary: "New Joinees for February 2024"
+date: 2024-03-04
+summary: "Events at CeRAI"
 draft: false
 ---
+
 <div class="container mt-5">
         <div class="text-center">
             <h2>Second Workshop on Deployable AI</h2>

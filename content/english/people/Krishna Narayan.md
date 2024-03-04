@@ -1,9 +1,9 @@
 ---
-title: "Krishna Narayanan"
+title: "Krishnan Narayanan"
 date: 2023-05-09T11:30:00+05:30
 image: "https://itihaasa.com/public/images/KrishnanNarayanan.jpg"
 
-designation : Co-Founder
+designation : PhD Student
 weblink:
 affiliation:  Dept. of Computer Science, IIT Madras <br> RBCDSAI, IIT Madras
 

@@ -1,6 +1,27 @@
 {{ define "main" }}
 
 <style>
+.button-box
+{
+text-align:center;
+}
+
+.link-button
+{
+padding: .6rem 1.2rem;
+line-height: 2.1rem;
+font-size: 1.2rem;
+color: #000;
+border: 1px solid #ddd;
+background-color: #ddd;
+display: inline;
+padding: 5px;
+margin: 10px;
+}
+.link-button .button_text {
+    text-decoration: none; 
+    color: black; 
+}
   .title
   {
     text-align:center;
@@ -27,6 +48,11 @@
             </a>
             {{ end }}
             <br><br>
+            <div class="button-box" style="text-align:left;">
+              <button class="link-button">
+                  <a class="button_text" href="/blogs/"> ← Back</a>
+              </button>
+          </div>
             <div class="content mb-4" style="text-align: justify;">{{.Content}}</div>
         </div>
         </div>
