@@ -5,7 +5,7 @@ date: 2024-02-28T15:45:00+05:30
 image: "/images/people/researchers/0.jpg"
 
 designation : "Research Advisor"
-affiliation: Dept. of CSE, IIT Madras RBCDSAI, IIT Madras
+affiliation: CeRAI, IIT Madras
 
 type: researcher
 draft: false

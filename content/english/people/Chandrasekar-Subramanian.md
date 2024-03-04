@@ -3,7 +3,7 @@ title: "Chandrasekar Subramanian"
 image: "/images/people/staff/cs.jpg"
 
 designation : "Research Advisor"
-affiliation: IIT Madras
+affiliation: CeRAI, IIT Madras
 
 type: researcher
 draft: false

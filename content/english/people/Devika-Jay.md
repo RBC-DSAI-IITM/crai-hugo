@@ -4,7 +4,7 @@ date: 2022-08-16T15:45:00+05:30
 image: "https://rbcdsai.iitm.ac.in/images/people/Devika-Jay.jpg"
 
 designation : "Post-doctoral researcher"
-affiliation: IIT Madras
+affiliation: CeRAI, IIT Madras
 
 type: researcher
 draft: false
