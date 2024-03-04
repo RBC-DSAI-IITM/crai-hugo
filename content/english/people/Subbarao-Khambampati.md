@@ -5,7 +5,7 @@ image: "http://rakaposhi.eas.asu.edu/rao-fall-colors-small.png"
 
 designation : "**Member**"
 weblink: "https://rakaposhi.eas.asu.edu/"
-affiliation: Professor, Department of Computer Science and Engineering, <br> Arizona State University, USA
+affiliation: Professor, Department of Computer <br> Science and Engineering, <br> Arizona State University, USA
 
 type: advisor
 draft: false
