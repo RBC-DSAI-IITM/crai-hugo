@@ -5,7 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/sinha.jpg"
 
 designation : "Associate Professor"
 weblink: "https://home.iitm.ac.in/sinha/people/himanshu_sinha.html"
-affiliation: Dept. of BioTech, IIT Madras <br> RBCDSAI, IIT Madras
+affiliation: Dept. of BioTech, IIT Madras 
 
 type:
 draft: false

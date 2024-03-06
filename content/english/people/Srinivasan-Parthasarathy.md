@@ -5,7 +5,7 @@ image: "https://engineering.osu.edu/sites/default/files/styles/coe_smallest/publ
 
 designation : "**Member**"
 weblink: "https://web.cse.ohio-state.edu/~parthasarathy.2/"
-affiliation: Professor, Dept. of Computer Science and Engineering <br> Ohio State University, USA 
+affiliation: Professor, Dept. of Computer <br> Science and Engineering <br> Ohio State University, USA 
 
 type: advisor
 draft: false

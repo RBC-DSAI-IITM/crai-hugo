@@ -1,11 +1,11 @@
 ---
 title: "Ramayya Krishnan"
 date: 2023-05-07T15:45:00+05:30
-image: "https://www.heinz.cmu.edu/faculty-research/profiles/profiles/ramayya-krishnan/_files/ramayya-krishnan-bio.jpg"
+image: "/images/people/scientific-advisory-board/ramayya-krishnan-bio.jpg"
 
 designation : "**Member**"
 weblink: "https://www.heinz.cmu.edu/faculty-research/profiles/krishnan-ramayya"
-affiliation: Dean, Heinz College Of Information Systems And Public Policy, <br> Carnegie Mellon University, USA
+affiliation: Dean, Heinz College Of Information <br> Systems And Public Policy, <br> Carnegie Mellon University, USA
 
 type: advisor
 draft: false

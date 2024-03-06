@@ -1,7 +1,38 @@
 {{ define "main" }}
+<style>
+
+.button-box
+{
+  text-align:center !important;
+}
+
+.link-button
+{
+  padding: .6rem 1.2rem;
+  line-height: 2.1rem;
+  font-size: 1.2rem;
+  color: #000;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all .3s ease-in;
+}
+    .link-button .button_text {
+        text-decoration: none; 
+        color: black; 
+        font-weight: bold;
+    }
+
+
+</style>
 
 <section class="section">
   <div class="container">
+    <div class="button-box" style="text-align:left;">
+      <button class="link-button">
+          <a class="button_text" href="/news/hiring-2024">We are hiring, join our team!</a>
+      </button>
+  </div>
+      <br>
     <div class="row justify-content-center">
       <div class="col-lg-5 col-sm-6 mb-5"> <!-- Moved col-lg-5 and col-sm-6 classes here -->
         <div class="content-box text-center" style="background-color: #ECECEC; padding: 10%; width:100%;"> <!-- Added padding -->

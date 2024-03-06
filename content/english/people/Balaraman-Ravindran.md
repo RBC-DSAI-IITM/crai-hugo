@@ -5,7 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/ravi.jpg"
 
 designation : "**Head of the Centre** <br> Professor"
 weblink: http://www.cse.iitm.ac.in/~ravi/
-affiliation: Dept. of CSE, IIT Madras <br> RBCDSAI, IIT Madras
+affiliation: Dept. of CSE, IIT Madras 
 
 type: head
 type2: council

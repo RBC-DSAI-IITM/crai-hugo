@@ -5,7 +5,7 @@ image: "https://acr.iitm.ac.in/wp-content/uploads/2020/01/GirijaVaidyanathan.jpg
 
 designation : "**Member**"
 weblink: "https://acr.iitm.ac.in/latestdaas/dr-girija-vaidyanathan/"
-affiliation: Professor of Practice,<br> Department of Humanities and Social Sciences, IIT Madras
+affiliation: Professor of Practice,<br> Department of Humanities <br> and Social Sciences, IIT Madras
 type: advisor
 draft: false
 ---

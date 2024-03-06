@@ -5,7 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/Gokul-S-Krishnan.jpg"
 
 designation : "Research Scientist"
 weblink: https://gsk1692.github.io
-affiliation: RBCDSAI, IIT Madras
+affiliation: CeRAI, IIT Madras
 
 type: researcher
 draft: false

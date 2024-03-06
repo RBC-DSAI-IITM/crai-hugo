@@ -5,7 +5,7 @@ date: 2022-08-16T15:45:00+05:30
 image: "/images/people/staff/appbf.jpg"
 
 designation : "Post-baccalaureate Fellow"
-affiliation: IIT Madras
+affiliation: CeRAI, IIT Madras
 
 type: researcher
 draft: false
