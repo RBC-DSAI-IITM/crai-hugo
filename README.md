@@ -4,4 +4,4 @@ Netlify link: https://golden-tartufo-126e30.netlify.app/
 
 ## Sandbox Branch
 
-Netify link: https://sandbox--cerai-sandbox.netlify.app/
+Netify link: https://soft-croissant-94ca5b.netlify.app/
