@@ -9,14 +9,6 @@ banner:
     label: "Browse All Products"
     link: "products/"
 
-    ############################# Carousel ############################
-carousel:
-    enable: false
-    carousel_items:
-      - image: "https://source.unsplash.com/TzjMd7i5WQI/900x600/"
-        title: "lorem ipsum"
-      - image: "https://source.unsplash.com/fk4tiMlDFF0/900x600/"
-        title: "dolor si amet"
 
 ############################# Ticker ############################
 ticker:

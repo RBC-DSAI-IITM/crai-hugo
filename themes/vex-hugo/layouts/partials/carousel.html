@@ -1,54 +1,71 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
+<style>
+.carousel-slide {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
 
-{{- if $data.homepage.carousel.enable }}
-  {{- with $data.homepage.carousel }}
-
-  <style>
-   .carousel-slide {
-        margin: auto;
-        height: 50%; 
-        position: relative; 
-        overflow: hidden;
+/* Media query for desktop devices with a minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+    .carousel-slide {
+        max-height: 50%;
+        max-width: 50%;
     }
+}
 
     .carousel-indicator-title {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background color */
-        padding: 10px; /* Optional: Add padding as needed */
-        z-index: 15; /* Ensure the box appears above images */
-        text-align: center; /* Center content */
-        color: #fff; /* Optional: Set text color */
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 10px; 
+        z-index: 15; 
+        text-align: center;
+        color: #fff; 
+        width: 100%;
     }
 
     .carousel-indicators {
-        margin-bottom: 10%; /* Optional: Adjust margin as needed */
+        margin-bottom: 10%; 
         overflow: hidden;
     }
+    .carousel-item  {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform .6s ease-in-out;
+}
+.carousel-item.active {
+  display: block;
+}
 
-    .carousel-indicator-title h1 {
-
-    }
   </style>
 
-  <div id="ImageCarouselCSS" class="carousel-slide" data-ride="carousel">
-    <div class="carousel-inner">
-      {{- range $index, $item := .carousel_items }}
-      <div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
-        <img src="{{ $item.image }}" class="d-block w-100" alt="{{ $item.title }}">
-        <div class="carousel-indicator-title">
-          <h1>{{ $item.title }}</h1>
-        </div>
+
+<div id="ImageCarouselCSS" class="carousel-slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $index, $event := (where .Site.RegularPages "Type" "events" | first 3 ) }}
+    <div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
+      <img src="{{ $event.Params.image }}" class="d-block w-100" alt="{{ $event.Params.title }}">
+      <div class="carousel-indicator-title">
+        <h1>{{ $event.Params.title }}</h1>
+        <h5>{{ dateFormat "Jan 2, 2006" $event.Params.date }}</h5>
       </div>
-      {{- end }}
     </div>
-    <ol class="carousel-indicators">
-      {{- range $index, $item := .carousel_items }}
-      <li data-target="#ImageCarouselCSS" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }}></li>
-      {{- end }}
-    </ol>
+    {{- end }}
   </div>
-  {{ end }}
-{{ end }}
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
