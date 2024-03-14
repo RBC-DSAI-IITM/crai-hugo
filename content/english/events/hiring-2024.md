@@ -1,7 +1,7 @@
 ---
 title: "Summer internships, post-baccalaureate and post-doctoral fellowships at CeRAI for 2024"
 date: 2024-01-06
-image: "/images/news-and-events/postbacc24.jpg"
+image: "https://img.freepik.com/free-photo/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working_146671-13569.jpg?w=1380&t=st=1710397010~exp=1710397610~hmac=cac9271d716a7d2b94d58d576b4c4c0b7b6285e46e1604390c4d6d49245f00e1"
 draft: false
 ---
 
