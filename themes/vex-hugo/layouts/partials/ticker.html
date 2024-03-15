@@ -1,7 +1,4 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{- if $data.homepage.ticker.enable }}
-{{- with $data.homepage.ticker }}
 
 <style>
     #ticker {
@@ -62,20 +59,21 @@
 
 
 
-
 <div id="ticker" class="ticker-wrapper">
     <ul class="ticker-list">
-        {{- $tickerLength := len .ticker_items -}}
-        {{- range $index, $element := .ticker_items -}}
+        {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
+        {{ range $index, $element := $news }}
             <li class="ticker-item">
-                <a href="{{ $element.link }}">{{ $element.item }}</a>
-                {{ if lt $index ($tickerLength) }} <!-- Check if not the last item -->
+                <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
+                {{ if lt $index (sub (len $news) 1) }} <!-- Check if not the last item -->
                     <span style="color: navy;">|</span> <!-- Add separator -->
                 {{ end }}
             </li>
-        {{- end -}}
+        {{ end }}
     </ul>
 </div>
+
+
 
 
 
@@ -109,9 +107,3 @@
     });
 </script>
 
-
-
-
-
-{{ end }}
-{{ end }}

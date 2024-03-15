@@ -1,127 +1,119 @@
 <style>
-.carousel-container {
-    margin: auto;
-    position: relative;
-    overflow: hidden;
+  .carousel-inner {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.carousel-inner {
+	padding-top: 43.25%;
+	display: block;
+	content: "";
+}
+.carousel-item {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: skyblue;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-/* Media query for desktop devices with a minimum width of 1024px */
-@media only screen and (min-width: 1024px) {
-    .carousel-container {
-      max-height: 25%;
-      max-width: 77%;
-
-    }
-}
-
-   
-    .carousel-item  {
-      position: relative;
-  display: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: transform .6s ease-in-out;
-}
-.carousel-item.active {
-  display: block;
-}
-.carousel-caption
-{
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	width: 60%;
+	z-index: 9;
+	margin-top: 20px;
+	text-align: center;
   background-color: #36454F;
   opacity: 80%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 10px; 
+}
+.caption h1 {
+  color: #fff;
+	font-size: 52px;
+	font-weight: 700;
+	margin-bottom: 23px;
+  opacity: 100%;
+}
+.caption h2 {
+  color: rgba(255,255,255,.75);
+	font-size: 26px;
+	font-weight: 300;
+}
+a.big-button {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #eb7a00;
+	background: rgba(255, 0, 0, 0.75);
+	padding: 28px 35px;
+	border-radius: 3px;
+	margin-top: 80px;
+	margin-bottom: 0;
+	display: inline-block;
+}
+a.big-button:hover {
+	text-decoration: none;
+	background: rgba(255, 0, 0, 0.9);
+}
+a.view-demo {
+	color: #fff;
+	font-size: 21px;
+	font-weight: 700;
+	display: inline-block;
+	margin-top: 35px;
+}
+a.view-demo:hover {
+	text-decoration: none;
+	color: #333;
 }
 
+.carousel-indicators .active {
+  color: #fff;
+}
   </style>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<div id="carousel" class="carousel slide" data-ride="carousel">
 
-<div id="ImageCarouselCSS" class="carousel slide carousel-container" data-ride="carousel">
+  {{ $eventsCount := len (where .Site.RegularPages "Type" "events") }}
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    </ol>
-  <div class="carousel-inner inner-box">
-    {{ $events := where .Site.RegularPages "Type" "events" | first 3 }}
-    {{ range $index, $event := $events }}
-    <div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
-      <div class="row col-lg-12 justify-content-center landing-card">
-        <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
-          <img src="{{ $event.Params.image }}" class="d-block w-100">
-          <div class="carousel-caption">
-            <h1>{{ $event.Params.title }}</h1>
-            <h5>{{ dateFormat "Jan 2, 2006" $event.Params.date }}</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    {{- end }}
+    {{/* Loop through each event to create corresponding indicators, limited to the first 3 */}}
+    {{ range $index, $ := seq 3 }}
+    <li data-target="#carousel" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
+    {{ end }}
+  </ol>
 
-    {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
-    {{ range $index, $new := $news }}
-    <div class="carousel-item">
-      <div class="row col-lg-12 justify-content-center landing-card">
-        <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
-          <img src="{{ $new.Params.image }}" class="d-block w-100">
-          <div class="carousel-caption">
-            <h1>{{ $new.Params.title }}</h1>
-            <h5>{{ dateFormat "Jan 2, 2006" $new.Params.date }}</h5>
-          </div>
-        </div>
+  <div class="carousel-inner" role="listbox">
+    {{ $events := where .Site.RegularPages "Type" "events" | first 3 }}
+    {{/* Loop through each event and create carousel items */}}
+    {{ range $index, $event := $events }}
+    <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="background-image: url('{{ $event.Params.image }}');">
+      <div class="caption">
+        <h1>{{ $event.Params.title }}</h1>
+        <h2>{{ dateFormat "Jan 2, 2006" $event.Params.date }}</h2>
       </div>
     </div>
-    {{- end }}
-    <div class="carousel-item">
-      <div class="row col-lg-12 justify-content-center landing-card">
-        <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
-          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80">
-          <div class="carousel-caption">
-            <a href="research/" style="text-decoration:none !important; color:white !important;">
-              <h1>Research</h1>
-            </a>
-        </div>
-      </div>
-    </div>
-      <div class="carousel-item">
-        <div class="row col-lg-12 justify-content-center landing-card">
-          <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
-            <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-            <div class="carousel-caption">
-              <a href="projects/" style="text-decoration:none !important; color:white !important;">
-                <h1>Projects</h1>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row col-lg-12 justify-content-center landing-card">
-          <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
-            <img src="https://img.freepik.com/free-photo/teamwork-making-online-blog_53876-94868.jpg?t=st=1709032238~exp=1709035838~hmac=eaeccc9472faa23bda844e9433b6cfecd9b8118b18a3a95a737b8cb004843329&w=1380">
-          <div class="carousel-caption">
-            <a href="blogs/" style="text-decoration:none !important; color:white !important;">
-              <h1>Blogs</h1>
-            </a>
-          </div>
-        </div>
-      </div>
-  <a class="carousel-control-prev arrow" href="#ImageCarouselCSS" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+    {{ end }}
+  </div>
+
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next arrow" href="#ImageCarouselCSS" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-</div>
 
+</div>
 
 
 
