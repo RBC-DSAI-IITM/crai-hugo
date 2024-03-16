@@ -2,6 +2,7 @@
 title: "IIT-Madras receives ₹110-crore endowment to establish Wadhwani School of Data Science & AI"
 date: 2024-01-30
 publisher: "The Hindu Business Line"
+image: "https://images.indianexpress.com/2024/02/A-LESSON-FROM-IIT.jpg?w=640"
 draft: false
 ---
 <p>CeRAI is excited to announce the establishment of Wadhwani School of Data Science and AI (WSAI) at IIT Madras with generous backing from IITM alumnus, Sunil Wadhwani. The school aims to rise to the top 20 AI-focused schools worldwide. CeRAI head Prof. Ravindran is also the head of this school and our centre is formally a member of WSAI. 
