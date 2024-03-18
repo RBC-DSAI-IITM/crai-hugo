@@ -3,7 +3,7 @@ title: "Carnegie Global Technology Summit: DPI Frameworks and AI Regulation"
 date: 2023-12-04 17:25:00 +0530
 venue: "Carnegie GTS 2024"
 tags: []
-image: "/images/news-and-events/pasted%20image%200.png"
+image: "/images/news-and-events/pasted image 0.png"
 imageStyle: "width: 50%; max-width: 50%; height: 50%;"
 draft: false
 

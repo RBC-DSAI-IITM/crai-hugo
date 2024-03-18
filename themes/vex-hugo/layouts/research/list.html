@@ -1,7 +1,26 @@
 {{ define "main" }}
 
+<style>
+  .breadcrumb
+  {
+    padding: .6rem 1.2rem;
+line-height: 2.1rem;
+font-size: 1.2rem;
+color: #000;
+  }
+</style>
 <section class="feature-list section">
   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" style="background-color:white !important">
+            <li class="breadcrumb-item"><a href="/" style="text-decoration: none !important">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Themes</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-12">
         <div class="heading" style="padding-bottom: 0px;">

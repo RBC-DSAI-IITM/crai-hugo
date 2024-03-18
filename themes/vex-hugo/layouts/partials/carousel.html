@@ -1,5 +1,9 @@
 <style>
 
+.carousel-section
+{
+	height: 25%;
+}
   .carousel-inner {
 	width: 100%;
 	display: inline-block;
@@ -85,8 +89,9 @@
 }
 }
   </style>
+  <section class="carousel-section">
 
-<div id="carousel" class="carousel slide" data-ride="carousel">
+<div id="carousel" class="carousel slide carousel-container" data-ride="carousel">
 
   {{ $eventsCount := len (where .Site.RegularPages "Type" "events") }}
   <ol class="carousel-indicators">
@@ -119,6 +124,7 @@
   </a>
 
 </div>
+</section>
 
 
 
