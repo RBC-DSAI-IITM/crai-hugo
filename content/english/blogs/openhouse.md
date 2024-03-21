@@ -1,5 +1,5 @@
 ---
-title: "CeRAI in the News"
+title: "CeRAI at the IITM Open House"
 subtitle: "2024 March" 
 image: "https://www.iitm.ac.in/sites/default/files/styles/img_m4/public/happenings/press_release/pressrelease04_03_2024_09_45.jpg?itok=nKPKm7Wo"
 tags: ["News", "Updates", "Open House", "IITM"]

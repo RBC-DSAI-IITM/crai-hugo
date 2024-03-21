@@ -88,27 +88,28 @@
 
 <div id="carousel" class="carousel slide" data-ride="carousel">
 
-  {{ $eventsCount := len (where .Site.RegularPages "Type" "events") }}
-  <ol class="carousel-indicators">
-    {{/* Loop through each event to create corresponding indicators, limited to the first 3 */}}
-    {{ range $index, $ := seq 3 }}
-    <li data-target="#carousel" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
-    {{ end }}
-  </ol>
-
-  <div class="carousel-inner" role="listbox">
-    {{ $events := where .Site.RegularPages "Type" "events" | first 3 }}
-    {{/* Loop through each event and create carousel items */}}
-    {{ range $index, $event := $events }}
-    <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="background-image: url('{{ $event.Params.image }}');">
-      <div class="caption">
-        <h1>{{ $event.Params.title }}</h1>
-        <h2>{{ dateFormat "Jan 2, 2006" $event.Params.date }}</h2>
-      </div>
-    </div>
-    {{ end }}
+	{{ $events := where .Site.RegularPages "Type" "events" | first 3 }}
+	{{ $blogs := where .Site.RegularPages "Type" "blogs" | first 3}}
+	{{ $combined := union $events $blogs }}
+	{{ $totalItems := len $combined }}
+  
+	<ol class="carousel-indicators">
+	  {{ range $index, $ := seq $totalItems }}
+	  <li data-target="#carousel" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
+	  {{ end }}
+	</ol>
+  
+	<div class="carousel-inner" role="listbox">
+	  {{ range $index, $item := $combined }}
+	  <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="background-image: url('{{ $item.Params.image }}');">
+		<div class="caption">
+		  <h1>{{ $item.Params.title }}</h1>
+		  <h2>{{ dateFormat "Jan 2, 2006" $item.Params.date }}</h2>
+		</div>
+	  </div>
+	  {{ end }}
+	</div>
   </div>
-
   <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
