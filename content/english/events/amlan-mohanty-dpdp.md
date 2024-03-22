@@ -5,6 +5,7 @@ time: "04:00 PM to 05:30 PM"
 venue: "IIT Madras"
 image: "/images/news-and-events/amlan-mohanty-dpdp.jpg"
 tags: []
+link: "/events/amlan-mohanty-dpdp"
 draft: false
 ---
 

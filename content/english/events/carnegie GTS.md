@@ -5,6 +5,7 @@ venue: "Carnegie GTS 2024"
 tags: []
 image: "/images/news-and-events/pasted%20image%200.png"
 imageStyle: "width: 50%; max-width: 50%; height: 50%;"
+link: "/events/carnegie-gts"
 draft: false
 
 ---

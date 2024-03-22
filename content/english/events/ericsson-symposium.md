@@ -5,6 +5,7 @@ time: "09:30 AM to 12:30 PM"
 venue: "IIT Madras"
 image: "/images/news-and-events/ericsson-symposium.jpg"
 tags: []
+link: "/events/ericsson-symposium"
 draft: false
 ---
 <br />

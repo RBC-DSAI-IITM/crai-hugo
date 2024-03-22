@@ -6,6 +6,7 @@ tags: ["News", "Updates", "Open House", "IITM"]
 author: "Sitara Raman"
 date: 2024-03-04
 summary: "Cerai in the News"
+link: "/blogs/openhouse"
 draft: false
 ---
 

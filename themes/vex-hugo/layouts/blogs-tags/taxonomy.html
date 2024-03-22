@@ -6,6 +6,7 @@
 </section>
 <section class="section-page-news">
   <div class="container-fluid">
+    {{range .Pages.GroupBy "Section"}}
       <div class="text-center mb-4">
         <h2 class="col-12 text-center mb-5" style="font-weight: 500;">
           {{.Key | humanize }}
@@ -20,7 +21,7 @@
         </div>
         <div class="col-md-8 align-self-center text-center text-md-left">
           <div class="content">
-            <h4 class="subheading"><a class="link-title" href="{{.Permalink}}">{{ Params.title | markdownify }}</a></h4>
+            <h4 class="subheading"><a class="link-title" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h4>
             <p>{{ Params.summary }}</p>
             <a href="{{ .Permalink }}" class="btn btn-main btn-main-sm">{{ i18n "read_more" }}</a>
           </div>

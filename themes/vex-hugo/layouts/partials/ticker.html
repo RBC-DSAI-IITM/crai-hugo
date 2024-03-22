@@ -76,7 +76,7 @@
         <ul class="ticker-list">
             {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
             {{ range $index, $element := $news }}
-                <h3 class="ticker-item"><a href="#">{{ $element.Params.title }}</a></h3>
+                <h3 class="ticker-item"><a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a></h3>
                 {{ if lt $index (sub (len $news) 1) }}<span class="separator" style="color: navy; font-weight: bold;"> | &nbsp; </span>{{ end }}
             {{ end }}
         </ul>
@@ -114,7 +114,7 @@ function Marquee(tickerSelector, speed) {
 }
 
 window.addEventListener('load', function() {
-    Marquee('#ticker', 10); // Adjust speed here (e.g., set to 1 for faster scrolling)
+    Marquee('#ticker', 8); // Adjust speed here (e.g., set to 1 for faster scrolling)
 });
     </script>
     

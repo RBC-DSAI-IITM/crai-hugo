@@ -43,7 +43,7 @@ color: #000;
             <p>{{ dateFormat "Jan 2, 2006" .Params.date }}</p>
             <p>{{ .Params.summary }}</p>
             {{ range .Params.tags }}
-            <a href="" style="text-decoration: none;">
+            <a href="/tags/{{ . }}" style="text-decoration: none;">
             <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
               <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
             </div>
