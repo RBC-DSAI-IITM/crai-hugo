@@ -3,7 +3,7 @@ title: "Call For Papers: AAAI '24 Special Track on Safe, Robust and Responsible 
 date: 2023-08-08
 publisher: "AAAI '24"
 draft: false
-link: "/news/aaai24-raj-chair"
+link: "/news/aaai24-rai-chair"
 ---
 
 **AAAI-24** will feature a special track on Safe, Robust and Responsible Artificial Intelligence (SRRAI). This special track focuses on the theory and practice of safety and robustness in AI-based systems and adherence to responsible AI principles. AI systems are increasingly being deployed throughout society within different domains such as data science, robotics and autonomous systems, medicine, economy, and safety-critical systems. With the recent explosion of interest in generative AI systems, the accessibility and applicability of foundational models have grown exponentially. 
