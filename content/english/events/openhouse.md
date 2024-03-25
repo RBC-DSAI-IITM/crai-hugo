@@ -1,5 +1,5 @@
 ---
-title: "IIT Madras Opens Public Open House Event"
+title: "IIT Madras Hosts Public Open House Event"
 date: 2024-03-03 17:25:00 +0530
 venue: "IIT Madras"
 tags: []
