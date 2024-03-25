@@ -3,6 +3,7 @@ title: "Openings at CeRAI"
 date: 2024-01-06
 image: "https://media.istockphoto.com/id/949182974/photo/male-manager-shaking-hands-with-female-applicant.jpg?s=612x612&w=0&k=20&c=QCjfJPKUckGpX9FdZU-8bw2szQuxa2_CPATyCBAazWM="
 draft: false
+link: "news/hiring-2024"
 ---
 
 <style>

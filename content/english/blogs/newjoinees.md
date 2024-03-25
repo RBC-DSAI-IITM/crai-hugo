@@ -6,6 +6,7 @@ tags: ["New Joinees", "Staff", "Updates"]
 author: "Sitara Raman"
 date: 2024-03-04
 summary: "New Joinees for February 2024"
+link: "/blogs/newjoinees"
 draft: false
 ---
 <style>

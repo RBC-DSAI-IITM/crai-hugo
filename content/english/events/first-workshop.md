@@ -5,6 +5,7 @@ time: "10:15 AM to 01:30 PM"
 venue: "IIT Madras"
 image: "/images/news-and-events/first-workshop.png"
 tags: []
+link: "/events/first-workshop"
 draft: false
 ---
 

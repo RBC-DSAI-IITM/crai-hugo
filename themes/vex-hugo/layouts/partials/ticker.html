@@ -55,55 +55,71 @@
         transform: translateX(-100%);
     }
 }
+
+.ticker-list {
+    white-space: nowrap;
+    animation: ticker-animation linear infinite;
+}
+
+@keyframes ticker-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 </style>
 
-
-
-<div id="ticker" class="ticker-wrapper">
-    <ul class="ticker-list">
-        {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
-        {{ range $index, $element := $news }}
-            <li class="ticker-item">
-                <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
-                {{ if lt $index (sub (len $news) 1) }} <!-- Check if not the last item -->
-                    <span style="color: navy;">|</span> <!-- Add separator -->
-                {{ end }}
-            </li>
-        {{ end }}
-    </ul>
+<div id="ticker">
+    <div class="ticker-wrapper">
+        <ul class="ticker-list">
+            {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
+            {{ range $index, $element := $news }}
+                <h3 class="ticker-item"><a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a></h3>
+                {{ if lt $index (sub (len $news) 1) }}<span class="separator" style="color: navy; font-weight: bold;"> | &nbsp; </span>{{ end }}
+            {{ end }}
+        </ul>
+    </div>
 </div>
-
-
-
-
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function(){
-        var ticker = $('#ticker');
-        var list = $('.ticker-list');
-        var clone = list.clone(true);
+function Marquee(tickerSelector, speed) {
+    const ticker = document.querySelector(tickerSelector);
+    const list = ticker.querySelector('.ticker-list');
+    const clone = list.cloneNode(true);
+    const marqueeContent = document.createElement('marquee');
 
-        ticker.append(clone);
+    marqueeContent.setAttribute('behavior', 'scroll');
+    marqueeContent.setAttribute('direction', 'left');
 
-        function tick() {
-            list.animate({left: '-=1'}, 20, function() {
-                if ($(this).position().left < -$(this).width()) {
-                    $(this).css('left', ticker.width());
-                }
-            });
+    marqueeContent.appendChild(clone);
+    ticker.innerHTML = ''; // Clear the ticker container
+    ticker.appendChild(marqueeContent);
+
+    const contentWidth = marqueeContent.scrollWidth; // Get width of marquee content
+    let i = 0;
+
+    function move() {
+        i = i + speed; // Increment i by speed
+        if (i > contentWidth) {
+            i = 0; // Reset i to 0
         }
+        marqueeContent.style.marginLeft = `-${i}px`;
+        requestAnimationFrame(move);
+    }
 
-        var tickerInterval = setInterval(function(){ tick() }, 10);
+    move();
+}
 
-        ticker.hover(
-            function() {
-                clearInterval(tickerInterval);
-            },
-            function() {
-                tickerInterval = setInterval(function(){ tick() }, 10);
-            }
-        );
-    });
-</script>
+window.addEventListener('load', function() {
+    Marquee('#ticker', 8); // Adjust speed here (e.g., set to 1 for faster scrolling)
+});
+    </script>
+    
+    
+
+
+
 

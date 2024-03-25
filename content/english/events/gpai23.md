@@ -3,6 +3,7 @@ title: "GPAI Summit 2023: Call For Abstracts"
 date: 2023-08-31 10:15:00 +0530
 venue: "GPAI Summit, New Delhi"
 tags: []
+link: "/events/gpai23"
 draft: false
 ---
 

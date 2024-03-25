@@ -5,6 +5,7 @@ time: "10:00 PM to 01:00 PM"
 venue: "IIT Madras"
 image: "/images/news-and-events/rai-workshop-updated.png"
 tags: []
+link: "/events/raj-workshop"
 draft: false
 ---
 <br />

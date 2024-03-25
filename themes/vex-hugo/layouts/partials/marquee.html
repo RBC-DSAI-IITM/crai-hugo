@@ -1,0 +1,67 @@
+<style>
+  <style>
+    #ticker {
+        height: 40px;
+        overflow: hidden;
+        background-color: #f4f4f4;
+    }
+    .ticker-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    .ticker-list {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        animation: marquee 15s linear infinite; /* Add animation for marquee effect */
+    }
+    .ticker-item {
+        margin-right: 10px;
+        font-size: 150%;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .ticker-item a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .ticker-item a:hover {
+        color: blue;
+    }
+    @media only screen and (max-width: 768px) {
+        #ticker {
+            height: auto;
+            padding: 10px;
+        }
+        .ticker-item {
+            margin-right: 10px;
+            font-size: 100%;
+        }
+    }
+
+    /* Keyframes definition for marquee animation */
+    @keyframes marquee {
+        0% { transform: translateX(100%); } /* Start off screen */
+        100% { transform: translateX(-100%); } /* Move to the left */
+    }
+</style>
+
+</style>
+<div id="ticker" class="ticker-wrapper">
+    <ul class="ticker-list">
+        {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
+        {{ range $index, $element := $news }}
+            <li class="ticker-item">
+                <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
+                {{ if lt $index (sub (len $news) 1) }}
+                    <span style="color: navy;">|</span>
+                {{ end }}
+            </li>
+        {{ end }}
+    </ul>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

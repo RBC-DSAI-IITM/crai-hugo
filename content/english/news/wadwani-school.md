@@ -3,6 +3,7 @@ title: "IIT-Madras receives ₹110-crore endowment to establish Wadhwani School 
 date: 2024-01-30
 publisher: "The Hindu Business Line"
 image: "https://images.indianexpress.com/2024/02/A-LESSON-FROM-IIT.jpg?w=640"
+link: "/news/wadwani-school/"
 draft: false
 ---
 

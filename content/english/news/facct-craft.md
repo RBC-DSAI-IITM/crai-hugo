@@ -4,6 +4,7 @@ date: 2023-04-12
 link:
 draft: false
 publisher: "FaccT"
+link: "/news/facct-craft"
 ---
 
 CeRAI team's proposed session, "Towards an India-first Responsible AI research agenda," has been accepted for the [CRAFT track](https://facctconference.org/2023/cfpcraft.html) of the FAccT conference. 

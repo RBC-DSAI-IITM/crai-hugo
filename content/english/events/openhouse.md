@@ -5,6 +5,7 @@ venue: "IIT Madras"
 tags: []
 image: "https://www.hindustantimes.com/ht-img/img/2024/03/04/550x309/iit-madras_91282ea6-9e41-11e5-98be-8e4b0fa67469_1709535541389.jpg"
 imageStyle: "width: 50%; max-width: 50%; height: 50%;"
+link: "/events/openhouse"
 draft: false
 
 ---
