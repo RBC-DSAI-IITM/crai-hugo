@@ -2,7 +2,7 @@
 title: "CeRAI in the News - March 2024"
 subtitle: "2024 March" 
 image: "/images/iitm.jpg"
-tags: ["News", "Updates", "Open House", "IITM"]
+tags: ["news", "updates", "open-house", "iitm"]
 author: "Sitara Raman"
 date: 2024-03-04
 summary: "Cerai in the News - March 2024"

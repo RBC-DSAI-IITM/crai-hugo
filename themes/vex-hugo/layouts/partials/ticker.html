@@ -85,38 +85,61 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-function Marquee(tickerSelector, speed) {
-    const ticker = document.querySelector(tickerSelector);
-    const list = ticker.querySelector('.ticker-list');
-    const clone = list.cloneNode(true);
-    const marqueeContent = document.createElement('marquee');
-
-    marqueeContent.setAttribute('behavior', 'scroll');
-    marqueeContent.setAttribute('direction', 'left');
-
-    marqueeContent.appendChild(clone);
-    ticker.innerHTML = ''; // Clear the ticker container
-    ticker.appendChild(marqueeContent);
-
-    const contentWidth = marqueeContent.scrollWidth; // Get width of marquee content
-    let i = 0;
-
-    function move() {
-        i = i + speed; // Increment i by speed
-        if (i > contentWidth) {
-            i = 0; // Reset i to 0
+    function getBrowser() {
+        const agent = navigator.userAgent.toLowerCase();
+        if (agent.indexOf('firefox') !== -1) {
+            return 'firefox';
+        } else {
+            return 'other'; 
         }
-        marqueeContent.style.marginLeft = `-${i}px`;
-        requestAnimationFrame(move);
     }
+    
+    function Marquee(tickerSelector, speed) {
+        const browser = getBrowser();
+        const adjustedSpeed = browser === 'firefox' ? speed * 2 : speed; 
+        const ticker = document.querySelector(tickerSelector);
+        const list = ticker.querySelector('.ticker-list');
+        const clone = list.cloneNode(true);
+        const marqueeContent = document.createElement('marquee');
+    
+        marqueeContent.setAttribute('behavior', 'scroll');
+        marqueeContent.setAttribute('direction', 'left');
+    
+        marqueeContent.appendChild(clone);
+        ticker.innerHTML = ''; 
+        ticker.appendChild(marqueeContent);
+    
+        const contentWidth = marqueeContent.scrollWidth; 
+        let i = 0;
+    
+        function move() {
+            i = i + adjustedSpeed; 
+            if (i > contentWidth) {
+                i = 0; 
+            }
+            marqueeContent.style.marginLeft = `-${i}px`;
+            requestAnimationFrame(move);
+        }
+    
+     
+        marqueeContent.addEventListener('mouseenter', function() {
+            cancelAnimationFrame(move);
+        });
+    
 
-    move();
-}
-
-window.addEventListener('load', function() {
-    Marquee('#ticker', 8); // Adjust speed here (e.g., set to 1 for faster scrolling)
-});
+        marqueeContent.addEventListener('mouseleave', function() {
+            move();
+        });
+    
+        move();
+    }
+    
+    window.addEventListener('load', function() {
+        Marquee('#ticker', 0.5); 
+    });
     </script>
+    
+    
     
     
 

@@ -2,7 +2,7 @@
 title: "Events at CeRAI - February 2024"
 subtitle: "2024 February" 
 image:  "/images/vancouver 1.jpg"
-tags: ["Events", "Updates","AAAI", "IITM"]
+tags: ["events", "updates","aaai", "iitm"]
 author: "Sitara Raman"
 date: 2024-03-04
 summary: "Events at CeRAI"
