@@ -1,7 +1,7 @@
 ---
 title: "Meet CeRAI's New Joinees"
 subtitle: "2024 February" 
-image: "https://media.istockphoto.com/id/1007238808/photo/group-of-people-holding-the-welcome-aboard-written-speech-bubble.jpg?s=612x612&w=0&k=20&c=SqzcfJPAdojlwnvixCO-rLRpONG0sqSMA_zjGAYMQyU="
+image: "/images/new-joinees.jpg"
 tags: ["new-joinees", "staff", "updates"]
 author: "Sitara Raman"
 date: 2024-03-04
