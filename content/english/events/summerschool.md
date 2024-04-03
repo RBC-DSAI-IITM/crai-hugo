@@ -8,4 +8,4 @@ link: "/events/summerschool"
 draft: false
 ---
 
-https://precogatiiit.notion.site/ACM-India-Summer-School-on-Responsible-Safe-AI-76108c53564d4dc4af46c1d3bed52946
+{{ https://precogatiiit.notion.site/ACM-India-Summer-School-on-Responsible-Safe-AI-76108c53564d4dc4af46c1d3bed52946 }}
