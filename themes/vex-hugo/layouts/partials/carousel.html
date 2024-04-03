@@ -96,8 +96,8 @@
 	{{ $events := where .Site.RegularPages "Type" "events" | first 3 }}
 	{{ $blogs := where .Site.RegularPages "Type" "blogs" | first 3}}
 	{{ $combined := slice }}
-{{ $combined = append $combined $events }}
-{{ $combined = append $combined $blogs }}
+	{{ $combined = append $combined $events }}
+	{{ $combined = append $combined $blogs }}
 	{{ $totalItems := len $combined }}
   
 	<ol class="carousel-indicators">
