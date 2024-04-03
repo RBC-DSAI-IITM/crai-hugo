@@ -2,9 +2,9 @@
 title: "Professor Ravindran on VR Learning"
 date: 2024-03-31
 draft: false
-image: "https://twitter.com/bsindia/status/1774302824555594169"
+image: "https://bsmedia.business-standard.com/_media/bs/img/article/2022-12/11/full/1670778991-6022.jpg?im=FeatureCrop,size=(826,465)"
 publisher: "Business Standard"
-link: "https://twitter.com/bsindia/status/1774302824555594169"
+link: "https://www.youtube.com/shorts/Vd_cVKjYCq4"
 ---
 
 
