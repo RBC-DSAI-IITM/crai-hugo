@@ -1,9 +1,9 @@
 ---
 title: "ACM India Summer School on Responsible & Safe AI"
-date: 2024-04-03
+date: 2024-05-06
 time: "10:15 AM - 01:30 PM"
 venue: "IIT Madras"
-tags: [AI, Responsible AI, ACM, Summer School]
+tags: []
 image: "/images/summer-school.png"
 link: "/events/summer-school"
 draft: false
@@ -13,7 +13,7 @@ draft: false
 
 Join us at the ACM India Summer School on Responsible & Safe AI hosted at IIT Madras!
 
-Date: June 5, 2024  
+Date: June 2nd - June 15th, 2024 
 Time: 10:15 AM - 01:30 PM  
 Venue: IIT Madras  
 
