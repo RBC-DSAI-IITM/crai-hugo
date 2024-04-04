@@ -91,32 +91,31 @@
   </style>
   <section class="carousel-section">
 
-<div id="carousel" class="carousel slide carousel-container" data-ride="carousel">
-
-	{{ $events := where .Site.RegularPages "Type" "events" | first 3 }}
-	{{ $blogs := where .Site.RegularPages "Type" "blogs" | first 3}}
-	{{ $combined := slice }}
-	{{ $combined = append $combined $events }}
-	{{ $combined = append $combined $blogs }}
-	{{ $totalItems := len $combined }}
-  
-	<ol class="carousel-indicators">
-	  {{ range $index, $ := seq $totalItems }}
-	  <li data-target="#carousel" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
-	  {{ end }}
-	</ol>
-  
-	<div class="carousel-inner" role="listbox">
-	  {{ range $index, $item := $combined }}
-	  <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="background-image: url('{{ $item.Params.image }}');">
-		<div class="caption">
-			<h1><a href="{{ $item.Params.link }}" style="text-decoration: none; color: white;">{{ $item.Params.title }}</a></h1>
-		  <h2>{{ dateFormat "Jan 2, 2006" $item.Params.date }}</h2>
+	<div id="carousel" class="carousel slide carousel-container" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  {{ $index := 0 }}
+		  {{ range (where .Site.RegularPages "Type" "events" | first 3 ) }}
+		  <li data-target="#carousel" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
+		  {{ $index = add $index 1 }}
+		  {{ end }}
+		</ol>
+		
+		<div class="carousel-inner" role="listbox">
+		  {{ $index := 0 }}
+		  {{ range (where .Site.RegularPages "Type" "events" | first 3 ) }}
+		  <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="background-image: url('{{ .Params.image }}');">
+			<div class="caption">
+			  <h1><a href="{{ .Params.link }}" style="text-decoration: none; color: white;">{{ .Params.title }}</a></h1>
+			  <h2>{{ dateFormat "Jan 2, 2006" .Params.date }}</h2>
+			</div>
+		  </div>
+		  {{ $index = add $index 1 }}
+		  {{ end }}
 		</div>
 	  </div>
-	  {{ end }}
-	</div>
-  </div>
+	  
+	  
+	  
   <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
