@@ -1,9 +1,8 @@
 ---
 title: "ACM India Summer School on Responsible & Safe AI"
-date: 2024-06-05
+date: 2024-04-03
 time: "10:15 AM - 01:30 PM"
 venue: "IIT Madras"
-tags: [AI, Responsible AI, ACM, Summer School]
 image: "/images/summer-school.png"
 link: "/events/summer-school"
 draft: false
