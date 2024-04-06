@@ -67,6 +67,7 @@ color: #000;
         </center> 
         {{ end }}
         <h4 class="mb-4"><strong>By:</strong> {{ .Params.author | markdownify }}</h4>
+        <p><em>{{ .Params.designation | markdownify }}</em></p>
         <span style="font-size: medium;">Tags: </span>
             {{ range .Params.tags }}
             <a href="" style="text-decoration: none;">
