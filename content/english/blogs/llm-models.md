@@ -3,7 +3,7 @@ title: "LLM-based systems and Responsible AI"
 subtitle: "" 
 image: "https://miro.medium.com/v2/resize:fit:1183/1*9h_P1gUtSMt5MOJLxs3rUQ.jpeg"
 tags: ["llm", "articles", "op-ed", "llm based systems"]
-author: "Chandrashekar Subramanian"
+author: <a href= "/people/chandrasekar-subramanian/">Chandrasekar Subramanian</a>
 date: 2024-04-05
 summary: "Responsible AI concerns in LLM systems"
 link: "/blogs/llm-models"
