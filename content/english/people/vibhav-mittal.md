@@ -1,5 +1,5 @@
 ---
-title: "Vibhav Mittal"
+title: "Vibhav Mithal"
 date: 2024-04-21T15:45:00+05:30
 image: "/images/people/collaborators/v-mittal.jpg"
 
