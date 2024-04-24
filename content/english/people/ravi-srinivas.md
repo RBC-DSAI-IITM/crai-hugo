@@ -1,7 +1,7 @@
 ---
 title: "Dr. Ravi Srinivas"
 date: 2024-04-21T15:45:00+05:30
-image: "/images/people/collaborators/ravi.png"
+image: "/images/people/collaborators/ravisrinivas-nalsar.jpg"
 designation : "Associate Research Fellow"
 affiliation: Adjunct professor at NALSAR University of Law
 
