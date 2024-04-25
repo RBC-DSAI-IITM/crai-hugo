@@ -15,7 +15,7 @@ echo "Pulling latest main branch from GitHub"
 git pull origin main
 
 echo "------------------------------"
-hugo -F
+~/Hugo/hugo -F
 
 echo "------------------------------"
 echo "Do you want to view site on localhost? [Y/n]"
