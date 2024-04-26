@@ -1,5 +1,58 @@
 {{ define "main" }}
 
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:center;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+ </style>         
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW4VEP0VKF"></script>
 <script>
@@ -20,23 +73,41 @@
       </div>
     </div>
     
-    <div class="row justify-content-center">
-      
-        {{ range .Pages }}
-        <div class="col-lg-3 col-md-6 mb-10 mb-lg-10 text-center news-card">
-          {{ if .Params.link }}
-            <a href="{{ .Params.link }}" target="_blank"><h4 class="mb-10" style="font-weight: bold; margin-top: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{ .Params.title }}</h4></a>
-          {{ else }}
-            <a href="{{ .Permalink }}"><h4 class="mb-10" style="font-weight: bold; margin-top: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{ .Params.title }}</h4></a>
-          {{ end }}
-          <br>
-          <h6 style="margin-bottom: 20px;"><i class="tf-ion-calendar"></i> {{ dateFormat "Jan 2, 2006" .Params.date }} &nbsp;&nbsp; | &nbsp;&nbsp; <i class="tf-ion-ios-book-outline"></i> {{ .Params.publisher }}</h6>
+    <div class="content">
+      <div class="container">
+        {{ $pages := .Pages }}
+        <div class="row">
+          {{ range $i, $page := $pages }}
+            <div class="col-xs-12 col-sm-4">
+              <div class="card">
+                <a class="img-card">
+                  <img src="{{ $page.Params.Image }}" />
+                </a>
+                <div class="card-content">
+                  <h4 class="mb-10" style="font-weight: bold; margin-top: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">{{ $page.Params.title }}</h4>
+                  <h6 style="margin-bottom: 20px;"><i class="tf-ion-calendar"></i> {{ dateFormat "Jan 2, 2006" $page.Params.date }} &nbsp;&nbsp; | &nbsp;&nbsp; <i class="tf-ion-ios-book-outline"></i> {{ $page.Params.publisher }}</h6>
+                </div>
+                <div class="card-read-more">
+                  {{ if $page.Params.link }}
+                  <a href="{{ $page.Params.link }}" class="btn btn-link btn-block">
+                    Read More
+                  </a>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+            {{ if and (or (eq (add $i 1 | mod 3) 0) (eq $i (sub (len $pages) 1))) (not (eq $i 0)) }}
         </div>
-        <br>
-        {{ end }}
-    
+        <div class="row">
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
     </div>
-  </div>
+    
+    
+    
+  
 </section>
 {{ end }}
 

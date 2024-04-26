@@ -3,6 +3,7 @@ title: "Call For Papers: AAAI '24 Special Track on Safe, Robust and Responsible 
 date: 2023-08-08
 publisher: "AAAI '24"
 draft: false
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/LexingtonDowntown.JPG/350px-LexingtonDowntown.JPG"
 link: "/news/aaai24-rai-chair"
 ---
 
