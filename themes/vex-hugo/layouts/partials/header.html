@@ -38,10 +38,13 @@
               <a class="nav-link current" href="{{if .Pre}}{{site.BaseURL | relLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
             </li>
             {{ end }}
+            
+            
 
           {{ end }}
         </ul>
       </div>
+      <a class="navbar-brand" href="https://dsai.iitm.ac.in/">{{ if site.Params.wsai }} <img src="{{ site.Params.wsai | absURL }}" alt="wsai" {{with site.Params.wsai_width}}width="{{.}}"{{end}}> {{ else }} <b>{{ site.Title }}</b> {{ end }}</a>
     </nav>
   </div>
 </header>
