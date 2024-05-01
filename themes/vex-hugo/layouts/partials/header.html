@@ -1,50 +1,89 @@
 {{ $current_page := . }}
+<style>
+  @media only screen and (min-width: 500px) and (max-width: 1500px) {
+    .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    margin-right: 10px; 
+}
+
+.logo-container img {
+    max-height: 50px; 
+}
+.logo-img
+{
+  max-width: 96%;
+}
+}
+@media only screen and (min-width: 1500px) and (max-width: 3000px) 
+{
+
+  .navbar-toggler
+  {
+    margin-left: 265px !important;
+  }
+  
+}
+</style>
 
 <!-- navigation -->
 <header class="sticky-top bg-white">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} <b>{{ site.Title }}</b> {{ end }}</a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
-        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav ml-auto">
-          {{ range site.Menus.main }}
-
-          {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            {{ $drop_active := or (eq .Name $current_page ) }}
-            <a href="#" class="nav-link {{ if $drop_active }}active{{ end }} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-              {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              {{ range .Children }}
-              <li class="dropdown-item my-0 py-0 mx-0 px-0">
-                <a class="nav-link current" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
-                  {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
-                </a>
-              </li>
-              {{ end }}
-            </ul>
-          </li>
-
-          {{ else }}
-
-          <li class="nav-item">
-              <a class="nav-link current" href="{{if .Pre}}{{site.BaseURL | relLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-light cerai-nav">
+      <div class="logo-container">
+        <a class="navbar-brand logo" href="{{ site.BaseURL | relLangURL }}">
+            {{ if site.Params.logo }}
+                <img class="logo-img" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}>
+            {{ else }}
+                <b>{{ site.Title }}</b>
             {{ end }}
-            
-            
-
-          {{ end }}
+        </a>
+        <a class="wsai" href="https://dsai.iitm.ac.in/">
+            {{ if site.Params.wsai }}
+                <img class="wsai" src="{{ site.Params.wsai | absURL }}" alt="wsai" {{with site.Params.wsai_width}}width="{{.}}"{{end}}>
+            {{ else }}
+                <b>{{ site.Title }}</b>
+            {{ end }}
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span id ="nav-button" class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+   
+ 
+    <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+            {{ range site.Menus.main }}
+                {{ if .HasChildren }}
+                    <li class="nav-item dropdown">
+                        {{ $drop_active := or (eq .Name $current_page ) }}
+                        <a href="#" class="nav-link {{ if $drop_active }}active{{ end }} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+                            {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            {{ range .Children }}
+                                <li class="dropdown-item my-0 py-0 mx-0 px-0">
+                                    <a class="nav-link current" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+                                        {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ else }}
+                    <li class="nav-item">
+                        <a class="nav-link current" href="{{if .Pre}}{{site.BaseURL | relLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
         </ul>
-      </div>
-      <a class="navbar-brand" href="https://dsai.iitm.ac.in/">{{ if site.Params.wsai }} <img src="{{ site.Params.wsai | absURL }}" alt="wsai" {{with site.Params.wsai_width}}width="{{.}}"{{end}}> {{ else }} <b>{{ site.Title }}</b> {{ end }}</a>
+    </div>
+    
     </nav>
   </div>
 </header>
