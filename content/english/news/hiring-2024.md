@@ -110,6 +110,7 @@ link: "/news/hiring-2024"
 
 If you answered “yes” to these questions then CeRAI could be the perfect place for you. We are looking for brilliant and well-rounded technologists who can work on projects that will have direct impact on responsible AI.
 </p>
+<p><a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in to apply</a></p>
 </div>
 
 <div class="divider"></div>
@@ -123,7 +124,8 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
 </div>
 
 <div class="big-div">
-<p>The Policy Analyst will work as an integral part of CeRAI and will be required to undertake research, analysis, and drafting of whitepapers or briefs. The expected output from the research work will be in the form of research reports and policy briefs, draft legislation, rules and regulations.</p>
+<p>The Policy Analyst will work as an integral part of CeRAI and will be required to undertake research, analysis, and drafting of whitepapers or briefs. The expected output from the research work will be in the form of research reports and policy briefs, draft legislation, rules and regulations.
+<p><a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in to apply</a></p>
 </div>
 
 <div class="divider"></div>
