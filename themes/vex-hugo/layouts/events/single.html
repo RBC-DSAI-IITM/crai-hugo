@@ -36,10 +36,9 @@ color: #000;
         <div style="text-align: center;">
           <a href="{{ .Params.link }}">
             <h1 class="mb-4" style="text-decoration: none; color:black;">{{.Title | markdownify}}</h1>
-
         </a>
         
-        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" style="height: 20%;">
+        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" style="height: 20%; width: 100%">
         </div>
         <div class="content">
           {{.Content}}

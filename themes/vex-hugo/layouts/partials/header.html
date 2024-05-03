@@ -1,30 +1,35 @@
 {{ $current_page := . }}
 <style>
-  @media only screen and (min-width: 500px) and (max-width: 1500px) {
-    .logo-container {
-    display: flex;
-    align-items: center;
-}
+  @media only screen and (min-width: 200px) and (max-width: 1200px) 
+  {
+    .banner-img
+    {
+        
+    }
+    .wsai
+    {
+        
 
-.logo-container a {
-    margin-right: 10px; 
-}
+    }
+    .logo-container
+    {
+        display: flex;
 
-.logo-container img {
-    max-height: 50px; 
-}
-.logo-img
-{
-  max-width: 96%;
-}
+    }
+    .logo-link
+    {
+        height: auto;
+        display: inline;
+        overflow: hidden;
+    }
+
+
 }
 @media only screen and (min-width: 1500px) and (max-width: 3000px) 
 {
 
-  .navbar-toggler
-  {
-    margin-left: 265px !important;
-  }
+
+
   
 }
 </style>
@@ -34,27 +39,26 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light cerai-nav">
       <div class="logo-container">
-        <a class="navbar-brand logo" href="{{ site.BaseURL | relLangURL }}">
+        <a class ="logo-link" href="{{ site.BaseURL | relLangURL }}">
             {{ if site.Params.logo }}
-                <img class="logo-img" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}>
+                <img class="banner-img" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}>
             {{ else }}
                 <b>{{ site.Title }}</b>
             {{ end }}
         </a>
-        <a class="wsai" href="https://dsai.iitm.ac.in/">
+        <a class ="logo-link" href="https://dsai.iitm.ac.in/">
             {{ if site.Params.wsai }}
                 <img class="wsai" src="{{ site.Params.wsai | absURL }}" alt="wsai" {{with site.Params.wsai_width}}width="{{.}}"{{end}}>
             {{ else }}
                 <b>{{ site.Title }}</b>
             {{ end }}
         </a>
+        
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span id ="nav-button" class="navbar-toggler-icon"></span>
     </button>
     </div>
-   
- 
     <div class="collapse navbar-collapse text-center" id="navigation">
         <ul class="navbar-nav ml-auto">
             {{ range site.Menus.main }}
