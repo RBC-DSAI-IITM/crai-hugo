@@ -6,11 +6,6 @@
     {
         
     }
-    .wsai
-    {
-        
-
-    }
     .logo-container
     {
         display: flex;
@@ -38,14 +33,12 @@
 <header class="sticky-top bg-white">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light cerai-nav">
-      <div class="logo-container">
-        <a class ="logo-link" href="{{ site.BaseURL | relLangURL }}">
-            {{ if site.Params.logo }}
-                <img class="banner-img" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}>
-            {{ else }}
-                <b>{{ site.Title }}</b>
-            {{ end }}
-        </a>
+        <div class="logo-container">
+            <img src="{{ site.Params.logo}}" usemap="#image-map" {{with site.Params.logo_width}}width="{{.}}"{{end}}>
+            <map name="image-map">
+                <area target="_self" href="https://cerai.iitm.ac.in/" coords="65,126,1823,694" area shape="rect">
+                <area target="_self" href="https://dsai.iitm.ac.in/" coords="2342,694,1835,97" area shape="rect">
+            </map>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span id ="nav-button" class="navbar-toggler-icon"></span>
