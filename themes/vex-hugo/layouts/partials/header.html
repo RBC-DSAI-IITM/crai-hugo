@@ -14,20 +14,24 @@
         display: inline;
         overflow: hidden;
     }
-    .navbutton
-    {
-        font-size: 1 rem !important;
-
-    }
 
 
 }
-@media only screen and (min-width: 1500px) and (max-width: 3000px) 
+@media only screen and (min-width: 200px) and (max-width: 800px)
 {
+    .navbutton
+    {
+        display: none;
+    }
 
+}
+@media only screen and (min-width: 800px) and (max-width: 3000px) 
+{
+    .mobilebutton
+    {
+        display: none;
+    }
 
-
-  
 }
 </style>
 
@@ -41,6 +45,9 @@
                 <area target="_self" alt="cerai" title="cerai" href="https://cerai.iitm.ac.in/" coords="5,5,190,74" shape="rect"></area>
                 <area target="_self" alt="wsai" title="wsai" href="https://dsai.iitm.ac.in/" coords="247,73,195,7" shape="rect"></area>
             </map>
+            <button class="mobilebutton navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span id ="nav-button" class="navbar-toggler-icon"></span>
+            </button>
     </div>
     <button class=" navbutton navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
     <span id ="nav-button" class="navbar-toggler-icon"></span>
