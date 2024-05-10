@@ -1,5 +1,5 @@
 ---
-title: "A BTech in AI may soon trump a BTech in CompSci as IITians’ top choice"
+title: "The Ken: A BTech in AI may soon trump a BTech in CompSci as IITians’ top choice"
 date: 2024-05-10
 draft: false
 image: "https://the-ken.com/wp-content/uploads/2024/05/CS_lede-1024x575.jpg"
