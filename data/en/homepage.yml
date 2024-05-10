@@ -13,12 +13,10 @@ banner:
 promo:
   enable: true
   image: "images/watch.png"
-  title: "Watch our Inauguration Video here!"
+  title: "Introducing the Wadhwani School of Data Science and AI (WSAI) at IIT Madras"
   content:
-    "**CeRAI was inaugurated by Hon. Shri. Rajeev Chandrasekhar, Union Minister of State for Electronics and Information Technology
-    and Union Minister of State for Skill Development and Entrepreneurship**.
-    <br><br>
-    The inauguration took place in IIT Madras on 27 April 2023."
+    "A quick overview of the exciting new school of Data Science and AI! Listen to Prof. Ravindran, our Head, and Prof. Arun Tangirala talk about the school, the department and the various centres it houses, and also the new academic programmes offered by this school.
+    <br><br>"
 
 ############################# About Product #######################
 about_product:
