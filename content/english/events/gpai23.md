@@ -4,6 +4,7 @@ date: 2023-08-31 10:15:00 +0530
 venue: "GPAI Summit, New Delhi"
 tags: []
 link: "/events/gpai23"
+image: "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202312/1702435060_wja204_gpai_summit_inaguration-sixteen_nine.jpg?size=948:533"
 draft: false
 ---
 

@@ -1,4 +1,79 @@
 {{ define "main" }}
+<style>
+  @media only screen and (min-width: 768px) {
+  .mobile-link {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile-date {
+    /* Add your styles for .mobile-date here if needed */
+  }
+
+  .mobile-heading {
+    font-size: 0.85rem !important;
+  }
+
+  .timeline-block:nth-child(2n) .mobile-heading {
+    font-size: 0.85rem !important;
+  }
+
+  .mobile-icon {
+    display: none;
+    margin: 0px !important;
+  }
+
+  .inner-mobile {
+    float: none !important;
+    width: 95% !important;
+    text-align: left;
+  }
+
+  .timeline-block:nth-child(2n) .inner-mobile {
+    padding-left: 10px;
+  }
+  .timeline-block:nth-child(2n) .inner-box
+  {
+    text-align:justify !important;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  /* Hide the .time-box if .time span is empty */
+  .time-box .time:empty,
+  .timeline-block:nth-child(2n) .time:empty {
+    display: none;
+  }
+
+  .time-box .time:empty + i,
+  .timeline-block:nth-child(2n) .time:empty + i {
+    display: none;
+  }
+
+  .timeline-block:nth-child(2n) .time:empty ~ .time-box {
+    display: none;
+  }
+
+  /* Hide the .venue-box if .map span is empty */
+  .venue-box .map:empty,
+  .timeline-block:nth-child(2n) .map:empty {
+    display: none;
+  }
+
+  .venue-box .map:empty + i,
+  .timeline-block:nth-child(2n) .map:empty + i {
+    display: none;
+  }
+
+  .timeline-block:nth-child(2n) .map:empty ~ .venue-box {
+    display: none;
+  }
+}
+  
+</style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW4VEP0VKF"></script>
@@ -10,7 +85,7 @@
   gtag('config', 'G-HW4VEP0VKF');
 </script>
 
-<section class="section">
+<section class="section others-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -19,7 +94,7 @@
         </div>
       </div>
     </div>
-    
+    </div>
     <div class="row justify-content-center">
     <div class="col-md-10 u-margin-bottom-small">
       {{ $all_pages := where .Site.RegularPages "Section" "in" (slice "events")}}
@@ -73,9 +148,9 @@
             {{$groups = $groups | append ( . )}}
           {{end}}
           <div class="timeline-block filter-item {{$class}} {{ range $groups }}{{. | urlize}} {{end}} {{.Section}} {{ dateFormat `2006` .Date }}">
-            <div class="inner-box">
+            <div class="inner-box inner-mobile">
               <div class="inner">
-                <div class="date">
+                <div class="date mobile-date">
                   {{ dateFormat "Jan 2" .Date }}<br>
                   {{ dateFormat "2006" .Date }}<br>
                 </div>
@@ -84,15 +159,22 @@
                   {{with .Params.link}}
                     {{$link = .}}
                   {{end}}
-                  <h4><a href="{{$link}}">{{.Title}}</a></h4>
+                  <h4 class="mobile-heading"><a href="{{$link}}">{{.Title}}</a></h4>
                   <div class="icon">
                     {{$date := .Date}}
                     {{with .Params.dateTo}}
                       <i class="fas fa-calendar-week"></i><span>{{ dateFormat "January 2" $date }} to {{ dateFormat "January 2" . }}</span>
                     {{end}}
-                    <i class="far fa-clock"></i><span>{{.Params.time}}</span>
+                    <div class="time-box">
+                      <i class="far fa-clock"></i><span class="time">{{.Params.time}}</span>
+                    </div>
                   </div>
-                  <div class="icon"><i class="fas fa-map-marker-alt"></i></i><span>{{.Params.venue}}</span></div>
+                  <div class="venue-box">
+                    <div class="icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="map">{{.Params.venue}}</span>
+                    </div>
+                  </div>
                   <div class="icon">
                     {{with .Params.tags}}
                       <i class="fas fa-tags"></i>
@@ -101,8 +183,11 @@
                       {{end}}
                     {{end}}
                   </div>
-                  <div class="btn-box">
+                  <div class="btn-box desktop-btn">
                     <a href="{{$link}}">Read More</a>
+                  </div>
+                  <div class="mobile-link">
+                  <a href="{{$link}}">Read More</a>
                   </div>
                 {{end}}
               </div>
@@ -115,6 +200,8 @@
   </div>
 </section>
 {{ end }}
+
+
 
 
 
