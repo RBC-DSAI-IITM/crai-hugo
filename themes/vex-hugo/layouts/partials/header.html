@@ -23,6 +23,11 @@
     {
         display: none;
     }
+    .mobile-dropdown
+    {
+        border: none;
+        text-align: center;
+    }
 
 }
 @media only screen and (min-width: 800px) and (max-width: 3000px) 
@@ -62,7 +67,7 @@
                             {{- .Pre -}}<span>{{ .Name | safeHTML }}</span>{{- .Post -}}
                             <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu mobile-dropdown">
                             {{ range .Children }}
                                 <li class="dropdown-item my-0 py-0 mx-0 px-0">
                                     <a class="nav-link current" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
