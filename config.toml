@@ -51,7 +51,7 @@ url = "people/"
 weight = 4
 
 [[menu.main]]
-name = "Research"
+name = "Activities"
 url = "#"
 weight = 1
 hasChildren = "true"
@@ -63,13 +63,19 @@ weight = 2
 
 [[menu.main]]
 name = "Themes"
-parent = "Research"
-url = "research/"
+parent = "Activities"
+url = "activities/"
 weight = 1
 
 [[menu.main]]
+name= "Courses"
+parent = "Activities"
+url = "/events/summer-school"
+weight = 3
+
+[[menu.main]]
 name = "Projects"
-parent = "Research"
+parent = "Activities"
 url = "projects/"
 weight = 2
 
@@ -105,8 +111,8 @@ weight = 8
 
 # footer menu
 [[menu.footer]]
-name = "Research"
-url = "research/"
+name = "Activities"
+url = "activities/"
 weight = 1
 
 [[menu.footer]]
