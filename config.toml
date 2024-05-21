@@ -68,10 +68,9 @@ url = "activities/"
 weight = 1
 
 [[menu.main]]
-name= "Courses"
+name="Courses"
 parent = "Activities"
-url = "/events/summer-school"
-weight = 3
+url = "events/summer-school/"
 
 [[menu.main]]
 name = "Projects"
