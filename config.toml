@@ -70,7 +70,7 @@ weight = 1
 [[menu.main]]
 name="Courses"
 parent = "Activities"
-url = "events/summer-school/"
+url = "courses/"
 
 [[menu.main]]
 name = "Projects"
@@ -106,7 +106,6 @@ weight = 5
 name = "Contact"
 url = "contact/"
 weight = 8
-
 
 # footer menu
 [[menu.footer]]
