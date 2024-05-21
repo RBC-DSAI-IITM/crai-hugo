@@ -5,7 +5,7 @@ image: "/images/people/principal-investigators/arun-rajkumar.png"
 
 designation : "Assistant Professor"
 weblink: "https://sites.google.com/view/arun-rajkumar/home?authuser=0"
-affiliation:  Dept. of Data Science and <br> Artificial Intelligence (DSAI), IIT Madras
+affiliation: Dept. of DSAI, IIT Madras
 
 type: core
 draft: false

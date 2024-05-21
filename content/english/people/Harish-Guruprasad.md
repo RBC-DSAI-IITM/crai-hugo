@@ -5,7 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/people/harishguru1.png"
 
 designation : "Assistant Professor"
 weblink: "https://sites.google.com/site/harishguruprasad/"
-affiliation: Dept. of Data Science and <br> Artificial Intelligence (DSAI), IIT Madras
+affiliation: Dept. of DSAI, IIT Madras
 
 type: core
 draft: false
