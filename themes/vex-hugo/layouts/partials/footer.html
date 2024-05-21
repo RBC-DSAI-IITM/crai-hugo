@@ -1,14 +1,22 @@
 <style>
-  @media only screen and (min-width: 200px) and (max-width: 800px)
-{
-    .desktop-footer
-    {
-      display:none;
-    }
-    
 
+@media only screen and (max-width: 700px)
+{
+  .desktop-footer
+  {
+    display:none !important;
+  }
+}
+
+@media only screen and (min-width: 701px)
+{
+  .mobile-footer
+  {
+    display:none !important;
+  }
 }
 </style>
+
 <footer class="mobile-footer">
   <div class="container text-center">
       <div class="row" style="display: flex; align-items: center; flex-wrap: wrap; padding-left:18%;">
@@ -27,7 +35,7 @@
         </ul>
       </div>
       <br>
-  
+
     <div class="row" style="display: flex; align-items: center; padding-left:29%;">
       <a href="https://www.iitm.ac.in/" target="_blank">
         <img src="/images/IIT_Madras_Logo.png" height="45px" />
@@ -47,6 +55,7 @@
         <a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-4"></i></a>
       </div>
     </div>
+    
     <div class="row" style="margin-top: 2rem;">
       <p style="font-size: 90% !important;">
         <span class="copyright-text" style="float: left; padding-left:20%;">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>
@@ -55,6 +64,8 @@
     </div>
   </div>
 </footer>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
 <footer class="desktop-footer">
   <div class="container text-center">
