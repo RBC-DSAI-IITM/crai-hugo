@@ -1,5 +1,5 @@
 ---
-title: "Programmes at the Wadhwani School of Data Science & AI"
+title: "Programmes at the WSAI"
 date: 2024-05-21
 image: "https://www.wadhwaniai.org/wp-content/uploads/2021/10/wadhwani-ai-facebook-2.png"
 tags: []
