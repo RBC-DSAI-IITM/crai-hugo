@@ -70,12 +70,12 @@
         </div>
       </div>
       
-      <div class="content">
-        <div class="container">
+      <div class="content" style="display: flex; justify-content: center;">
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
           {{ $pages := .Pages }}
-          <div class="row">
+          <div class="row" style="display: flex; justify-content: center; width: 100%;">
             {{ range $i, $page := $pages }}
-              <div class="col-xs-12 col-sm-4">
+              <div class="col-xs-12 col-sm-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 15px; box-sizing: border-box;">
                 <div class="card">
                   <a class="img-card">
                     <img src="{{ $page.Params.Image }}" />
@@ -101,12 +101,10 @@
                   </div>
                 </div>
               </div>
-              {{ if and (or (eq (add $i 1 | mod 3) 0) (eq $i (sub (len $pages) 1))) (not (eq $i 0)) }}
+              {{ if and (or (eq (add $i 1 | mod 2) 0) (eq $i (sub (len $pages) 1))) (not (eq $i 0)) }}
           </div>
-          <div class="row">
               {{ end }}
             {{ end }}
-          </div>
         </div>
       </div>
       
