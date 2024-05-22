@@ -4,6 +4,5 @@ date: 2024-05-01
 image: "https://code.iitm.ac.in/assets/code-programs/Data-science.jpeg"
 tags: []
 link: "https://code.iitm.ac.in/dsai-leadership-essentials"
-fees: ₹70,000 
 draft: false
 ---
