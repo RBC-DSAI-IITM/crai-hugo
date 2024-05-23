@@ -1,7 +1,7 @@
 ---
 title: "Programmes at the WSAI"
 date: 2024-05-21
-image: "https://www.wadhwaniai.org/wp-content/uploads/2021/10/wadhwani-ai-facebook-2.png"
+image: "/images/wsai-logo-new.png"
 tags: []
 link: "http://dsai.iitm.ac.in/programmes/"
 draft: false
