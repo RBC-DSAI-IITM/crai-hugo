@@ -1,6 +1,48 @@
 {{ define "main" }}
 <style>
 
+  @media only screen and (min-width: 750px) and (max-width: 1170px)
+  {
+
+.navnav
+{
+  width: 30%;
+  text-align:center;
+  padding-bottom:5%;
+}
+
+  }
+
+@media only screen and (min-width:1170px)
+{
+  .navnav
+{
+  width: 15%;
+}
+
+}
+#myTabContent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#myTab
+{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.navig {
+    border: none !important;
+    border-bottom:none !important;
+  }
+  .link-nav:active {
+    border:none !important;
+  }
+  .link-nav {
+    border:none !important;
+  }
   @media (max-width: 768px) {
     .nav-tabs {
       flex-wrap: wrap;
@@ -34,27 +76,27 @@
     </div>
 
     <div class="col-12">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation" style="width: 15%;">
-          <a class="nav-link active text-center" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
+      <ul class="nav nav-tabs navig" id="myTab" role="tablist">
+        <li class="nav-item navnav" role="presentation">
+          <a class="nav-link active text-center link-nav" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
         </li>
-        <li class="nav-item" role="presentation" style="width: 15%;">
-          <a class="nav-link  text-center" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
+        <li class="nav-item navnav" role="presentation">
+          <a class="nav-link  text-center link-nav" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
         </li>
-        <li class="nav-item" role="presentation" style="width: 15%;">
-          <a class="nav-link  text-center" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
-        </li>
-
-        <li class="nav-item" role="presentation" style="width: 15%;">
-          <a class="nav-link  text-center" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
+        <li class="nav-item navnav" role="presentation">
+          <a class="nav-link  text-center link-nav" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
         </li>
 
-        <li class="nav-item" role="presentation" style="width: 15%;">
-          <a class="nav-link  text-center" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
+        <li class="nav-item navnav" role="presentation">
+          <a class="nav-link  text-center link-nav" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
         </li>
 
-        <li class="nav-item" role="presentation" style="width: 15%;">
-          <a class="nav-link  text-center" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Fellows</a>
+        <li class="nav-item navnav" role="presentation">
+          <a class="nav-link  text-center link-nav" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
+        </li>
+
+        <li class="nav-item navnav" role="presentation">
+          <a class="nav-link  text-center link-nav" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Fellows</a>
         </li>
       </ul>
 
