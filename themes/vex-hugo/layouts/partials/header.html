@@ -32,9 +32,15 @@
         border: none;
         text-align: center;
     }
+    .cerai-nav
+    {
+        display:flex;
+        justify-content:center;
+        text-align:center;
+    }
 
 }
-@media only screen and (min-width: 799px) and (max-width: 1200px) 
+@media only screen and (min-width: 799px) and (max-width: 1170px) 
 {
     .mobilebutton
     {
@@ -44,6 +50,21 @@
     {
         border: none;
         text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:1170px) and (max-width: 1500px)
+{
+    .navContain
+    {
+        width:100%;
+        display:flex;
+        justify-content:center;
+        text-align:center;
+    }
+    .logo-container{
+        width:100%;
     }
 
 }
@@ -59,7 +80,7 @@
 
 <!-- navigation -->
 <header class="sticky-top bg-white">
-  <div class="container">
+  <div class="container navContain">
     <nav class="navbar navbar-expand-lg navbar-light cerai-nav">
         <div class="logo-container">
             <img src="/images/wsai-cerai-logo.jpg" usemap="#image-map">
