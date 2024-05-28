@@ -7,6 +7,10 @@ link: "/news/hiring-2024"
 ---
 
 <style>
+    .image
+    {
+        display:none;
+    }
 
     .hiring-img {
         width: 30%;

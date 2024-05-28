@@ -7,7 +7,7 @@
 
 .button-box
 {
-  text-align:center !important;
+  text-align:center;
 }
 
 .link-button
@@ -17,9 +17,15 @@
   font-size: 1.2rem;
   color: #000;
   border: 2px solid transparent;
+  border-radius: .5rem;
   text-decoration: none;
   transition: all .3s ease-in;
+  background-color: #4eadec !important;
 }
+    .link-button .button_text {
+        text-decoration: none; 
+        color: black; 
+    }
     .link-button .button_text {
         text-decoration: none; 
         color: black; 
@@ -31,7 +37,7 @@
 
 <section class="section">
   <div class="container">
-    <div class="button-box" style="text-align:left;">
+    <div class="button-box">
       <button class="link-button">
           <a class="button_text" href="/news/hiring-2024">We are hiring, join our team!</a>
       </button>
