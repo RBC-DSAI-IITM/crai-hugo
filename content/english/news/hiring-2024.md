@@ -90,7 +90,12 @@ link: "/news/hiring-2024"
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="https://docs.google.com/forms/d/e/1FAIpQLSfWxDdVjJMl3aKwbeRlNcE6y31SD84fW-yrwRlfrvHA406iIA/viewform" target="_blank">Click here to Apply</a>
+            <a class="button_text" href="https://docs.google.com/forms/d/e/1FAIpQLSfWxDdVjJMl3aKwbeRlNcE6y31SD84fW-yrwRlfrvHA406iIA/viewform" target="_blank">Click here to Apply for Post-Bacc Fellowships</a>
+        </button>
+    </div>
+        <div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="mailto:contact@cerai.in" target="_blank">Please Write to contact@cerai.in for More Details</a>
         </button>
     </div>
 </div>
