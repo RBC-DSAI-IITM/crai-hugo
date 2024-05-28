@@ -90,7 +90,7 @@ link: "/news/hiring-2024"
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in for more details</a>
+            <a class="button_text" href="mailto:contact@cerai.in" target="_blank">Please write to contact@cerai.in for more details</a>
         </button>
     </div>
 </div>
@@ -114,7 +114,7 @@ link: "/news/hiring-2024"
 
 If you answered “yes” to these questions then CeRAI could be the perfect place for you. We are looking for brilliant and well-rounded technologists who can work on projects that will have direct impact on responsible AI.
 </p>
-<p><a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in to apply</a></p>
+<p><a class="button_text" href="mailto:contact@cerai.in" target="_blank">Please write to contact@cerai.in to apply</a></p>
 </div>
 
 <div class="divider"></div>
@@ -129,7 +129,7 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
 
 <div class="big-div">
 <p>The Policy Analyst will work as an integral part of CeRAI and will be required to undertake research, analysis, and drafting of whitepapers or briefs. The expected output from the research work will be in the form of research reports and policy briefs, draft legislation, rules and regulations.
-<p><a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in to apply</a></p>
+<p><a class="button_text" href="mailto:contact@cerai.in" target="_blank">Please write to contact@cerai.in to apply</a></p>
 </div>
 
 <div class="divider"></div>
@@ -137,11 +137,11 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
-            <a class="button_text" href="/contact/" target="_blank">Please write to contact@cerai.in for more details</a>
+            <a class="button_text" href="mailto:contact@cerai.in" target="_blank">Please write to contact@cerai.in for more details</a>
         </button>
     </div>
 </div>
 
 <div class="big-div">
-<p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="/contact/" target="_blank">contact@cerai.in</a> for more details.</p>
+<p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="mailto:contact@cerai.in/" target="_blank">contact@cerai.in</a> for more details.</p>
 </div>
