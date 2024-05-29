@@ -11,67 +11,40 @@
 </script>
 
 <style>
-  .breadcrumb
-  {
+  .breadcrumb {
     padding: .6rem 1.2rem;
-line-height: 2.1rem;
-font-size: 1.2rem;
-color: #000;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+    color: #000;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #f0f0f0;
+  }
+
+  .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 </style>
 
-
 <section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb" style="background-color:white !important">
-            <li class="breadcrumb-item"><a href="/" style="text-decoration: none !important">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Blogs</li>
-          </ol>
-        </nav>
-
-      </div>
+    <div class="embed-container">
+      <iframe src="https://cerai.substack.com/" frameborder="0"></iframe>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="heading">
-          <h2>CeRAI Blogs</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="mb-40" style="display: flex; flex-wrap: wrap;">
-
-      {{ range .Pages }}
-
-        <div class="col-md-6 text-center mb-40 mb-lg-40" style="display: inline-table;">
-          <a href="{{.Permalink}}"><img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt=""></a>
-          <div class="contents">
-            <a href="{{.Permalink}}" style="text-decoration: none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
-            <p>{{ dateFormat "Jan 2, 2006" .Params.date }}</p>
-            <p>{{ .Params.summary }}</p>
-            {{ range .Params.tags }}
-            <a href="/tags/{{ . }}" style="text-decoration: none;">
-            <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
-              <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
-            </div>
-            </a>
-            {{ end }}
-          </div>
-        </div>
-
-      {{ end }}
-    </div>
-
-  </div>
-            
-          
   </div>
 </section>
+
 {{ end }}
-
-
 
 
