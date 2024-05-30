@@ -58,7 +58,7 @@ hasChildren = "true"
 
 [[menu.main]]
 name = "Blogs"
-url = "blogs/"
+url = "https://cerai.substack.com/"
 weight = 2
 
 [[menu.main]]
