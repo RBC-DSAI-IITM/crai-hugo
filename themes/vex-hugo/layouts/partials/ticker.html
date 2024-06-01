@@ -3,26 +3,26 @@
 <style>
     #ticker {
         overflow: hidden;
-        height: 40px; /* Adjust height as needed */
-        display: flex; /* Use flexbox */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        height: 40px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
         background-color: #f4f4f4;
     }
     .ticker-wrapper {
-        width: 100%; /* Ensure ticker takes full width */
-        overflow: hidden; /* Hide overflowing content */
+        width: 100%; 
+        overflow: hidden; 
     }
     .ticker-list {
         list-style-type: none;
         padding-left: 0;
-        display: flex; /* Use flexbox for horizontal layout */
-        margin: 0; /* Remove default margin */
-        justify-content: center; /* Center horizontally */
-        animation: ticker 15s infinite linear; /* Add missing colon */
+        display: flex; 
+        margin: 0; 
+        justify-content: center; 
+        animation: ticker 15s infinite linear; 
     }
     .ticker-item {
-        margin-right: 10px; /* Adjusted spacing between items */
+        margin-right: 10px; 
         font-size: 150%;
         font-weight: bold;
         white-space: nowrap;
@@ -34,22 +34,20 @@
     }
 
     .ticker-item a:hover {
-        color: blue; /* Change color to blue on hover */
+        color: blue; 
     }
 
-    /* Responsive adjustments */
     @media only screen and (max-width: 768px) {
         #ticker {
-            height: auto; /* Adjust height to fit content */
-            padding: 10px; /* Add padding for better spacing */
+            height: auto; 
+            padding: 10px; 
         }
         .ticker-item {
-            margin-right: 10px; /* Reduce spacing between items */
-            font-size: 100%; /* Reset font size */
+            margin-right: 10px; 
+            font-size: 100%; 
         }
     }
 
-    /* Keyframes definition for ticker animation */
     @keyframes ticker {
     100% {
         transform: translateX(-100%);
@@ -74,10 +72,12 @@
 <div id="ticker">
     <div class="ticker-wrapper">
         <ul class="ticker-list">
-            {{ $news := where .Site.RegularPages "Type" "news" | first 3 }}
-            {{ range $index, $element := $news }}
-                <h3 class="ticker-item"><a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a></h3>
-                {{ if lt $index (sub (len $news) 1) }}<span class="separator" style="color: navy; font-weight: bold;"> | &nbsp; </span>{{ end }}
+            {{ $announcements := where .Site.RegularPages "Type" "announcements" | first 3 }}
+            {{ range $index, $element := $announcements }}
+                <li class="ticker-item">
+                    <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
+                </li>
+                <span class="separator" style="color: navy; font-weight: bold;"> | &nbsp; </span>
             {{ end }}
         </ul>
     </div>
@@ -90,54 +90,31 @@
         if (agent.indexOf('firefox') !== -1) {
             return 'firefox';
         } else {
-            return 'other'; 
+            return 'other';
         }
     }
-    
+
     function Marquee(tickerSelector, speed) {
         const browser = getBrowser();
-        const adjustedSpeed = browser === 'firefox' ? speed * 2 : speed; 
+        const adjustedSpeed = browser === 'firefox' ? speed * 2 : speed;
         const ticker = document.querySelector(tickerSelector);
         const list = ticker.querySelector('.ticker-list');
-        const clone = list.cloneNode(true);
-        const marqueeContent = document.createElement('marquee');
-    
-        marqueeContent.setAttribute('behavior', 'scroll');
-        marqueeContent.setAttribute('direction', 'left');
-    
-        marqueeContent.appendChild(clone);
-        ticker.innerHTML = ''; 
-        ticker.appendChild(marqueeContent);
-    
-        const contentWidth = marqueeContent.scrollWidth; 
-        let i = 0;
-    
-        function move() {
-            i = i + adjustedSpeed; 
-            if (i > contentWidth) {
-                i = 0; 
-            }
-            marqueeContent.style.marginLeft = `-${i}px`;
-            requestAnimationFrame(move);
-        }
-    
-     
-        marqueeContent.addEventListener('mouseenter', function() {
-            cancelAnimationFrame(move);
-        });
-    
+        const clone = document.createElement('ul');
+        
+        clone.classList.add('ticker-list');
+        clone.innerHTML = list.innerHTML; // Clone the list's content
 
-        marqueeContent.addEventListener('mouseleave', function() {
-            move();
-        });
-    
-        move();
+        list.appendChild(clone); // Clone the list for seamless scrolling
+
+        const contentWidth = list.scrollWidth / 2; // Width of the original list
+
+        list.style.animationDuration = `${contentWidth / adjustedSpeed}s`;
     }
-    
+
     window.addEventListener('load', function() {
-        Marquee('#ticker', 0.5); 
+        Marquee('#ticker', 20); // Adjust speed as needed
     });
-    </script>
+</script>
     
     
     

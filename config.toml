@@ -44,7 +44,6 @@ link = "plugins/pushin/pushin.min.js"
 
 ###################################### Navigation ######################################
 
-
 [[menu.main]]
 name = "People"
 url = "people/"
@@ -57,6 +56,12 @@ weight = 1
 hasChildren = "true"
 
 [[menu.main]]
+name = "Resources"
+parent = "Activities"
+url = "resources/"
+weight = 4
+
+[[menu.main]]
 name = "Blogs"
 url = "https://cerai.substack.com/"
 weight = 2
@@ -65,12 +70,13 @@ weight = 2
 name = "Themes"
 parent = "Activities"
 url = "activities/"
-weight = 1
+weight = 2
 
 [[menu.main]]
 name="Education"
 parent = "Activities"
 url = "education/"
+weight = 3
 
 [[menu.main]]
 name = "Projects"
@@ -100,7 +106,6 @@ weight = 2
 name = "Collaborators"
 url = "collaborators/"
 weight = 5
-
 
 [[menu.main]]
 name = "Careers"
