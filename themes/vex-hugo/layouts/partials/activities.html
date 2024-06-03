@@ -1,7 +1,14 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 {{ if $data.homepage.activities.enable }}
-<section class="testimonials section" id="testimonial">
+<style>
+  .activity
+  {
+    
+    background-color:#f4f4f4;
+  }
+</style>
+<section class="testimonials section activity" id="testimonial">
   <div class="container">
     {{ with $data.homepage.activities }}
     <div class="row justify-content-center">

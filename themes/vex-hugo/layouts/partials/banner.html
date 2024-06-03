@@ -2,16 +2,29 @@
 
 {{- if $data.homepage.banner.enable }}
 {{- with $data.homepage.banner }}
+
+<style>
+	.banner-section
+	{
+		margin-top:4%;
+		background-color: #f4f4f4 ;
+	}
+	.center-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>
 <!-- hero area -->
-<section class="section">
+<section class="testimonials section banner-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 text-center mb-5 mb-md-0">
-				<img class="img-fluid" height="75%" src="{{ .image | absURL }}" alt="">
+			<div class="col-md-6 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-center">
+				<img class="img-fluid banner-img" height="75%" src="{{ .image | absURL }}" alt="">
 			</div>
 			<div class="col-md-6 align-self-center text-center text-md-left">
 				<div class="block">
-					<h1 class="font-weight-bold mb-4 font-size-60">{{ .title | markdownify }}</h1>
+					<h1 class="font-weight-bold mb-4 font-size-40">{{ .title | markdownify }}</h1>
 					<p class="mb-4">{{ .content | markdownify }}</p>
 					{{ if .button.enable }}
 					{{ with .button }}

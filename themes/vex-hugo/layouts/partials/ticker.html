@@ -85,35 +85,47 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    function getBrowser() {
-        const agent = navigator.userAgent.toLowerCase();
-        if (agent.indexOf('firefox') !== -1) {
-            return 'firefox';
-        } else {
-            return 'other';
-        }
+   function getBrowser() {
+    const agent = navigator.userAgent.toLowerCase();
+    if (agent.indexOf('firefox') !== -1) {
+        return 'firefox';
+    } else {
+        return 'other';
+    }
+}
+
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function Marquee(tickerSelector) {
+    const browser = getBrowser();
+    const mobile = isMobile();
+    let speed;
+
+    if (mobile) {
+        speed = 70;
+    } else {
+        speed = 40;
     }
 
-    function Marquee(tickerSelector, speed) {
-        const browser = getBrowser();
-        const adjustedSpeed = browser === 'firefox' ? speed * 2 : speed;
-        const ticker = document.querySelector(tickerSelector);
-        const list = ticker.querySelector('.ticker-list');
-        const clone = document.createElement('ul');
-        
-        clone.classList.add('ticker-list');
-        clone.innerHTML = list.innerHTML; // Clone the list's content
+    const ticker = document.querySelector(tickerSelector);
+    const list = ticker.querySelector('.ticker-list');
+    const clone = document.createElement('ul');
+    
+    clone.classList.add('ticker-list');
+    clone.innerHTML = list.innerHTML; // Clone the list's content
 
-        list.appendChild(clone); // Clone the list for seamless scrolling
+    list.appendChild(clone); // Clone the list for seamless scrolling
 
-        const contentWidth = list.scrollWidth / 2; // Width of the original list
+    const contentWidth = list.scrollWidth / 2; // Width of the original list
 
-        list.style.animationDuration = `${contentWidth / adjustedSpeed}s`;
-    }
+    list.style.animationDuration = `${contentWidth / speed}s`;
+}
 
-    window.addEventListener('load', function() {
-        Marquee('#ticker', 20); // Adjust speed as needed
-    });
+window.addEventListener('load', function() {
+    Marquee('#ticker'); // Adjust speed is determined within the function
+});
 </script>
     
     
