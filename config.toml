@@ -56,12 +56,6 @@ weight = 1
 hasChildren = "true"
 
 [[menu.main]]
-name = "Resources"
-parent = "Activities"
-url = "resource-materials/"
-weight = 4
-
-[[menu.main]]
 name = "Blogs"
 url = "https://cerai.substack.com/"
 weight = 2
