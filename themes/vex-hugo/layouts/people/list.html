@@ -3,68 +3,22 @@
 
   @media only screen and (min-width: 750px) and (max-width: 1170px)
   {
-    .link-nav {
-  box-shadow: 0 1px 8px rgba(0,0,0,.15);
-  border-radius: .5rem !important;
-}
 
 .navnav
 {
+  width: 30%;
   text-align:center;
   padding-bottom:5%;
-}
-.desktop-list{
-  display:none;
-}
-.mobile-list{
-  display:none;
 }
 
   }
 
 @media only screen and (min-width:1170px)
 {
-  .link-nav {
-  box-shadow: 0 1px 8px rgba(0,0,0,.15);
-  border-radius: .5rem !important;
+  .navnav
+{
+  width: 15%;
 }
-  .mobile-list
-  {
-    display:none;
-  }
-  .tablet-list
-  {
-    display:none;
-  }
-  #myTab
-    {
-      display: flex;
-      justify-content: center;
-      margin-top: 2%;
-      flex-wrap: wrap;
-    }
-    #myTab .nav-item {
-      flex: 1 1 calc(33.3333% - 1%);
-      margin-right: 1%;
-      box-sizing: border-box;
-    }
-    #myTab .nav-item:nth-child(3n) {
-      margin-right: 0;
-    }
-    #myTab2 {
-      display: flex;
-      justify-content: center;
-      margin-top: 2%;
-      flex-wrap: wrap;
-    }
-    #myTab2 .nav-item {
-      flex: 1 1 calc(33.3333% - 1%);
-      margin-right: 1%;
-      box-sizing: border-box;
-    }
-    #myTab2 .nav-item:nth-child(3n) {
-      margin-right: 0;
-    }
 
 }
 #myTabContent {
@@ -106,92 +60,11 @@
       overflow: visible !important; 
       text-overflow: clip !important; 
     }
-    .desktop-list
-    {
-      display:none;
-    }
-    .tablet-list{
-      display:none;
-    }
   }
   .people-img {
     width: 50%;
     height: 52%;
 }
-
-
-.nav-item.navnav {
-    margin-right: 2%;
-  }
-  
-  .nav-item.navnav:last-child {
-    margin-right: 0;
-  }
-    .nav-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .nav-container .nav-item {
-      flex: 1 1 33%;
-    }
-    
-    @media (min-width:786px) and (max-width:1170px)
-    {
-      .desktop-list{
-        display:none;
-      }
-      .mobile-list{
-        display:none;
-      }
-      .tablet-list{
-        display:block;
-      }
-      #myTab {
-      display: flex;
-      justify-content: center;
-      margin-top: 2%;
-      flex-wrap: wrap;
-    }
-    #myTab .nav-item {
-      flex: 1 1 calc(33.3333% - 1%);
-      margin-right: 1%;
-      box-sizing: border-box;
-    }
-    #myTab .nav-item:nth-child(3n) {
-      margin-right: 0;
-    }
-      #myTab2 {
-      display: flex;
-      justify-content: center;
-      margin-top: 2%;
-      flex-wrap: wrap;
-    }
-    #myTab2 .nav-item {
-      flex: 1 1 calc(33.3333% - 1%);
-      margin-right: 1%;
-      box-sizing: border-box;
-    }
-    #myTab2 .nav-item:nth-child(3n) {
-      margin-right: 0;
-    }
-    #myTab3 {
-      display: flex;
-      justify-content: center;
-      margin-top: 2%;
-      flex-wrap: wrap;
-    }
-    #myTab3 .nav-item {
-      flex: 1 1 calc(33.3333% - 1%);
-      margin-right: 1%;
-      box-sizing: border-box;
-    }
-    #myTab3 .nav-item:nth-child(3n) {
-      margin-right: 0;
-    }
-
-
-    }
-  
   </style>
   
 
@@ -201,88 +74,32 @@
     <div class="col-12 text-center mb-5">
       <h1 class="font-weight-bold">{{.Title}}</h1>
     </div>
-    <div class="desktop-list">
-      <ul class="nav nav-tabs navig" id="myTab" role="tablist">
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link active text-center link-nav" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
-        </li>
-      </ul>
-      <br>
-      
-      <ul class="nav nav-tabs navig" id="myTab2" role="tablist">
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Fellows</a>
-        </li>
-      </ul>
-    </div>
-    <div class="tablet-list">
-      <ul class="nav nav-tabs navig" id="myTab" role="tablist">
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link active text-center link-nav" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
-        </li>
-      </ul>
-      
-      <ul class="nav nav-tabs navig" id="myTab2" role="tablist">
+    <ul class="nav nav-tabs navig" id="myTab" role="tablist">
       <li class="nav-item navnav" role="presentation">
-        <a class="nav-link text-center link-nav" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
+        <a class="nav-link active text-center link-nav" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
       </li>
       <li class="nav-item navnav" role="presentation">
-        <a class="nav-link text-center link-nav" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
+        <a class="nav-link  text-center link-nav" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
+      </li>
+      <li class="nav-item navnav" role="presentation">
+        <a class="nav-link  text-center link-nav" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
+      </li>
+
+      <li class="nav-item navnav" role="presentation">
+        <a class="nav-link  text-center link-nav" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
+      </li>
+
+      <li class="nav-item navnav" role="presentation">
+        <a class="nav-link  text-center link-nav" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
+      </li>
+
+      <li class="nav-item navnav" role="presentation">
+        <a class="nav-link  text-center link-nav" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Fellows</a>
       </li>
     </ul>
-      
-      <ul class="nav nav-tabs navig" id="myTab3" role="tablist">
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Fellows</a>
-        </li>
-      </ul>
-
-    </div>
-    <div class="mobile-list">
-      <ul class="nav nav-tabs navig" id="myTab" role="tablist">
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link active text-center link-nav" id="pis-tab" data-toggle="tab" href="#pis" role="tab" aria-controls="pis" aria-selected="true">Principal Investigators</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="council-tab" data-toggle="tab" href="#council" role="tab" aria-controls="council" aria-selected="false">Governing Council</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="advisor-tab" data-toggle="tab" href="#advisor" role="tab" aria-controls="advisor" aria-selected="false">Scientific Advisory Board</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="researcher-tab" data-toggle="tab" href="#researcher" role="tab" aria-controls="researcher" aria-selected="false">Researchers</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff</a>
-        </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="collab-tab" data-toggle="tab" href="#collab" role="tab" aria-controls="collab" aria-selected="false">Fellows</a>
-        </li>
-      </ul>
-
-    </div>
-    
 
   <br>
-
+  <br>
 
       <div class="tab-content" id="myTabContent">
         
@@ -422,7 +239,3 @@
 </section>
 
 {{ end }}
-
-
-
-
