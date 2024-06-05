@@ -56,9 +56,9 @@ weight = 1
 hasChildren = "true"
 
 [[menu.main]]
-name = "Materials"
+name = "Resources"
 parent = "Activities"
-url = "materials/"
+url = "resource-materials/"
 weight = 4
 
 [[menu.main]]
