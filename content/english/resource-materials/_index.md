@@ -1,6 +1,5 @@
 ---
 
-title: "Resource Materials"
+title: "Materials"
 draft: false
-layout: "list"
 ---

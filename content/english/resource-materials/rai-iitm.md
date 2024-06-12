@@ -6,6 +6,8 @@ filter: "presentations"
 layout: "resource-materials/single"
 draft: false
 ---
+<div class="summary" style="display: block flex; justify-content: center;">
+<p>A breakdown of the various responsible AI projects undertaken at IIT Madras.</p>
 
  <iframe src="https://docs.google.com/presentation/d/1riJOiWRg4zFIY8r8WXzagpL8YYHFrV1pWjvtq2h_SiU/edit?usp=sharing" 
             frameborder="0" 
