@@ -6,7 +6,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
-  
   gtag('config', 'G-HW4VEP0VKF');
 </script>
 
@@ -14,56 +13,51 @@
   .heading {
     padding-bottom: 31px !important;
   }
-
   .breadcrumb {
     padding: 0.6rem 1.2rem;
     line-height: 2.1rem;
     font-size: 1.2rem;
     color: #000;
   }
-
+  .card-item {
+    margin-right:1%;
+  
+}
   @media only screen and (min-width: 750px) and (max-width: 1170px) {
     .navnav {
       text-align: center;
       padding-bottom: 5%;
     }
   }
-
   @media only screen and (min-width: 1170px) {
     #myTabContent {
       display: flex;
       justify-content: center;
       text-align: center;
     }
-
     #myTab {
       display: flex;
       justify-content: center;
       text-align: center;
     }
-
     .navig {
       border: none !important;
       border-bottom: none !important;
     }
-
     .link-nav:active,
     .link-nav {
       border: none !important;
     }
   }
-
   @media (max-width: 768px) {
     .nav-tabs {
       flex-wrap: wrap;
       justify-content: space-around;
       height: auto !important;
     }
-
     .nav-item {
       width: 100% !important;
     }
-
     .nav-link {
       padding: 10px 0 !important;
       white-space: normal !important;
@@ -118,20 +112,22 @@
         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
             {{ end }}
@@ -141,22 +137,25 @@
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
             {{ if eq .Params.filter "papers" }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
+
             {{ end }}
             {{ end }}
           </div>
@@ -165,22 +164,26 @@
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
             {{ if eq .Params.filter "essays" }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
+              
+
             {{ end }}
             {{ end }}
           </div>
@@ -189,22 +192,25 @@
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
             {{ if eq .Params.filter "code" }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
+            
             {{ end }}
             {{ end }}
           </div>
@@ -213,22 +219,25 @@
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
             {{ if eq .Params.filter "videos" }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
+           
             {{ end }}
             {{ end }}
           </div>
@@ -237,22 +246,25 @@
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
             {{ if eq .Params.filter "presentations" }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
+            
             {{ end }}
             {{ end }}
           </div>
@@ -261,22 +273,25 @@
           <div class="row">
             {{ range (where .Site.RegularPages "Section" "resource-materials") }}
             {{ if eq .Params.filter "dataset" }}
-            <div class="col-md-6 text-center mb-40 mb-lg-40">
-              <a href="{{ .Permalink }}">
-                <img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt="">
-              </a>
-              <div class="contents">
-                {{ if .Params.link }}
-                <a href="{{ .Params.link }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ else }}
-                <a href="{{ .Permalink }}" style="text-decoration: none;">
-                  <h4 class="subheading">{{ .Title | markdownify }}</h4>
-                </a>
-                {{ end }}
+            <div class="card mb-3 card-item" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{{.Params.title}}</h5>
+                    
+                    {{ if .Permalink }}
+                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    {{ else }}
+                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    {{ end }}
+                  </div>
+                </div>
               </div>
             </div>
+           
             {{ end }}
             {{ end }}
           </div>
