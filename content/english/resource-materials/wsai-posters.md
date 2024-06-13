@@ -1,6 +1,6 @@
 ---
 title: "WSAI Annual Research Showcase 2024 - Posters"
-image: "https://lh3.googleusercontent.com/1Rj9IZlLo3m24_h5j5JqS8xDrBIReHoJig82RjbDCCVFc8hPCq-NjeecdkdIjy20TRpCGKbfJ7RA_yL2eY5q4-8KnMH4Bq9l50mjzM4z3EtVjfIkwn_tvaMwDgohhiGkbQ=w1280"
+image: "https://lh5.googleusercontent.com/o1DUFxXw0Zas06c9bhCYb32gMJdvsUZc2gvPJR-uuKgwc6SX8AYivn-XWvnLMFexe0WUuPUP6jO0ZaR_OWTiJeTAvlEwjfboa9A7d-hPYXu8vCIq_3ne7j4-vPoUAGrmqg=w1280"
 type: "resource-materials"
 filter: "presentations"
 layout: "resource-materials/single"
