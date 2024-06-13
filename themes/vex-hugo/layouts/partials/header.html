@@ -4,6 +4,9 @@
     {
         font-family: 'Titillium Web', sans-serif, Source Sans Pro, Helvetica Neue, Helvetica, Arial,sans-serif !important;
     }
+    body[data-current-page="index"] .breadcrumb-div {
+    display: none;
+}
   @media only screen and (min-width: 200px) and (max-width: 1200px) 
   {
 
@@ -81,10 +84,57 @@
 {
     text-transform: capitalize;
 }
+.breadcrumb-div
+  {
+    background-color: #f4f4f4;
+    padding-top:0.5%;
+
+  }
+  .breadcrumb-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    margin-left:25%;
+    padding-bottom: 0.5%;
+}
+
+.breadcrumb-item {
+    display: inline; 
+    margin-right: 10px; 
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.breadcrumb-item a {
+    text-decoration: none !important; 
+}
+@media only screen and (min-width:200px) and (max-width:692px)
+{
+    .breadcrumb-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    padding-bottom: 2%;
+    margin-left:15%;
+}
+.breadcrumb-div
+  {
+    background-color: #f4f4f4;
+    padding-top:2%;
+
+  }
+
+
+}
+
+
+
 </style>
 
 <!-- navigation -->
-<header class="sticky-top bg-white" style="background-color:aliceblue!important;">
+<header class="bg-white" style="background-color:aliceblue!important;">
   <div class="container navContain">
     <nav class="navbar navbar-expand-lg navbar-light cerai-nav">
         <div class="logo-container">
@@ -132,5 +182,21 @@
     
     </nav>
   </div>
+  <div class="breadcrumb-div">
+          <nav aria-label="breadcrumb-nav">
+            <ol class="breadcrumb-list">
+              <li class="breadcrumb-item"><a href="/" style="text-decoration: none !important">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"> {{ .Title }}</li>
+            </ol>
+          </nav>
+    </div>
 </header>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var path = window.location.pathname;
+        if (path === "/" || path === "/index.html" || path === "") {
+            document.body.setAttribute('data-current-page', "index");
+        }
+    });
+</script>
 <!-- /navigation -->
