@@ -9,7 +9,15 @@
 
   gtag('config', 'G-HW4VEP0VKF');
 </script>
-
+<style>
+    .heading {
+    padding-bottom: 31px !important;
+  }
+  .card-item {
+    margin-right:1%;
+  
+}
+</style>
 
 
 <section class="section">
@@ -23,27 +31,28 @@
       </div>
 
       <div class="mb-40" style="display: flex; flex-wrap: wrap;">
+        <div class="row">
+          {{ range (where .Site.RegularPages "Section" "projects") }}
 
-      {{ range (where .Site.RegularPages "Section" "projects") }}
-
-        <div class="col-md-6 text-center mb-40 mb-lg-40" style="display: inline-table;">
-          <a href="{{.Permalink}}"><img class="mb-40" height="300rem" width="90%" src="{{ .Params.image | absURL }}" alt=""></a>
-          <div class="contents">
-            <a href="{{.Permalink}}" style="text-decoration: none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
-            {{ range .Params.tags }}
-            <a href="/tags/{{ . }}" style="text-decoration: none;">
-            <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
-              <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
+          <div class="card mb-3 card-item" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{.Params.title}}</h5>
+                  
+                  {{ if .Params.link }}
+                  <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
+                  {{ else }}
+                  <a href="{{ .Permalink  }}" class="btn btn-primary">View</a>
+                  {{ end }}
+                </div>
+              </div>
             </div>
-            </a>
-            {{ end }}
           </div>
-        </div>
-
-      {{ end }}
-    </div>
-
-    </div>
+          {{ end }}
 </section>
 
 {{ end }}
