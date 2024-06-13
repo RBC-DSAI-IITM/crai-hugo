@@ -7,6 +7,17 @@
     
     background-color:#f4f4f4;
   }
+  .activity-link
+  {
+    text-decoration:none;
+    color: #3b4045;
+    font-size: 18px;
+  line-height: 25px;
+  }
+  .activity-link:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
 </style>
 <section class="testimonials section activity" id="testimonial">
   <div class="container">
@@ -19,8 +30,11 @@
       </div>
       {{ range .activity_item }}
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center">
-        <a href="{{ .link }}"><img class="mb-40" width="90%" height="75%" src="{{.image}}" /></a>
-        <p>{{ .event_name }}</p>
+        <img class="mb-40" width="90%" height="75%" src="{{.image}}" />
+        <p>
+          <a  class="activity-link" href="{{ .link }}">{{ .event_name }}</a>
+        </p>
+        
       </div>
       {{ end }}
     </div>
