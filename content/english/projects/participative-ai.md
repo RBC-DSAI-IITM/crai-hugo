@@ -3,8 +3,6 @@
 title: "Participative AI Policy Framework"
 image: "images/AI-shake.JPG"
 draft: false
-# tags: ["artificial-intelligence", "responsible-ai"]
-tags: ["ai-and-society"]
 pis: "Balaraman Ravindran (IIT Madras), Harish Guruprasad (IIT Madras), Ameen Jauhar (Vidhi Centre for Legal Policy)"
 ---
 

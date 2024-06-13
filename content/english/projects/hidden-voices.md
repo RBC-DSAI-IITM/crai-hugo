@@ -3,7 +3,6 @@
 title: "Hidden Voices"
 image: "images/hidden-voices-banner.png"
 draft: false
-tags: ["ai-and-society"]
 pis: "Balaraman Ravindran (IIT Madras) and Raji Baskaran (Superbloom Studios)"
 ---
 

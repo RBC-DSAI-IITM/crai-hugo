@@ -3,8 +3,6 @@
 title: "Legal AI"
 image: "images/legal-ai.jpeg"
 draft: false
-# tags: ["artificial-intelligence", "responsible-ai"]
-tags: ["ai-and-society"]
 pis: "Balaraman Ravindran (IIT Madras) and Ponnurangam Kumaraguru (IIIT Hyderabad)"
 ---
 
