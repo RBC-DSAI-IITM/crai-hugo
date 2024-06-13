@@ -65,6 +65,7 @@
       text-overflow: clip !important;
     }
   }
+
 </style>
 
 <section class="section">
@@ -102,9 +103,6 @@
         <li class="nav-item navnav" role="presentation">
           <a class="nav-link text-center link-nav" id="presentation-tab" data-toggle="tab" href="#presentations" role="tab" aria-controls="presentations" aria-selected="false">Presentations</a>
         </li>
-        <li class="nav-item navnav" role="presentation">
-          <a class="nav-link text-center link-nav" id="dataset-tab" data-toggle="tab" href="#dataset" role="tab" aria-controls="dataset" aria-selected="false">Datasets</a>
-        </li>
       </ul>
       <br>
       <br>
@@ -122,9 +120,9 @@
                     <h5 class="card-title">{{.Params.title}}</h5>
                     
                     {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
                     {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
                     {{ end }}
                   </div>
                 </div>
@@ -147,9 +145,9 @@
                     <h5 class="card-title">{{.Params.title}}</h5>
                     
                     {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
                     {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
                     {{ end }}
                   </div>
                 </div>
@@ -174,9 +172,9 @@
                     <h5 class="card-title">{{.Params.title}}</h5>
                     
                     {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
                     {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
                     {{ end }}
                   </div>
                 </div>
@@ -202,9 +200,9 @@
                     <h5 class="card-title">{{.Params.title}}</h5>
                     
                     {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
                     {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
                     {{ end }}
                   </div>
                 </div>
@@ -229,9 +227,9 @@
                     <h5 class="card-title">{{.Params.title}}</h5>
                     
                     {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
                     {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
                     {{ end }}
                   </div>
                 </div>
@@ -256,42 +254,15 @@
                     <h5 class="card-title">{{.Params.title}}</h5>
                     
                     {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
                     {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
                     {{ end }}
                   </div>
                 </div>
               </div>
             </div>
             
-            {{ end }}
-            {{ end }}
-          </div>
-        </div>
-        <div class="tab-pane fade" id="dataset" role="tabpanel" aria-labelledby="dataset-tab">
-          <div class="row">
-            {{ range (where .Site.RegularPages "Section" "resource-materials") }}
-            {{ if eq .Params.filter "dataset" }}
-            <div class="card mb-3 card-item" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">{{.Params.title}}</h5>
-                    
-                    {{ if .Permalink }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
-                    {{ else }}
-                    <a href="{{ .Params.link }}" class="btn btn-primary">Read More</a>
-                    {{ end }}
-                  </div>
-                </div>
-              </div>
-            </div>
-           
             {{ end }}
             {{ end }}
           </div>

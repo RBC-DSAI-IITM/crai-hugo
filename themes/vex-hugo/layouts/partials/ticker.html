@@ -7,11 +7,13 @@
         display: flex; 
         justify-content: center; 
         align-items: center; 
-        background-color: #f4f4f4;
+        
     }
     .ticker-wrapper {
         width: 100%; 
         overflow: hidden; 
+        position:relative;
+        margin-right:25.5%;
     }
     .ticker-list {
         list-style-type: none;
@@ -23,7 +25,7 @@
     }
     .ticker-item {
         margin-right: 10px; 
-        font-size: 150%;
+        font-size: 120%;
         font-weight: bold;
         white-space: nowrap;
         text-align: center;
@@ -37,6 +39,167 @@
         color: blue; 
     }
 
+
+
+.ticker-list {
+    white-space: nowrap;
+    animation: ticker-animation linear infinite;
+}
+
+@keyframes ticker-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.ticker-contain {
+    background-color: #f4f4f4;
+    overflow: hidden; /* Hide overflow to contain ticker items */
+    position: relative; /* Ensure positioning context for children */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure the flex container spans the full width */
+}
+
+.announcement-container {
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 1% 20% 1% 6%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block; /* Ensures the container only takes as much width as needed */
+}
+
+.announcement-container::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%; /* Position at the right edge of the container */
+        transform: translateY(-50%);
+        border-width: 30px 0 30px 35px; /* Pointing right */
+        border-style: solid;
+        border-color: #f4f4f4 #f4f4f4 #f4f4f4 #d7d7d7; /* Adjust arrow color */
+        z-index: 1; /* Ensure arrow is above ticker items */
+    }
+
+@media only screen and (min-width:1600px) 
+{
+    .announcement-text {
+    margin-bottom: 2%;
+    margin-left:65%;
+    font-size: 120%;
+    font-weight: bold;
+}
+.ticker-wrapper {
+        width: 100%; 
+        overflow: hidden; 
+        position:relative;
+        margin-right:19%;
+    }
+    .announcement-container {
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 1% 10% 1% 13%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block; /* Ensures the container only takes as much width as needed */
+}
+}
+@media only screen and (min-width:1180px) and (max-width:1599px)
+{
+    .announcement-text {
+    margin-bottom: 2%;
+    margin-left:55%;
+    font-size: 120%;
+    font-weight: bold;
+}
+.ticker-wrapper {
+        width: 100%; 
+        overflow: hidden; 
+        position:relative;
+        margin-right:10%;
+    }
+    .announcement-container {
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 1% 12% 1% 4%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block; /* Ensures the container only takes as much width as needed */
+}
+}
+@media only screen and (min-width:800px) and (max-width:1180px)
+{
+    .announcement-text {
+    margin-bottom: 2%;
+    margin-left:70%;
+    font-size: 120%;
+    font-weight: bold;
+}
+.ticker-wrapper {
+        width: 100%; 
+        overflow: hidden; 
+        position:relative;
+        margin-right:10%;
+    }
+    .announcement-container {
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 1% 19% 1% 0%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block; /* Ensures the container only takes as much width as needed */
+}
+
+}
+@media only screen and (min-width:692px) and (max-width:900px)
+{
+    .announcement-text {
+    margin-bottom: 2%;
+    margin-left:70%;
+    font-size: 120%;
+    font-weight: bold;
+}
+.ticker-wrapper {
+        width: 100%; 
+        overflow: hidden; 
+        position:relative;
+        margin-right:5%;
+    }
+    .announcement-container {
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 1% 23% 1% 0%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block; /* Ensures the container only takes as much width as needed */
+}
+}
+@media only screen and (min-width:200px) and (max-width:692px)
+{
+    .announcement-container{
+        display:none;
+    }
+    .ticker-wrapper {
+        width: 100%; 
+        overflow: hidden; 
+        position:relative;
+        margin: 0 !important;
+    }
+
+}
+
+
+    .separator
+    {
+        color:#2d9f7a;
+        font-weight:bold;
+    }
     @media only screen and (max-width: 768px) {
         #ticker {
             height: auto; 
@@ -53,33 +216,23 @@
         transform: translateX(-100%);
     }
 }
-
-.ticker-list {
-    white-space: nowrap;
-    animation: ticker-animation linear infinite;
-}
-
-@keyframes ticker-animation {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 </style>
-
-<div id="ticker">
-    <div class="ticker-wrapper">
-        <ul class="ticker-list">
-            {{ $announcements := where .Site.RegularPages "Type" "announcements" | first 3 }}
-            {{ range $index, $element := $announcements }}
-                <li class="ticker-item">
-                    <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
-                </li>
-                <span class="separator" style="color: navy; font-weight: bold;"> | &nbsp; </span>
-            {{ end }}
-        </ul>
+<div class="ticker-contain">
+    <div id="ticker" class="flex-container">
+        <div class="announcement-container">
+            <p class="announcement-text">Announcements</p>
+        </div>
+        <div class="ticker-wrapper">
+            <ul class="ticker-list">
+                {{ $announcements := where .Site.RegularPages "Type" "announcements" | first 3 }}
+                {{ range $index, $element := $announcements }}
+                    <li class="ticker-item">
+                        <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
+                    </li>
+                    <span class="separator"> | &nbsp; </span>
+                {{ end }}
+            </ul>
+        </div>
     </div>
 </div>
 
