@@ -37,9 +37,25 @@
 {
 	height:500px !important;
 }
+.btn-link
+{
+ background-color: #2d9f7a;
+  color: #fff;
+  padding: 1.3rem 2rem;
+  font-weight:bold;
+}
+.btn-link:hover
+{
+	text-decoration:none;
+	color:white;
+}
+.carousel-control-next .carousel-control-prev{
+	opacity: 1 !important;
+}
 @media (max-width: 767px) {
             .carousel-control-prev, .carousel-control-next {
                 display: none;
+				
             }
         }
   </style> 
@@ -66,7 +82,7 @@
 							<div class="col-md-6 align-self-center text-center text-md-left">
 								<div class="block">
 									<h1 class="font-weight-bold mb-4 font-size-0">{{ .Params.title }}</h1>
-									<a href="{{ .Params.link }}" class="btn btn-main">Read More</a>
+									<a href="{{ .Params.link }}" class="btn btn-link">Read More</a>
 								</div>
 							</div>
 						</div>
