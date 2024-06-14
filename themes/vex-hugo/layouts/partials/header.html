@@ -1,10 +1,146 @@
 {{ $current_page := . }}
 <style>
+    
+    #ticker {
+        overflow: hidden;
+        height: 40px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+    .ticker-wrapper {
+        width: 100%; 
+        overflow: hidden; 
+        position:relative;
+    }
+    .ticker-list {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex; 
+        margin: 0; 
+        justify-content: center; 
+        animation: ticker 15s infinite linear; 
+    }
+    .ticker-item {
+        margin-right: 10px; 
+        font-size: 120%;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .ticker-item a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .ticker-item a:hover {
+        color: blue; 
+    }
+
+.ticker-list {
+    white-space: nowrap;
+    animation: ticker-animation linear infinite;
+}
+
+@keyframes ticker-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.ticker-contain {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f4f4f4; 
+    z-index:0;
+}
+
+.left-bg {
+    background-color: #d7d7d7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%; 
+    z-index: 1; 
+    padding-right:50%;
+}
+
+.container {
+    position: relative;
+    z-index: 1; 
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4; 
+}
+
+.announcement-container {
+    position: relative;
+    background-color: #d7d7d7;
+    padding: 1% 6%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.announcement-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 30px 0 30px 35px;
+    border-style: solid;
+    border-color: #f4f4f4 #f4f4f4 #f4f4f4 #d7d7d7;
+    z-index: 1;
+}
+
+.ticker-wrapper {
+    flex-grow: 1;
+    background-color: #f4f4f4; 
+}
+
+.ticker-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.separator {
+    display: inline-block;
+}
+.announcement-text
+{
+    font-weight:bold;
+    font-size:120%;
+    margin-top:10%;
+    margin-left:-10%;
+}
+@media only screen and (max-width: 600px) {
+    .announcement-container {
+        display: none;
+    }
+    .left-bg{
+        display:none;
+    }
+}
     *
     {
         font-family: 'Titillium Web', sans-serif, Source Sans Pro, Helvetica Neue, Helvetica, Arial,sans-serif !important;
     }
     body[data-current-page="index"] .breadcrumb-div {
+    display: none;
+}
+body:not([data-current-page="index"]) .ticker-contain {
     display: none;
 }
   @media only screen and (min-width: 200px) and (max-width: 1200px) 
@@ -95,7 +231,7 @@
     padding: 0; 
     margin: 0; 
     display: flex; 
-    margin-left:25%;
+    margin-left:18%;
     padding-bottom: 0.5%;
 }
 
@@ -128,8 +264,6 @@
 
 
 }
-
-
 
 </style>
 
@@ -181,7 +315,34 @@
     </div>
     
     </nav>
+   
   </div>
+  <div class="ticker-contain">
+    <div class="left-bg"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div id="ticker" class="flex-container">
+                    <div class="announcement-container">
+                        <p class="announcement-text">Announcements</p>
+                    </div>
+                    <div class="ticker-wrapper">
+                        <ul class="ticker-list">
+                            {{ $announcements := where .Site.RegularPages "Type" "announcements" | first 3 }}
+                            {{ range $index, $element := $announcements }}
+                                <li class="ticker-item">
+                                    <a href="{{ $element.Params.link }}">{{ $element.Params.title }}</a>
+                                </li>
+                                <span class="separator"> | &nbsp; </span>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
   <div class="breadcrumb-div">
           <nav aria-label="breadcrumb-nav">
             <ol class="breadcrumb-list">
@@ -192,11 +353,56 @@
     </div>
 </header>
 <script>
+
+
     document.addEventListener('DOMContentLoaded', function() {
         var path = window.location.pathname;
         if (path === "/" || path === "/index.html" || path === "") {
             document.body.setAttribute('data-current-page', "index");
         }
     });
-</script>
+
+    function getBrowser() {
+     const agent = navigator.userAgent.toLowerCase();
+     if (agent.indexOf('firefox') !== -1) {
+         return 'firefox';
+     } else {
+         return 'other';
+     }
+ }
+ 
+ function isMobile() {
+     return /Mobi|Android/i.test(navigator.userAgent);
+ }
+ 
+ function Marquee(tickerSelector) {
+     const browser = getBrowser();
+     const mobile = isMobile();
+     let speed;
+ 
+     if (mobile) {
+         speed = 70;
+     } else {
+         speed = 40;
+     }
+ 
+     const ticker = document.querySelector(tickerSelector);
+     const list = ticker.querySelector('.ticker-list');
+     const clone = document.createElement('ul');
+     
+     clone.classList.add('ticker-list');
+     clone.innerHTML = list.innerHTML; // Clone the list's content
+ 
+     list.appendChild(clone); // Clone the list for seamless scrolling
+ 
+     const contentWidth = list.scrollWidth / 2; // Width of the original list
+ 
+     list.style.animationDuration = `${contentWidth / speed}s`;
+ }
+ 
+ window.addEventListener('load', function() {
+     Marquee('#ticker'); // Adjust speed is determined within the function
+ });
+ </script>
+     
 <!-- /navigation -->
