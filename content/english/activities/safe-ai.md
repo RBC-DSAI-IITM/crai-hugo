@@ -4,7 +4,7 @@ title: "AI & Safety"
 label: "Check Features"
 link: "#/"
 reftags: ["safe-ai"]
-weight: 2
+weight: 3
 
 ---
 

@@ -4,7 +4,7 @@ title: "Making AI understandable"
 label: "Check Features"
 link: "#/"
 reftags: ["making-ai-understandable"]
-weight: 1
+weight: 2
 ---
 
 To focus on making AI more understandable and interpretable through techniques on Explainable AI, Interpretable AI and human-in-the-loop learning.
