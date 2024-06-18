@@ -114,9 +114,7 @@
                   <div class="block">
                     <h1 class="font-weight-bold mb-4 font-size-0">{{ .Params.title | markdownify }}</h1>
                     {{ .Content }}
-                    {{ if .Params.reftags }}
-                      <a href="/tags/{{ index .Params.reftags 0 }}" class="btn btn-link">View Projects</a>
-                    {{ end }}
+                      <a href="/projects/" class="btn btn-link">View Projects</a>
                   </div>
                 </div>
               </div>

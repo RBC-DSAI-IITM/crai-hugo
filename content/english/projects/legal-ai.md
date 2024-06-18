@@ -4,6 +4,7 @@ title: "Legal AI"
 image: "images/legal-ai.jpeg"
 draft: false
 pis: "Balaraman Ravindran (IIT Madras) and Ponnurangam Kumaraguru (IIIT Hyderabad)"
+filters: [ai-and-society]
 ---
 
 The project is being carried out as a collaboration between the Centre for Responsible AI, IIT Madras and <a href="https://precog.iiit.ac.in/index.html" target="_blank">Precog group</a>, <a href="https://iiit.ac.in/" target="_blank">IIIT Hyderabad</a>.

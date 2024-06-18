@@ -2,8 +2,7 @@
 image: "/images/research-themes/ai-and-society.png"
 title: "AI & Society"
 label: "Check Features"
-link: "#/"
-reftags: ["ai-and-society"]
+link: "/ai-and-society"
 weight: 4
 ---
 

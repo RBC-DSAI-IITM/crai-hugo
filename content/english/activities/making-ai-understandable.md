@@ -2,8 +2,7 @@
 image: "/images/research-themes/making-ai-understandable.png"
 title: "Making AI understandable"
 label: "Check Features"
-link: "#/"
-reftags: ["making-ai-understandable"]
+link: ""
 weight: 2
 ---
 

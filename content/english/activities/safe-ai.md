@@ -2,8 +2,7 @@
 image: "/images/research-themes/safe-ai.png"
 title: "AI & Safety"
 label: "Check Features"
-link: "#/"
-reftags: ["safe-ai"]
+link: "/safe-ai"
 weight: 3
 
 ---

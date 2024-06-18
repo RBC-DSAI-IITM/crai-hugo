@@ -10,13 +10,67 @@
   gtag('config', 'G-HW4VEP0VKF');
 </script>
 <style>
-    .heading {
+  .heading {
     padding-bottom: 31px !important;
   }
   .card-item {
     margin-right:1%;
   
 }
+.navig {
+    border: none !important;
+    border-bottom:none !important;
+  }
+  .link-nav:active {
+    border:none !important;
+  }
+  .link-nav {
+    border:none !important;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1170px) {
+    .navnav {
+      text-align: center;
+      padding-bottom: 5%;
+    }
+  }
+  @media only screen and (min-width: 1170px) {
+    #myTabContent {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    #myTab {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .navig {
+      border: none !important;
+      border-bottom: none !important;
+    }
+    .link-nav:active,
+    .link-nav {
+      border: none !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav-tabs {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto !important;
+    }
+    .nav-item {
+      width: 100% !important;
+    }
+    .nav-link {
+      padding: 10px 0 !important;
+      white-space: normal !important;
+      overflow: visible !important;
+      text-overflow: clip !important;
+      
+    }
+
+  }
 </style>
 
 
@@ -29,30 +83,131 @@
           </div>
         </div>
       </div>
+      <ul class="nav nav-tabs navig" id="myTab" role="tablist">
+        <li class="nav-item navnav" role="presentation">
+            <a class="nav-link text-center link-nav active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+        </li>
+        <li class="nav-item navnav" role="presentation">
+            <a class="nav-link text-center link-nav" id="society-tab" data-toggle="tab" href="#society" role="tab" aria-controls="society" aria-selected="false">AI and Society</a>
+        </li>
+        <li class="nav-item navnav" role="presentation">
+            <a class="nav-link text-center link-nav" id="understand-tab" data-toggle="tab" href="#understandable" role="tab" aria-controls="understandable" aria-selected="false">Making AI Understandable</a>
+        </li>
+        <li class="nav-item navnav" role="presentation">
+            <a class="nav-link text-center link-nav" id="safe-tab" data-toggle="tab" href="#safe" role="tab" aria-controls="safe" aria-selected="false">Safe AI</a>
+        </li>
+    </ul>
+      <br>
+      <br>
 
-      <div class="mb-40" style="display: flex; flex-wrap: wrap;">
-        <div class="row">
-          {{ range (where .Site.RegularPages "Section" "projects") }}
-
-          <div class="card mb-3 card-item" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">{{.Params.title}}</h5>
-                  
-                  {{ if .Params.link }}
-                  <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
-                  {{ else }}
-                  <a href="{{ .Permalink  }}" class="btn btn-primary">View</a>
-                  {{ end }}
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+            <div class="mb-40" style="display: flex; flex-wrap: wrap;">
+                <div class="row">
+                    {{ range (where .Site.RegularPages "Section" "projects") }}
+                    <div class="card mb-3 card-item" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{.Params.title}}</h5>
+                                    {{ if .Params.link }}
+                                    <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
+                                    {{ else }}
+                                    <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
                 </div>
-              </div>
             </div>
-          </div>
-          {{ end }}
-</section>
+        </div>
+    
+        <div class="tab-pane fade" id="society" role="tabpanel" aria-labelledby="society-tab">
+            <div class="row">
+                {{ range (where .Site.RegularPages "Section" "projects") }}
+                {{ if in .Params.filters "ai-and-society" }}
+                <div class="card mb-3 card-item" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{.Params.title}}</h5>
+                                {{ if .Params.link }}
+                                <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
+                                {{ else }}
+                                <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    
+        <div class="tab-pane fade" id="understandable" role="tabpanel" aria-labelledby="understand-tab">
+            <div class="row">
+                {{ range (where .Site.RegularPages "Section" "projects") }}
+                {{ if in .Params.filters "making-ai-understandable" }}
+                <div class="card mb-3 card-item" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{.Params.title}}</h5>
+                                {{ if .Params.link }}
+                                <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
+                                {{ else }}
+                                <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    
+        <div class="tab-pane fade" id="safe" role="tabpanel" aria-labelledby="safe-tab">
+            <div class="row">
+                {{ range (where .Site.RegularPages "Section" "projects") }}
+                {{ if in .Params.filters "safe-ai" }}
+                <div class="card mb-3 card-item" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{ .Params.image | absURL }}" class="card-img" alt="Card Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{.Params.title}}</h5>
+                                {{ if .Params.link }}
+                                <a href="{{ .Params.link }}" class="btn btn-primary">View</a>
+                                {{ else }}
+                                <a href="{{ .Permalink }}" class="btn btn-primary">View</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+  </section>
+
+
 
 {{ end }}
+
