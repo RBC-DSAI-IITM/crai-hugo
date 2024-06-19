@@ -32,6 +32,14 @@
       text-align: center;
       padding-bottom: 5%;
     }
+    .tabrow
+    {
+      justify-content:center;
+    }
+    .navig
+    {
+      justify-content:center;
+    }
   }
   @media only screen and (min-width: 1170px) {
     #myTabContent {
@@ -103,7 +111,7 @@
       <div class="tab-content">
         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
             <div class="mb-40" style="display: flex; flex-wrap: wrap;">
-                <div class="row">
+                <div class="row tabrow">
                     {{ range (where .Site.RegularPages "Section" "projects") }}
                     <div class="card mb-3 card-item" style="max-width: 540px;">
                         <div class="row no-gutters">
