@@ -1,5 +1,5 @@
 ---
-title: "On Crises: Crisis Informatics and Large Language Model Alignment"
+title: "Talk: 'On Crises: Crisis Informatics and Large Language Model Alignment' by A. KhudaBukhsh, RIT"
 date: 2024-06-19 10:15:00 +0530
 time: "9.00 AM - 12.00 PM"
 venue: "IIT Madras"

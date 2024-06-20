@@ -1,5 +1,5 @@
 ---
-title: "RBCDSAI Distinguished Fellow Colloquium"
+title: "Talk: 'Building 2-level learning and reasoning systems: Neurosymbolic sequential decision-making' by S. Natarajan, UT Dallas and RBCDSAI Distinguished Fellow"
 date: 2024-06-19 10:15:00 +0530
 time: "9.00 AM - 12.00 PM"
 venue: "IIT Madras"
@@ -23,7 +23,8 @@ draft: false
   transition: all .3s ease-in;
   background-color: #4eadec !important;
 }
-    .link-button .button_text {
+    .link-button .button_text 
+    {
         text-decoration: none; 
         color: black; 
     }
