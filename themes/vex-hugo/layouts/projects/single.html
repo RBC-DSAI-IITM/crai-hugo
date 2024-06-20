@@ -27,18 +27,7 @@
             {{ with .Params.pis }}
             <h4 class="mb-4"><strong>PI(s):</strong> {{ . | markdownify }}</h4>
             {{ end }}
-            <span style="font-size: medium;">Tags: </span>
-            {{ range .Params.tags }}
-            <a href="/tags/{{ . }}" style="text-decoration: none;">
-            <div style="border: 1px solid #ddd; background-color: #ddd; display: inline; padding: 5px; margin: 10px;">
-              <span style="color: black; font-size: medium;"><i class="tf-ion-pricetag"></i> {{ . }}</span>
-            </div>
-            </a>
-            {{ end }}
-            <br><br>
             <div class="content mb-4" style="text-align: justify;">{{.Content}}</div>
-        </div>
-        </div>
     </div>
 </section>
 

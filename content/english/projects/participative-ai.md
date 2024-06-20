@@ -1,14 +1,49 @@
 ---
 
 title: "Participative AI Policy Framework"
-image: "images/AI-shake.JPG"
+image: "images/participatory.png"
 draft: false
 pis: "Balaraman Ravindran (IIT Madras), Harish Guruprasad (IIT Madras), Ameen Jauhar (Vidhi Centre for Legal Policy)"
 filters: [ai-and-society]
 ---
+<style>
+    .link-button
+{
+  padding: .6rem 1.2rem;
+  line-height: 2.1rem;
+  font-size: 1.2rem;
+  color: #000;
+  border: 2px solid transparent;
+  border-radius: .5rem;
+  text-decoration: none;
+  transition: all .3s ease-in;
+  background-color: #4eadec !important;
+}
+    .link-button .button_text 
+    {
+        text-decoration: none; 
+        color: black; 
+    }
+</style>
 
-"Closed-door approach" of AI poses concerns in terms of fairness/bias issues, inaccuracies/glitches, privacy/security issues and explainability/transparency issues. Deploying AI systems and services to crucial sectors with potentially large social impact needs to be built and deployed such that there be no harms to the users and stakeholders. At the same time it is also important there be adequate measures to voice concerns and feedback from the stakeholders/users and it is even more a challenging task to monitor these concerns and incorporate the necessary changes to the AI systems.
+<button class="link-button">
+            <a class="button_text" href="https://vidhilegalpolicy.in/research/participatory-ai-approaches-in-ai-development-and-governance/" target="_blank">View</a>
+        </button>
 
-This project aims to come up with a novel policy framework – <b><i>"Participatory AI"</i></b>, where multiple stakeholders involved in the usage of AI systems/services can come together and contribute to the design and development of the AI system such that it will be impactful to the society in a positive manner.
+<strong>Motivation:</strong>
 
-This project is a crucial step towards democratizing AI and making AI deployability safe, responsible and reliable. Vidhi Centre for Legal Policy, an think tank on public and legal policies, is partnering with CeRAI.
+The paired investigation presented by the Vidhi Centre for Legal Policy (Vidhi) in collaboration with the Centre for Responsible AI (CeRAI) at IIT Madras delineates a participatory model for artificial intelligence (AI) development and governance. 
+
+This model highlights the importance of involving relevant stakeholders in shaping the design, implementation, and oversight of AI systems. By incorporating input from all relevant parties in decision-making processes, this approach empowers affected users to influence the presence and functioning of AI-based systems, thereby fostering fairer and more accountable outcomes.
+
+The aim of this two part series is to establish the need and importance of a participatory approach to AI Governance while grounding it in real world use cases.
+
+
+<strong>Paper 1:</strong>
+
+In this paper, the authors investigate various issues that have cropped up in the recent past when it comes to AI governance and explore viable solutions. By analyzing how beneficial a participatory approach has been in other domains, they propose a framework that integrates these aspects. The decision sieve, as proposed in the paper, aims to foster participation in every decision making process that culminates in a well rounded AI solution.
+
+<strong>Paper 2:</strong>
+
+This paper aims to ground the principles established in Paper  1 in the real world. This was done by analysing two use cases of AI solutions and their governance, with one of them being a largely deployed solution in Facial Recognition Technologies which has been widely discussed and well documented, while the other is a possible future application of a relatively newer AI solution in a critical domain. Through these and more use cases in the future the authors expound and ground the application of the framework proposed in Paper 1.
+
