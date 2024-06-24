@@ -5,6 +5,7 @@ subtitle: "Exploring legal/semantic differences between Western and Indian notio
 image: "https://rbcdsai.iitm.ac.in/images/research/AI-and-Ethics-for-the-Indian-Context.jpg"
 draft: false
 filters: ["ai-and-society"]
+reslink: "https://ioe.iitm.ac.in/project/deployable-ai/"
 pis: "Sudarsan Padmanabhan and Balaraman Ravindran"
 ---
 

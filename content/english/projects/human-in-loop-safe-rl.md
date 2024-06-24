@@ -5,6 +5,7 @@ image: "https://rbcdsai.iitm.ac.in/images/research/humans-in-loop-safe-ai.jpg"
 draft: false
 pis: "Nirav Bhatt <br> **Co-PI:**  Balaraman Ravindran"
 filters: [making-ai-understandable, safe-ai]
+reslink: "https://rbcdsai.iitm.ac.in/projects/human-in-the-loop-for-safe-and-verifiable-reinforcement-learning/"
 ---
 
 One of the main challenges in implementation of RL in real life applications is safety. Particularly, the undesired and harmful behaviour of RL agents involving humans is one of the major safety concerns. Utilizing the human in the RL agent as an active participant has been an active area of research, labelled as, human-in-the-loop RL. In this work, we propose to model human participants as a constraint provider. Humans can provide context specific constraints to ensure safety. This project aims to develop a framework for safe human-in-the-loop RL with human being a constraint provider. The framework will address the following questions:

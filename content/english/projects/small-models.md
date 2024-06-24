@@ -5,33 +5,8 @@ image: "https://www.frontiersin.org/files/Articles/507097/frai-03-00003-HTML/ima
 draft: false
 pis: "Abhishek Ghose, Balaraman Ravindran"
 filters: [making-ai-understandable]
+reslink: "https://arxiv.org/abs/1905.01520"
 ---
-
-<style>
-    .link-button
-{
-  padding: .6rem 1.2rem;
-  line-height: 2.1rem;
-  font-size: 1.2rem;
-  color: #000;
-  border: 2px solid transparent;
-  border-radius: .5rem;
-  text-decoration: none;
-  transition: all .3s ease-in;
-  background-color: #4eadec !important;
-}
-    .link-button .button_text 
-    {
-        text-decoration: none; 
-        color: black; 
-    }
-</style>
-
-<button class="link-button">
-            <a class="button_text" href="https://arxiv.org/abs/1905.01520" target="_blank">View</a>
-        </button>
-
-<strong>Abstract:</strong>
 
 Models often need to be constrained to a certain size for them to be considered interpretable. For example, a decision tree of depth 5 is much easier to understand than one of depth 50. Limiting model size, however, often reduces accuracy. We suggest a practical technique that minimizes this trade-off between interpretability and classification accuracy. This enables an arbitrary learning algorithm to produce highly accurate small-sized models. Our technique identifies the training data distribution to learn from that leads to the highest accuracy for a model of a given size.
 

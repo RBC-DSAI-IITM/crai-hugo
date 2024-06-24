@@ -10,25 +10,58 @@
   gtag('config', 'G-HW4VEP0VKF');
 </script>
 
+<style>
+  .link-button
+{
+padding: .6rem 1.2rem;
+line-height: 2.1rem;
+font-size: 1.2rem;
+color: #000;
+border: 2px solid transparent;
+border-radius: .5rem;
+text-decoration: none;
+transition: all .3s ease-in;
+background-color: #4eadec !important;
+}
+  .link-button .button_text 
+  {
+      text-decoration: none; 
+      color: black; 
+  }
+</style>
+
 
   
 
 <section class="section">
-    
-    <div class="container">
-        <div class="row">
-        <div class="col-md-12 mb-4 mb-md-0">
-            <center><img class="mb-40" src="{{ .Params.image | absURL}}" width="50%" />
-            <h1 class="mb-4">{{ .Title }}</h1>
-            {{ with .Params.subtitle }}
-            <h2>{{ . }}</h2><br>
-            {{ end }}
-            </center>
-            {{ with .Params.pis }}
-            <h4 class="mb-4"><strong>PI(s):</strong> {{ . | markdownify }}</h4>
-            {{ end }}
-            <div class="content mb-4" style="text-align: justify;">{{.Content}}</div>
-    </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 mb-4 mb-md-0">
+              <center>
+                  <img class="mb-40" src="{{ .Params.image | absURL }}" width="50%" />
+                  <h1 class="mb-4">{{ .Title }}</h1>
+                  {{ with .Params.subtitle }}
+                  <h2>{{ . }}</h2><br>
+                  {{ end }}
+              </center>
+              {{ with .Params.pis }}
+              <h4 class="mb-4"><strong>PI(s):</strong> {{ . | markdownify }}</h4>
+              {{ end }}
+              <h2>Description:</h2>
+              <br>
+              <div class="content mb-4" style="text-align: justify;">
+                  {{ .Content }}
+              </div>
+              {{ with .Params.reslink }}
+              <button class="link-button">
+                  <a class="button_text" href="{{ . }}" target="_blank">View</a>
+              </button>
+              <br>
+              <br>
+              {{ end }}
+          </div>
+      </div>
+  </div>
 </section>
 
 {{ end }}
