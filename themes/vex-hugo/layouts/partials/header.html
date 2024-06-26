@@ -367,7 +367,7 @@ body:not([data-current-page="index"]) .ticker-contain {
 </div>
  
 <div class="breadcrumb-div">
-    <div class="container"> <!-- Use container or container-fluid for full-width -->
+    <div class="container"> 
         <div class="row">
             <div class="col">
                 <div class="breadcrumb-contain">
@@ -392,6 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var path = window.location.pathname;
     if (path === "/" || path === "/index.html" || path === "") {
         document.body.setAttribute('data-current-page', "index");
+    }
 });
 
     function getBrowser() {
@@ -423,17 +424,17 @@ document.addEventListener('DOMContentLoaded', function() {
      const clone = document.createElement('ul');
      
      clone.classList.add('ticker-list');
-     clone.innerHTML = list.innerHTML; // Clone the list's content
+     clone.innerHTML = list.innerHTML; 
  
-     list.appendChild(clone); // Clone the list for seamless scrolling
+     list.appendChild(clone); 
  
-     const contentWidth = list.scrollWidth / 2; // Width of the original list
+     const contentWidth = list.scrollWidth / 2; 
  
      list.style.animationDuration = `${contentWidth / speed}s`;
  }
  
  window.addEventListener('load', function() {
-     Marquee('#ticker'); // Adjust speed is determined within the function
+     Marquee('#ticker'); 
  });
  </script>
      
