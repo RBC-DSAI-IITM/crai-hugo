@@ -1,8 +1,10 @@
 ---
 title: "Deception in Reinforced Autonomous Agents: The Unconventional Rabbit Hat Trick in Legislation"
 image: "/images/images.jpeg"
-pis: "Atharvan Dogra, Ameet Deshpande, John Nay, Tanmay Rajpurohit, Ashwin Kalyan, Balaraman Ravindran"
-reslink: "https://arxiv.org/abs/2405.04325"
+researchers: "Atharvan Dogra, Ameet Deshpande, John Nay, Tanmay Rajpurohit, Ashwin Kalyan, Balaraman Ravindran"
+reslinks: ["https://arxiv.org/abs/2405.04325"]
+tags: ["ethics", "explainable-ai", "fintech"]
+reslinktitlse: ["Deception in Reinforced Autonomous Agents: The Unconventional Rabbit Hat Trick in Legislation: arxiv.org"]
 filters: [safe-ai]
 draft: false
 ---

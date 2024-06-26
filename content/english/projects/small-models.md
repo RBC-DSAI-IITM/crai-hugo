@@ -3,9 +3,10 @@
 title: "Interpretability with Accurate Small Models"
 image: "https://www.frontiersin.org/files/Articles/507097/frai-03-00003-HTML/image_m/frai-03-00003-g001.jpg"
 draft: false
-pis: "Abhishek Ghose, Balaraman Ravindran"
+researchers: "Abhishek Ghose, Balaraman Ravindran"
 filters: [making-ai-understandable]
-reslink: "https://arxiv.org/abs/1905.01520"
+reslinks: ["https://arxiv.org/abs/1905.01520"]
+reslinktitles: ["Interpretability with Accurate Small Models: arxiv.org"]
 ---
 
 Models often need to be constrained to a certain size for them to be considered interpretable. For example, a decision tree of depth 5 is much easier to understand than one of depth 50. Limiting model size, however, often reduces accuracy. We suggest a practical technique that minimizes this trade-off between interpretability and classification accuracy. This enables an arbitrary learning algorithm to produce highly accurate small-sized models. Our technique identifies the training data distribution to learn from that leads to the highest accuracy for a model of a given size.

@@ -5,8 +5,10 @@ subtitle: "Exploring legal/semantic differences between Western and Indian notio
 image: "https://rbcdsai.iitm.ac.in/images/research/AI-and-Ethics-for-the-Indian-Context.jpg"
 draft: false
 filters: ["ai-and-society"]
-reslink: "https://ioe.iitm.ac.in/project/deployable-ai/"
-pis: "Sudarsan Padmanabhan and Balaraman Ravindran"
+reslinks: ["https://rbcdsai.iitm.ac.in/projects/ai-and-ethics-for-the-indian-context/"]
+reslinktitles: ["AI and Ethics for the Indian Context: RBCDSAI"]
+tags: ["ethics", "artificial-intelligence", "ai-and-society"]
+researchers: "Sudarsan Padmanabhan and Balaraman Ravindran"
 ---
 
 An ethical framework in the field of AI should not be a mere appendage to its technological aspects. Rather, ethical understanding should be treated as an important aspect of the reasoning and rationalization of the impact of AI on the society. Ethical violations in AI processes, especially in areas such as health, education, financial markets, economy, housing and transportation could result in massive disruptions in the lives of a large number of people on a scale, hitherto, unimagined. In the Indian context, AI is steadily entering various sectors and will soon be ubiquitous. Questions regarding the nature and scope of the impact of AI on the lives of ordinary citizens of India abound. While ethical concerns of AI is an active area of research in Europe, US and elsewhere, given the unique nature of society in India, we would need to initiate research ourselves. Some of the questions that we will address in this project are:

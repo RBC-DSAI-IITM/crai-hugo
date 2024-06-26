@@ -3,9 +3,11 @@
 title: "Hidden Voices"
 image: "images/hidden-voices-banner.png"
 draft: false
-pis: "Balaraman Ravindran (IIT Madras) and Raji Baskaran (Superbloom Studios"
+researchers: "Balaraman Ravindran (IIT Madras) and Raji Baskaran (Superbloom Studios"
 filters: [ai-and-society]
-reslink: "https://hidden-voices.github.io/"
+tags: ["ai-and-society"]
+reslinks: ["https://hidden-voices.github.io/"]
+reslinktitles: ["Hidden Voices: Github"]
 ---
 
 Hidden Voices is an open source project by Robert Bosch Center for Data Science and Artificial Intelligence (RBCDSAI) and SuperBloom Studios with the support of the IIT Madras Alumni Association, created to reduce the gender data gap in Wikipedia. While there are multiple layers of complexity to resolve the nature of equitable representation across all digital platforms, it is an agreeable fact that there is significant value in increasing representation in Wikipedia.

@@ -3,9 +3,11 @@
 title: "Participative AI Policy Framework"
 image: "images/participatory.png"
 draft: false
-reslink: "https://vidhilegalpolicy.in/research/participatory-ai-approaches-in-ai-development-and-governance/"
-pis: "Balaraman Ravindran (IIT Madras), Harish Guruprasad (IIT Madras), Ameen Jauhar (Vidhi Centre for Legal Policy)"
+reslinks: ["https://vidhilegalpolicy.in/research/participatory-ai-approaches-in-ai-development-and-governance/"]
+researchers: "Balaraman Ravindran (IIT Madras), Harish Guruprasad (IIT Madras), Ameen Jauhar (Vidhi Centre for Legal Policy)"
 filters: [ai-and-society]
+tags: ["artificial-intelligence", "responsible-ai"]
+reslinktitles: ["Participative AI Policy Framework: Vidhi Legal"]
 ---
 
 <strong>Motivation:</strong>

@@ -3,9 +3,11 @@
 title: "Paradigms, Interpretable Models, Algorithms for AI-based Human in the Loop Learning"
 image: "https://rbcdsai.iitm.ac.in/images/research/Paradigms-Interpretable-Models-and-Algorithms-for-AI-based-Human-in-the-Loop-Learning.jpg"
 draft: false
-pis: "Arun Rajkumar, Harish Guruprasad and Chandrasekhar L"
+researchers: "Arun Rajkumar, Harish Guruprasad and Chandrasekhar L"
 filters: [making-ai-understandable]
-reslink: "https://ioe.iitm.ac.in/project/deployable-ai/"
+tags: ["human-in-loop", "explainable-ai"]
+reslinks: ["https://ioe.iitm.ac.in/project/deployable-ai/"]
+reslinktitles: ["Paradigms, Interpretable Models, Algorithms for AI-based Human in the Loop Learning: IITM"]
 ---
 
 Artificial intelligence/Data science systems with humans-in-the-loop (HIL) are increasing by the day with applications covering a broad spectrum of domains ranging from education to e-commerce. AI for HIL systems involves two kinds of continual learners namely humans and computers. The success of these systems critically depends on the interaction between these two learners. Towards this, we propose to investigate the following fundamental questions in AI-based HIL systems.
