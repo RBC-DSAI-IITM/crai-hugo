@@ -5,7 +5,7 @@ image: "https://itihaasa.com/public/images/KrishnanNarayanan.jpg"
 
 designation : PhD Student
 weblink:
-affiliation:  Dept. of Computer Science, IIT Madras 
+affiliation: Dept. of HSS / DSAI, IIT Madras
 
 type: researcher
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "InSaAF: Incorporating Safety through Accuracy and Fairness | Are LLMs ready for the Indian Legal Domain?"
 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvUEKp9wkb2ANIaV0dxWdR4tQezjTipXkPQA&s"
-researchers: "Yogesh Tripathi, Raghav Donakanti, Sahil Girhepuje, Ishan Kavathekar, Bhaskara Hanuma Vedula, Gokul S Krishnan, Shreya Goyal, Anmol Goel, Balaraman Ravindran, Ponnurangam Kumaraguru"
+researchers: ["Yogesh Tripathi", "Raghav Donakanti", "Sahil Girhepuje", "Ishan Kavathekar", "Bhaskara Hanuma Vedula", "Gokul S Krishnan", "Shreya Goyal", "Anmol Goel", "Balaraman Ravindran", "Ponnurangam Kumaraguru"]
 filters: [ai-and-society]
 reslinks: ["https://arxiv.org/abs/2402.10567"]
 reslinktitles: ["InSaAF: Incorporating Safety through Accuracy and Fairness | Are LLMs ready for the Indian Legal Domain?: Arxiv.org"]

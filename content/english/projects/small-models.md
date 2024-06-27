@@ -3,7 +3,7 @@
 title: "Interpretability with Accurate Small Models"
 image: "https://www.frontiersin.org/files/Articles/507097/frai-03-00003-HTML/image_m/frai-03-00003-g001.jpg"
 draft: false
-researchers: "Abhishek Ghose, Balaraman Ravindran"
+researchers: ["Abhishek Ghose, Balaraman Ravindran"]
 filters: [making-ai-understandable]
 reslinks: ["https://arxiv.org/abs/1905.01520"]
 reslinktitles: ["Interpretability with Accurate Small Models: arxiv.org"]

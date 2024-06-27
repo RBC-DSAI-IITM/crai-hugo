@@ -3,7 +3,7 @@
 title: "Hidden Voices"
 image: "images/hidden-voices-banner.png"
 draft: false
-researchers: "Balaraman Ravindran (IIT Madras) and Raji Baskaran (Superbloom Studios"
+researchers: ["Balaraman Ravindran (IIT Madras)", "Raji Baskaran (Superbloom Studios"]
 filters: [ai-and-society]
 tags: ["ai-and-society"]
 reslinks: ["https://hidden-voices.github.io/"]

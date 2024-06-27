@@ -3,7 +3,7 @@
 title: "A Causal Approach for Unfair Edge Prioritization and Discrimination Removal"
 image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREH_-qk6MhBc5ThPIv922G6hxDtvxAdPn5qg&s"
 draft: false
-researchers: "Pavan Ravishankar, Pranshu Malviya, Balaraman Ravindran"
+researchers: ["Pavan Ravishankar", "Pranshu Malviya", "Balaraman Ravindran"]
 filters: [ai-and-society]
 reslinks: ["https://arxiv.org/abs/2111.14348"]
 reslinktitles: ["A Causal Approach for Unfair Edge Prioritization and Discrimination Removal: arxiv.org"]

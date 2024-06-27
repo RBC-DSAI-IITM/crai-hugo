@@ -3,7 +3,7 @@
 title: "Responsible AI Policy Study"
 image: "images/AI-shake.JPG"
 draft: false
-researchers: "Balaraman Ravindran"
+researchers: ["Balaraman Ravindran"]
 reslinks: ["https://indiaai.gov.in/documents/pdf/NationalStrategy-for-AI-Discussion-Paper.pdf"]
 filters: [ai-and-society]
 tags: ["artificial-intelligence", "responsible-ai"]

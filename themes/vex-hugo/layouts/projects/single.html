@@ -61,7 +61,7 @@
 
 
   
-<section class="section">
+<section class="section" style="position:relative; z-index: 0 !important;">
   <div class="container">
       <div class="row">
           <div class="col-md-12 mb-4 mb-md-0">
@@ -72,29 +72,43 @@
                   <h2>{{ . }}</h2><br>
                   {{ end }}
               </center>
+              <br>
+              <h2 class="mb-4"><strong>Researcher(s):</strong> </h2>
+              {{ if .Params.researchimg}}
+              <img src ="{{ .Params.researchimg | absURL }}" width="50%">
+              <br>
+              {{end}}
               {{ with .Params.researchers }}
-              <h4 class="mb-4"><strong>Researcher(s):</strong> {{ . | markdownify }}</h4>
-              {{ end }}
+              <ol class="research-list">
+                {{ range . }}
+                  <li>{{ . | markdownify }}</li>
+                {{ end }}
+              </ol>
+            {{ end }}
+            {{ if .Params.coresearchers }}
+              <ol>
+                {{ range .Params.coresearchers }}
+                  <li>{{ . | markdownify }}</li>
+                {{ end }}
+              </ol>
+            {{ end }}
+            <br>
               <h2>Description:</h2>
               <br>
               <div class="content mb-4" style="text-align: justify;">
                   {{ .Content }}
               </div>
-                <div class="dropdown">
-                  <button onclick="toggleDropdown()" class="dropbtn">
-                    View <span class="arrow">&#9662;</span>
-                  </button>
-                  <div id="myDropdown" class="dropdown-content">
-                    {{ if and (isset .Params "reslinks") (isset .Params "reslinktitles") }}
-                      {{ range $index, $reslink := .Params.reslinks }}
-                        {{ $reslinktitle := index $.Params.reslinktitles $index }}
-                        <a href="{{ $reslink }}" target="_blank">{{ $reslinktitle }}</a>
-                      {{ end }}
-                    {{ else }}
-                      <p>No links available</p>
-                    {{ end }}
-                  </div>
-                </div>
+              <br>
+              {{ if and (.Params.reslinks) (.Params.reslinktitles) }}
+              <h2>Links:</h2>
+              <br>
+              <ol>
+                {{ range $index, $reslink := .Params.reslinks }}
+                  {{ $reslinktitle := index $.Params.reslinktitles $index }}
+                  <li><a href="{{ $reslink }}">{{ $reslinktitle }}</a></li>
+                {{ end }}
+              </ol>
+            {{ end }}
               <br>
               <br>
           </div>
