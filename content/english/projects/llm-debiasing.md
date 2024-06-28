@@ -3,7 +3,7 @@ title: "LLM agents for debiasing and explanations"
 image: "/images/debiasing.png"
 researchers: ["C. Subramaniam"]
 filters: [making-ai-understandable]
-tags: ["llm agents", "safe ai"]
+tags: ["llm-agents", "safe-ai"]
 draft: false
 ---
 
