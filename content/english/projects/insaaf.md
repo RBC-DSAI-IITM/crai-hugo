@@ -5,7 +5,7 @@ researchers: ["Yogesh Tripathi", "Raghav Donakanti", "Sahil Girhepuje", "Ishan K
 filters: [ai-and-society]
 reslinks: ["https://arxiv.org/abs/2402.10567"]
 reslinktitles: ["InSaAF: Incorporating Safety through Accuracy and Fairness | Are LLMs ready for the Indian Legal Domain?: Arxiv.org"]
-tags: ["making-ai-understandable"]
+tags: ["ai-and-society", "safe-ai"]
 draft: false
 ---
 

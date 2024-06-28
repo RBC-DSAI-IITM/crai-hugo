@@ -3,6 +3,7 @@ title: "On the Interpretability of Attention Networks"
 image: "/images/blackbox.webp"
 researchers: ["Lakshmi Narayan Pandey", "Rahul Vashisht", "Harish G. Ramaswamy"]
 filters: [making-ai-understandable]
+tags: ["making-ai-understandable"]
 reslinks: ["https://proceedings.mlr.press/v189/pandey23a.html"]
 reslinktitles: ["On the Interpretability of Attention Networks: Proceedings.mlr"]
 draft: false

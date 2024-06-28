@@ -4,6 +4,7 @@ title: "Closing the Gap in the Trade-off between Fair Representations and Accura
 image: "https://arxiv.org/html/2404.09664v1/extracted/5536997/AuthorKit24/CameraReady/imgs/tradeoff_plots/hldc_10pc_tradeoff.png"
 draft: false
 reslinks: ["https://arxiv.org/html/2404.09664v1"]
+tags: ["ai-and-society"]
 reslinktitles: ["Closing the Gap in the Trade-off between Fair Representations and Accuracy - arxiv.org"]
 researchers: ["Biswajit Rout", "Ananya B. Sai", "Arun Rajkumar"]
 filters: [ai-and-society]

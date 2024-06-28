@@ -6,6 +6,7 @@ draft: false
 researchers: ["Abhishek Ghose, Balaraman Ravindran"]
 filters: [making-ai-understandable]
 reslinks: ["https://arxiv.org/abs/1905.01520"]
+tags: ["making-ai-understandable"]
 reslinktitles: ["Interpretability with Accurate Small Models: arxiv.org"]
 ---
 
