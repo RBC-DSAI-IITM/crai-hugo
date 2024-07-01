@@ -229,11 +229,29 @@ body[data-current-page="index"] .breadcrumb-div {
     display: none;
 }
 
+body[data-current-page="tags"] .breadcrumb-div {
+    display: none;
+}
+body:not([data-current-page="tags"]) .breadcrumb-tags-div {
+    display:none;
+}
+
+body[data-current-page=""]
+
 .breadcrumb
 {
     background-color:transparent !important;
 }
-.breadcrumb-div
+.breadcrumb-div 
+  {
+    background-color: #f4f4f4;
+    padding-top:0.5%;
+    position: relative;
+    z-index: 0 !important;
+
+  }
+
+  .breadcrumb-tags-div
   {
     background-color: #f4f4f4;
     padding-top:0.5%;
@@ -247,6 +265,7 @@ body[data-current-page="index"] .breadcrumb-div {
     margin: 0; 
     display: flex; 
     padding-bottom: 0.5%;
+    background-color: transparent !important;
 }
 
 .breadcrumb-item {
@@ -271,7 +290,7 @@ body[data-current-page="index"] .breadcrumb-div {
 }
 @media only screen and (min-width:200px) and (max-width:692px)
 {
-    .breadcrumb-list {
+    .breadcrumb-list .breadcrumb-tags-div {
     list-style: none; 
     padding: 0; 
     margin: 0; 
@@ -370,6 +389,24 @@ body[data-current-page="index"] .breadcrumb-div {
     </div>
 </div>
 
+<div class="breadcrumb-tags-div">
+    <div class="container"> 
+        <div class="row">
+            <div class="col">
+                <div class="breadcrumb-contain">
+                    <nav aria-label="breadcrumb-nav">
+                        <ol class="breadcrumb-list breadcrumb">
+                            <li class="breadcrumb-item"><a href="/" style="text-decoration: none !important">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/projects" style="text-decoration: none !important">Projects</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="breadcrumb-div">
     <div class="container"> 
         <div class="row">
@@ -393,6 +430,8 @@ body[data-current-page="index"] .breadcrumb-div {
         </div>
     </div>
 </div>
+
+
  
 
 
@@ -404,6 +443,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var path = window.location.pathname;
     if (path === "/" || path === "/index.html" || path === "") {
         document.body.setAttribute('data-current-page', "index");
+    }
+
+    var pathParts = path.split('/').filter(function(part) { return part !== ""; });
+    if (pathParts.length > 0 && pathParts[0] === "tags") {
+        document.body.setAttribute('data-current-page', "tags");
     }
 });
 
