@@ -73,26 +73,33 @@
                   {{ end }}
               </center>
               <br>
-              <h2 class="mb-4"><strong>Researcher(s):</strong> </h2>
-              {{ if .Params.researchimg}}
-              <img src ="{{ .Params.researchimg | absURL }}" width="50%">
+              <h2 class="mb-4"><strong>Researcher(s):</strong></h2>
+
+              {{ if .Params.researchimg }}
+              <img src="{{ .Params.researchimg | absURL }}" width="50%">
               <br>
-              {{end}}
+              {{ end }}
+              
               {{ with .Params.researchers }}
               <ol class="research-list">
                 {{ range . }}
-                  <li>{{ . | markdownify }}</li>
+                <li>{{ . | markdownify }}</li>
                 {{ end }}
               </ol>
-            {{ end }}
-            {{ if .Params.coresearchers }}
-              <ol>
-                {{ range .Params.coresearchers }}
-                  <li>{{ . | markdownify }}</li>
+              {{ end }}
+              
+              {{ if .Params.collaborators }}
+              <h2>Collaborators:</h2>
+              <ul>
+                {{ range .Params.collaborators }}
+                <li>
+                  <img src="{{ . | absURL }}" alt="Collaborator Logo">
+                </li>
                 {{ end }}
-              </ol>
-            {{ end }}
-            <br>
+              </ul>
+              {{ end }}
+              <br>
+
               <h2>Description:</h2>
               <br>
               <div class="content mb-4" style="text-align: justify;">
