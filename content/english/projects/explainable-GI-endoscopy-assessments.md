@@ -5,8 +5,6 @@ image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.
 draft: false
 filters: [making-ai-understandable, safe-ai]
 researchers: ["Dr. Arun Rajkumar", "Dr. Chandrashekar Lakshmi Narayanan (RBCDSAI, IITM)", "Nithin Shivashankar (MIMYK)", Varun Seshadrinathan (MIMYK)"]
-reslinks: [""]
-reslinktitles: [""]
 tags: ["explainable-ai", "healthcare"]
 ---
 
