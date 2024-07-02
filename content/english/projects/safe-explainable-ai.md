@@ -1,11 +1,37 @@
 ---
 
-title: "Safe Transfer learning among different dynamical agents"
+title: "Safe and Explainable RL"
 image: "images/safe.png"
 draft: false
 researchers: ["Returaj Burnwal", "Anirban Santara", "Nirav P. Bhatt", "Balaraman Ravindran", "Gaurav Aggarwal"]
-filters: [ai-and-society]
+filters: [safe-ai]
 tags: ["safe-ai", "reinforcement-learning"]
+reslinks: ["https://arxiv.org/abs/2305.19111"]
+reslinktitles: ["Safe Transfer learning among different dynamical agents: Arxiv"]
 ---
+Responsible AI Adherence of Language Models
 
-Model predictive control (MPC) is a popular approach for trajectory optimization in practical robotics applications. MPC policies can optimize trajectory parameters under kinodynamic and safety constraints and provide guarantees on safety, optimality, generalizability, interpretability, and explainability. However, some behaviors are complex and it is difficult to hand-craft an MPC objective function. A special class of MPC policies called Learnable-MPC addresses this difficulty using imitation learning from expert demonstrations. However, they require the demonstrator and the imitator agents to be identical which is hard to satisfy in many real world applications of robotics. In this paper, we address the practical problem of training Learnable-MPC policies when the demonstrator and the imitator do not share the same dynamics and their state spaces may have a partial overlap. We propose a novel approach that uses a generative adversarial network (GAN) to minimize the Jensen-Shannon divergence between the state-trajectory distributions of the demonstrator and the imitator. We evaluate our approach on a variety of simulated robotics tasks of DeepMind Control suite and demonstrate the efficacy of our approach at learning the demonstrator's behavior without having to copy their actions. 
+Major factors affecting trustworthiness of Language Models
+
+- Performance
+- Explainability
+- Fairness and Bias
+- Privacy & Security
+
+We intend to explore and utilize the Performance, Fairness & Bias aspects of Language Models to quantify adherence of Responsible AI (RAI)
+
+Motivation: Why Safe and Explainable RL ?
+
+- Safety: In real-world applications, like surgical robotics or self driving cars deploying models without safety considerations can lead to undesirable consequences. Safe RL ensures that the learned policies adhere to certain constraints, preventing harmful actions.
+
+- Explainability: Understanding the decisions made by RL models is crucial for users, stakeholders, and regulators. Explainable RL helps build trust in the system by providing clear insights into why a particular decision or action was taken.
+
+- Legal and Ethical Compliance: Many industries are subject to regulations and ethical standards. Safe and explainable RL helps in complying with these requirements, avoiding legal issues and ensuring responsible AI deployment.
+
+Notion of Safety
+
+- Incorporating safety constraints in the policy model.
+- Guidance from the safe expert policy.
+- Insufficient information on specific part of state-space in offline RL raises deployment risks, as the safety status of these states remains uncertain.
+
+

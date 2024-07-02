@@ -30,6 +30,8 @@ Applications
 
 Antenna tilt optimisation: MARL agent is deployed for achieving the optimal tilt of antenna across all nodes in a 5G network considering multiple operation constraints. The trajectory of the antenna achieved using the MARL agent is to be explained.
 
+<div style="display:flex; justify-content:center">
 <img src="/images/multiagent.png">
+</div>
 
 Intent management: Building trustworthiness of the MARL agent deployed for optimal resource allocation that will maximise the intent utility function. 

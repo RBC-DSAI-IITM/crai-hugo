@@ -1,11 +1,11 @@
 ---
 title: "Krishna Pillutla"
 date: 2022-05-01T11:30:00+05:30
-image: "https://krishnap25.github.io/images/pic2.jpg"
+image: "/images/people/principal-investigators/krishna.png"
 
 designation : Assistant Professor
 weblink: https://krishnap25.github.io/
-affiliation:  Dept. of Computer Science, IIT Madras 
+affiliation:  Dept. of DSAI, IIT Madras 
 
 type: core
 draft: false

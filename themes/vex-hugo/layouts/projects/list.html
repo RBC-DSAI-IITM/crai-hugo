@@ -142,7 +142,7 @@
                     <br>
                     {{ $counter := 0 }}
                     {{ range .Params.tags }}
-                        {{ if eq (mod $counter 2) 0 }}
+                        {{ if eq (mod $counter 1) 0 }}
                             <div style="clear: both;"></div>
                         {{ end }}
                         <a href="/tags/{{ . }}" style="text-decoration: none;">

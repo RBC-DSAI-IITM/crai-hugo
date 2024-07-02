@@ -57,6 +57,43 @@
 .show {
     display: block;
 }
+
+.tags-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content:center;
+}
+
+.tag-link {
+    text-decoration: none;
+}
+
+.divtags {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    display: inline-block;
+    padding: 0.5%;
+    margin: 0;
+}
+
+.tag-text {
+    color: black;
+    font-size: medium;
+}
+.subtitle-line {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin: 0; 
+}
+.collab_logo {
+    height: 10%;
+    width: 10%;
+    border: 1px solid #000; 
+}
+
 </style>
 
 
@@ -66,20 +103,27 @@
       <div class="row">
           <div class="col-md-12 mb-4 mb-md-0">
               <center>
-                  <img class="mb-40" src="{{ .Params.image | absURL }}" width="50%" />
-                  <h1 class="mb-4">{{ .Title }}</h1>
-                  {{ with .Params.subtitle }}
-                  <h2>{{ . }}</h2><br>
-                  {{ end }}
+                <img class="mb-40" src="{{ .Params.image | absURL }}" width="50%" />
+                <h1 class="mb-4">{{ .Title }}</h1>
+                  <div class="tags-box">
+                    {{ range .Params.tags }}
+                        <a href="/tags/{{ . }}" class="tag-link">
+                            <div class="divtags">
+                                <span class="tag-text"><i class="tf-ion-pricetag"></i> {{ . }}</span>
+                            </div>
+                        </a>
+                    {{ end }}
+                </div>
               </center>
               <br>
-              <h2 class="mb-4"><strong>Researcher(s):</strong></h2>
+              <hr class="subtitle-line">
+              <br>
 
+              <h2 class="mb-4"><strong>Researcher(s):</strong></h2>
               {{ if .Params.researchimg }}
               <img src="{{ .Params.researchimg | absURL }}" width="50%">
               <br>
               {{ end }}
-              
               {{ with .Params.researchers }}
               <ol class="research-list">
                 {{ range . }}
@@ -87,24 +131,30 @@
                 {{ end }}
               </ol>
               {{ end }}
+              <hr class="subtitle-line">
               
+              <br>
               {{ if .Params.collaborators }}
               <h2>Collaborators:</h2>
+              <br>
               <ul>
                 {{ range .Params.collaborators }}
                 <li>
-                  <img src="{{ . | absURL }}" alt="Collaborator Logo">
+                  <img class="collab_logo" src="{{ . | absURL }}" alt="Collaborator Logo">
                 </li>
                 {{ end }}
               </ul>
-              {{ end }}
+              <hr class="subtitle-line">
               <br>
-
+              {{ end }}
+              
               <h2>Description:</h2>
               <br>
               <div class="content mb-4" style="text-align: justify;">
                   {{ .Content }}
               </div>
+              <br>
+              <hr class="subtitle-line">
               <br>
               {{ if and (.Params.reslinks) (.Params.reslinktitles) }}
               <h2>Links:</h2>
