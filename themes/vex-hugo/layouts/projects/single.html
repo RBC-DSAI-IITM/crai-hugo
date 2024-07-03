@@ -99,8 +99,8 @@
 
   
 <section class="section" style="position:relative; z-index: 0 !important;">
-  <div class="container">
-      <div class="row">
+  <div class="container" style="border: 1px solid black;">
+      <div class="row" style="margin-top:5%;">
           <div class="col-md-12 mb-4 mb-md-0">
               <center>
                 <img class="mb-40" src="{{ .Params.image | absURL }}" width="50%" />
@@ -123,7 +123,9 @@
               {{ if .Params.researchimg }}
               <img src="{{ .Params.researchimg | absURL }}" width="50%">
               <br>
+              <br>
               {{ end }}
+              
               {{ with .Params.researchers }}
               <ol class="research-list">
                 {{ range . }}
@@ -139,11 +141,12 @@
               <br>
               <ul>
                 {{ range .Params.collaborators }}
-                <li>
+                <li style="margin-bottom: 2%;">
                   <img class="collab_logo" src="{{ . | absURL }}" alt="Collaborator Logo">
                 </li>
                 {{ end }}
               </ul>
+              <br>
               <hr class="subtitle-line">
               <br>
               {{ end }}

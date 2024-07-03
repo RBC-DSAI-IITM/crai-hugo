@@ -3,9 +3,9 @@
 title: "Explainable RL Using Causal Inference"
 image: "https://miro.medium.com/v2/resize:fit:2000/0*WC4l7u90TsKs_eXj.png"
 draft: false
-researchers: ["Devika Jay", "Jayavarma S", "K.S Mohan Kumar", "Kadu Ankush", "Clifford F", "Kunta Akranth Reddy"]
+researchers: ["Devika Jay"]
 filters: ["making-ai-understandable"]
-tags: ["making-ai-understandable"]
+tags: ["making-ai-understandable", "reinforcement-learning"]
 collaborators: ["images/ericsson.png"]
 ---
 

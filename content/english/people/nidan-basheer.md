@@ -7,7 +7,7 @@ image: "/images/people/staff/nidan-basheer.jpg"
 designation : "Research intern"
 affiliation: CeRAI, IIT Madras
 
-type: staff
+type: researcher
 draft: false
 ---
 

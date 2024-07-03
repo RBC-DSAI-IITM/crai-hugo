@@ -7,6 +7,7 @@ reslinks: ["https://vidhilegalpolicy.in/research/participatory-ai-approaches-in-
 researchers: ["Balaraman Ravindran (IIT Madras)", "Harish Guruprasad (IIT Madras)", "Ameen Jauhar (Vidhi Centre for Legal Policy)"]
 filters: [ai-and-society]
 tags: ["artificial-intelligence", "responsible-ai"]
+collaborators: ["https://vidhilegalpolicy.in/wp-content/uploads/2020/07/Vector.svg"]
 reslinktitles: ["Participative AI Policy Framework: Vidhi Legal"]
 ---
 

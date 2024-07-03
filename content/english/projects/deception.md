@@ -5,6 +5,7 @@ researchimg: "/images/deception4.png"
 reslinks: ["https://arxiv.org/abs/2405.04325"]
 tags: ["ethics", "explainable-ai"]
 reslinktitles: ["Deception in Reinforced Autonomous Agents: The Unconventional Rabbit Hat Trick in Legislation: arxiv.org"]
+collaborators: ["/images/princeton.png", "/images/stanford.webp"]
 filters: [safe-ai]
 draft: false
 ---

@@ -7,7 +7,7 @@ image: "/images/people/staff/santhomjjoseph.jpeg"
 designation : "Research intern"
 affiliation: CeRAI, IIT Madras
 
-type: staff
+type: researcher
 draft: false
 ---
 
