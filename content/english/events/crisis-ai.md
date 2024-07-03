@@ -3,7 +3,7 @@ title: "Talk: 'On Crises: Crisis Informatics and Large Language Model Alignment'
 date: 2024-06-19 10:15:00 +0530
 time: "9.00 AM - 12.00 PM"
 venue: "IIT Madras"
-image: "https://imageio.forbes.com/specials-images/imageserve/63bdffc05989c30c33964a41/Artificial-Intelligence/960x0.png?format=png&width=960"
+image: "/images/llm.webp"
 tags: []
 link: "/events/crisis-ai"
 draft: false
