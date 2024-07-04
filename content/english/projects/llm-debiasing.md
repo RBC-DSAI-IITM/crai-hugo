@@ -3,7 +3,7 @@ title: "Responsible Design of LLM-Based Systems"
 image: "/images/llm-based.png"
 researchers: [<a href="https://cerai.iitm.ac.in/people/chandrasekar-subramanian/">Chandrasekar Subramanian (Research Advisor)</a>]
 filters: [making-ai-understandable]
-tags: ["llm-agents", "safe-ai"]
+tags: ["llm-agents", "safe-ai", "llm"]
 draft: false
 reslinks: ["https://github.com/alphasecio/langchain-examples/tree/main/news-summary", "https://github.com/Significant-Gravitas/AutoGPT", "https://www.crewai.com/", "https://openai.com/index/our-approach-to-alignment-research/"]
 reslinktitles: ["Langchain News Summary: Code Repository", "AutoGPT: Code Repository", "Crew AI", "OpenAI: Our approach to alignment research"]
