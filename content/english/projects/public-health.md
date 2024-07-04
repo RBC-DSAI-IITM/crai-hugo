@@ -2,12 +2,7 @@
 title: "Restless Multi-armed Bandits for Public Health – Fairness in Multilingual Settings"
 image: "images/agents.png"
 draft: false
-researchers:
-  - "Chandrasekar Subramanian (Research Advisor)"
-  - "Gokul Krishnan (Research Scientist)"
-  - "Ambreesh Parthasarathy (Pre-Doc)"
-  - "Kalyan Nadimpalli (Pre-Doc)"
-  - "Prof. B. Ravindran (Professor and Head)"
+researchers: [<a href="https://cerai.iitm.ac.in/people/chandrasekar-subramanian/">Chandrasekar Subramanian (Research Advisor)</a>, <a href="https://cerai.iitm.ac.in/people/gokul-s-krishnan/">Gokul Krishnan (Research Scientist)</a>,<a href="https://cerai.iitm.ac.in/people/ambreesh-parthasarathy/">Ambreesh Parthasarathy (Pre-doc)</a>, <a href="https://rbcdsai.iitm.ac.in/people/kalyan-varma-nadimpalli/">Kalyan Nadimpalli (Pre-doc), <a href="https://cerai.iitm.ac.in/people/balaraman-ravindran/">Prof. B. Ravindran (Professor and Head)</a> ]
 collaborators: ["/images/google-research.png"]
 filters:
   - "ai-and-society"

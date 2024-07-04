@@ -1,12 +1,12 @@
 ---
-title: "LLM agents for debiasing and explanations"
+title: "Responsible Design of LLM-Based Systems"
 image: "/images/llm-based.png"
-researchers: ["Chandrasekar Subramaniam - Research Advisor"]
+researchers: [<a href="https://cerai.iitm.ac.in/people/chandrasekar-subramanian/">Chandrasekar Subramanian (Research Advisor)</a>]
 filters: [making-ai-understandable]
 tags: ["llm-agents", "safe-ai"]
 draft: false
-reslinks: ["https://openai.com/index/our-approach-to-alignment-research/"]
-reslinktitles: ["OpenAI: Our approach to alignment research"]
+reslinks: ["https://github.com/alphasecio/langchain-examples/tree/main/news-summary", "https://github.com/Significant-Gravitas/AutoGPT", "https://www.crewai.com/", "https://openai.com/index/our-approach-to-alignment-research/"]
+reslinktitles: ["Langchain News Summary: Code Repository", "AutoGPT: Code Repository", "Crew AI", "OpenAI: Our approach to alignment research"]
 ---
 
 <style>
@@ -36,7 +36,7 @@ The alternative paradigm is to think of LLMs as components in a larger system wh
 
 One way to define “LLM systems” or “LLM-based systems” is as systems where one or more LLMs perform crucial reasoning tasks; this includes LLM-based autonomous agents. This is in contrast to the underlying standalone LLMs themselves, such as ChatGPT or Llama. 
 
-For example, this is a simple example of a news summarization system that takes a topic, searches it on Google News and then summarizes each result into a snippet using an LLM.  LLM systems can also be much more complex; for example, AutoGPT is a tool that uses LLM models for autonomous goal completion on complex tasks. Frameworks such as CrewAI enable creating multi-agent collaborative LLM systems. 
+For example, <a href="https://github.com/alphasecio/langchain-examples/tree/main/news-summary">this</a> is a simple example of a news summarization system that takes a topic, searches it on Google News and then summarizes each result into a snippet using an LLM.  LLM systems can also be much more complex; for example, <a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT</a> is a tool that uses LLM models for autonomous goal completion on complex tasks. Frameworks such as <a href="https://www.crewai.com/">CrewAI</a> enable creating multi-agent collaborative LLM systems. 
 
 LLM systems can also have memory and access to tools. This allows them to interact with the outside world. For example, Retrieval augmented generation (RAG) is a popular design pattern for LLM systems where an LLM’s context is augmented with relevant data retrieved from external sources so as to provide more accurate and up-to-date responses. As LLMs get widely deployed into various systems, architectural patterns have started to emerge; an example of this is “self-reflection”, which this post on X by Andrew Ng talks more about. 
 
