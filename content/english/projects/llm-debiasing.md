@@ -1,10 +1,12 @@
 ---
 title: "LLM agents for debiasing and explanations"
-image: "/images/debiasing.png"
-researchers: ["C. Subramaniam"]
+image: "/images/llm-based.png"
+researchers: ["Chandrasekar Subramaniam - Research Advisor"]
 filters: [making-ai-understandable]
 tags: ["llm-agents", "safe-ai"]
 draft: false
+reslinks: ["https://openai.com/index/our-approach-to-alignment-research/"]
+reslinktitles: ["OpenAI: Our approach to alignment research"]
 ---
 
 <style>
@@ -24,83 +26,26 @@ draft: false
     
 </style>
 
-<strong>LLM based systems – WHAT are they?</strong>
+<strong>Background</strong>
 
-<ul style="list-style-type:disc;">
-<li>Systems where LLMs form the core reasoning engine</li>
-<li>These LLMs interact with the outside world (– vs. – Standalone LLMs)</li>
-<li>LLM agents are subsumed into it</li>
-</ul>
-<br>
+Over the last year, Large language models (LLMs) such as ChatGPT, Gemini and Llama have shown remarkable intelligence capabilities and are increasingly being used in a variety of applications. However, off-the-shelf LLMs do not suffice for all use cases. In case of open source LLMs such as Llama, one option is to fine-tune the LLM for the specific use case or task; however, this can often be prohibitively expensive. Further, Responsible AI (RAI) concerns such as safety and toxicity, and their tradeoffs with model accuracy can be different for different applications, making a one-size-fits-all approach less desirable. 
 
-<div class="img-div">
-    <img src="/images/debiasing-full.png" style="width: 70%; height: 70%;">
-</div>
+The alternative paradigm is to think of LLMs as components in a larger system which performs the desired tasks. This enables a wider and more complex set of use cases to be addressed using LLMs. Further, loosely coupled designs allow components to evolve independently.
 
-<br>
+<strong>LLM systems</strong>
 
-<strong>A few examples of LLM systems/agents</strong>
+One way to define “LLM systems” or “LLM-based systems” is as systems where one or more LLMs perform crucial reasoning tasks; this includes LLM-based autonomous agents. This is in contrast to the underlying standalone LLMs themselves, such as ChatGPT or Llama. 
 
-<ul style="list-style-type:disc;">
-<li>Retrieval augmented generation (RAG)</li>
-<li>LLMs using tools</li>
-<li>LLM-powered workflow chains (e.g. using LangChain)</li>
-<li>Goal-based agents</li>
-<li>LLM-powered AI software engineering teams (e.g. CrewAI)</li>
-</ul>
+For example, this is a simple example of a news summarization system that takes a topic, searches it on Google News and then summarizes each result into a snippet using an LLM.  LLM systems can also be much more complex; for example, AutoGPT is a tool that uses LLM models for autonomous goal completion on complex tasks. Frameworks such as CrewAI enable creating multi-agent collaborative LLM systems. 
 
-And many more...
+LLM systems can also have memory and access to tools. This allows them to interact with the outside world. For example, Retrieval augmented generation (RAG) is a popular design pattern for LLM systems where an LLM’s context is augmented with relevant data retrieved from external sources so as to provide more accurate and up-to-date responses. As LLMs get widely deployed into various systems, architectural patterns have started to emerge; an example of this is “self-reflection”, which this post on X by Andrew Ng talks more about. 
 
-<br>
+<strong>Responsible AI concerns in LLM systems</strong>
 
-<strong>WHY is it important to look at LLM-based systems?</strong>
+Responsible AI covers a wide range of topics around responsible design of AI systems. Some of the dimensions include safety, fairness, toxicity, explainability, data traceability, etc. This has been an important part of the discussion around LLMs and other foundational models. For example, OpenAI has started talking about this early on (see <a href="https://openai.com/index/our-approach-to-alignment-research/">here</a>). And there have been methods such as Reinforcement Learning with Human Feedback (RLHF) which have been used to improve alignment of these foundational models.
 
-<ul style="list-style-type:disc;">
-<li>Orgs have complex workflows into which LLMs need to be integrated</li>
-<li>It can be very expensive to fine-tune large LLMs</li>
-<li>Can accomplish more complex tasks</li>
-<li>RAI concerns/tradeoffs can be quite different for different applications</li>
-<li>It allows components to evolve independently</li>
-</ul>
+With LLM-based systems, new Responsible AI (RAI) concerns emerge, and these might require newer approaches beyond those used for standalone foundational models. For example, there are higher privacy risks due to potential leak of PII data when LLMs make calls to external APIs. Another example is the use of copyrighted material by one subtask of a complex agent system, making it potentially hard to detect. Some as-yet-unpublished work by researchers at CeRAI (and other collaborators) has also shown the emergence of deception in multi-agent LLM systems. In other words, while alignment of foundational models is critical, it is also important to ensure systems built on top of them have the right RAI properties. 
 
-<br>
+With the accelerated proliferation of usage of LLMs in various systems, including critical systems such as healthcare, it is imperative to bake in Responsible AI approaches from the ground up when designing such systems. 
 
-<strong>Responsible AI (RAI) intersection LLM agents</strong>
-<br>
-<strong><i>A complex space on its own, and is fast evolving</i></strong>
-
-<div class="contdiv">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="rectangle">
-            <strong>Elevated RAI concerns</strong>
-            <i>in LLM systems</i>
-            </div>
-        </div>
-        <div class="col">
-            <ul>
-                <li>Privacy: leak of PII data</li>
-                <li>Data ownership: copyrighted material used as part of subtask</li>
-                <li>Deception: emergence of deception</li>
-                <li>Etc...</li>
-            </ul>
-        </div>
-    </div>
-        <div class="row">
-        <div class="col-md-6">
-            <div class="rectangle">
-                <strong>New Approaches to RAI</strong>
-                <i>enabled by LLM systems</i>
-            </div>
-        </div>
-        <div class="col">
-            <ul>
-                <li>Critique LLMs</li>
-                <li>Programmable guardrails</li>
-                <li>Constitutional AI</li>
-                <li>Traceability (e.g. using RAGs).</li>
-                <li>Etc...</li>
-            </ul>
-        </div>
-    </div>
-</div>
+This project aims to conduct research (theoretical and experimental) in this area and to also identify best practices for responsible design of LLM-based systems. 

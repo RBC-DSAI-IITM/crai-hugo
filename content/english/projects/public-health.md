@@ -1,6 +1,6 @@
 ---
 title: "Restless Multi-armed Bandits for Public Health – Fairness in Multilingual Settings"
-image: "images/healthcare.jpg"
+image: "images/agents.png"
 draft: false
 researchers:
   - "Chandrasekar Subramanian (Research Advisor)"
@@ -8,6 +8,7 @@ researchers:
   - "Ambreesh Parthasarathy (Pre-Doc)"
   - "Kalyan Nadimpalli (Pre-Doc)"
   - "Prof. B. Ravindran (Professor and Head)"
+collaborators: ["/images/google-research.png"]
 filters:
   - "ai-and-society"
 tags:
@@ -25,9 +26,5 @@ reslinktitles:
   - "[2402.14807] A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health"
 ---
 
-Social interventions to improve health outcomes for pregnant mothers
-Existing work [1, 2, 3] already proposes RMAB*-based allocation algorithms, including methods [4] to shape allocation policy based on English-language prompts
-In this work, the research objectives are
-Look at the fairness and bias impact of multilinguality in such an approach
-In addition, explore potential debiasing techniques. 
+This project focuses on designing social interventions to improve health outcomes for pregnant mothers. Existing work [1, 2, 3] proposes Restless Multi-Armed Bandit-based allocation algorithms, including methods [4] to shape allocation policy based on English-language prompts. In this project, the research objectives are to (1) identify the fairness and bias impact of multilinguality (including low-resource languages) in such an approach, and (2) explore techniques for debiasing and improving fairness. 
 
