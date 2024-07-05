@@ -291,28 +291,26 @@
                   {{end}}
                   <h4 class="mobile-heading"><a href="{{$link}}">{{.Title}}</a></h4>
                   <div class="icon">
+                    {{ if .Params.date }}
                     {{$date := .Date}}
-                    {{with .Params.dateTo}}
+                    {{ with .Params.dateTo }}
                       <i class="fas fa-calendar-week"></i><span>{{ dateFormat "January 2" $date }} to {{ dateFormat "January 2" . }}</span>
-                    {{end}}
+                    {{ end }}
+                  {{ end }}
+                    {{if .Params.time }}
                     <div class="time-box">
                       <i class="far fa-clock"></i><span class="time">{{.Params.time}}</span>
                     </div>
+                    {{ end }}
                   </div>
+                  {{ if .Params.venue }}
                   <div class="venue-box">
                     <div class="icon">
                       <i class="fas fa-map-marker-alt"></i>
                       <span class="map">{{.Params.venue}}</span>
                     </div>
                   </div>
-                  <div class="icon">
-                    {{with .Params.tags}}
-                      <i class="fas fa-tags"></i>
-                      {{range $key, $value := . }}
-                      <a href="/tags/{{ $value | urlize}}" class="tag-link">{{ $value }}</a>
-                      {{end}}
-                    {{end}}
-                  </div>
+                  {{ end }}
                   <div class="btn-box desktop-btn">
                     <a href="{{$link}}">Read More</a>
                   </div>
