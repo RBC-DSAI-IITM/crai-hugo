@@ -2,7 +2,7 @@
 title: "Nidan Basheer"
 date: 20234-04-01
 
-image: "/images/people/staff/nidan-basheer.jpg"
+image: "/images/people/researchers/nidan-basheer.jpg"
 
 designation : "Research intern"
 affiliation: CeRAI, IIT Madras

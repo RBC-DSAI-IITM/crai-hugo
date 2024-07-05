@@ -2,7 +2,7 @@
 title: "Santhom J Joseph"
 date: 20234-04-01
 
-image: "/images/people/staff/santhomjjoseph.jpeg"
+image: "/images/people/researchers/santhomjjoseph.jpeg"
 
 designation : "Research intern"
 affiliation: CeRAI, IIT Madras
