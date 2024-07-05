@@ -1,5 +1,5 @@
 ---
-title: "Restless Multi-armed Bandits for Public Health – Fairness in Multilingual Settings"
+title: " LLM-based Fine Tuning of Restless Multi-armed Bandits for Public Health – Fairness in Multilingual Settings"
 image: "images/agents.png"
 draft: false
 researchers: 
@@ -28,5 +28,9 @@ reslinktitles:
   - "[2402.14807] A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health"
 ---
 
-This project focuses on designing social interventions to improve health outcomes for pregnant mothers. Existing work [1, 2, 3] proposes Restless Multi-Armed Bandit-based allocation algorithms, including methods [4] to shape allocation policy based on English-language prompts. In this project, the research objectives are to (1) identify the fairness and bias impact of multilinguality (including low-resource languages) in such an approach, and (2) explore techniques for debiasing and improving fairness. 
+This project focuses on designing social interventions to improve health outcomes for pregnant mothers. Existing work [1, 2, 3] proposes Restless Multi-Armed Bandit-based allocation algorithms, including methods [4] to shape allocation policy using large language models (LLMs) based on English-language commands. In this project, the research objectives are to:
+
+ (1) Identify the fairness and bias impact of multilinguality (including low-resource languages) in such an LLM-based approach
+ 
+ (2) Explore techniques for debiasing and improving fairness.
 
