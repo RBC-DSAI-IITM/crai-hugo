@@ -104,7 +104,10 @@
           <div class="col-md-12 mb-4 mb-md-0">
               <center>
                 <img class="mb-40" src="{{ .Params.image | absURL }}" width="50%" />
+                <hr class="subtitle-line">
                 <h1 class="mb-4">{{ .Title }}</h1>
+                <hr class="subtitle-line">
+                <br>
                   <div class="tags-box">
                     {{ range .Params.tags }}
                         <a href="/tags/{{ . }}" class="tag-link">

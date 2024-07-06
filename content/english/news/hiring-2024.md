@@ -100,12 +100,40 @@ link: "/news/hiring-2024"
     </div>
 </div>
 
+<div class="divider"></div>
+
+<h1>AI and Healthcare Joint Research Fellowship</h1>
+<div class="big-div">
+    <div class="row">
+        <div class="col">
+            <img src="https://pbs.twimg.com/media/GRn3rpeXkAA9jMy?format=jpg&name=medium" class="hiring-img"></img>
+            <img src="https://pbs.twimg.com/media/GRn3rpYXAAATYzD?format=jpg&name=medium" class="hiring-img"></img>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="https://pbs.twimg.com/media/GRn3rrRWgAAT6_T?format=jpg&name=medium" class="hiring-img"></img>
+            <img src="https://pbs.twimg.com/media/GRn3rnTWMAArOTq?format=jpg&name=medium" class="hiring-img"></img>
+        </div>
+    </div>
+</div>
+<div class="button-box" style="text-align:left;">
+        <button class="link-button">
+            <a class="button_text" href="https://digitalfutureslab.notion.site/careers-78c91a91fb33482795090465cd975a50" target="_blank">Click here to Apply</a>
+        </button>
+    </div>
+
+
+</div>
+
 <div class="big-div">
 </div>
 
 
 <div class="divider"></div>
+<br>
 <h1>IT Analyst</h1>
+<br>
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
@@ -113,7 +141,7 @@ link: "/news/hiring-2024"
         </button>
     </div>
 </div>
-
+<br>
 <div class="big-div">
 <p>Are you looking for a technology career in an esteemed institution where you can experience how translational research is directly impacting the world? Do you want to work in an intellectually challenging environment where you can conceptualize and lead projects under the guidance of world’s brilliant minds and industry leaders?
 
@@ -123,7 +151,9 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
 </div>
 
 <div class="divider"></div>
+<br>
 <h1>Policy Analyst</h1>
+<br>
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
@@ -131,14 +161,16 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
         </button>
     </div>
 </div>
-
+<br>
 <div class="big-div">
 <p>The Policy Analyst will work as an integral part of CeRAI and will be required to undertake research, analysis, and drafting of whitepapers or briefs. The expected output from the research work will be in the form of research reports and policy briefs, draft legislation, rules and regulations.
 <p><a class="button_text" href="mailto:contact@cerai.in" target="_blank">Please write to contact@cerai.in to apply</a></p>
 </div>
 
 <div class="divider"></div>
+<br>
 <h1>Researcher</h1>
+<br>
 <div class="big-div">
     <div class="button-box" style="text-align:left;">
         <button class="link-button">
@@ -146,7 +178,10 @@ If you answered “yes” to these questions then CeRAI could be the perfect pla
         </button>
     </div>
 </div>
+<br>
 
 <div class="big-div">
 <p>We are actively looking for researchers with interest and experience in responsible AI topics. You will get to work on pressing problems, supervise talented juniors, and collaborate with top teams in the field around the world. Please write to <a href="mailto:contact@cerai.in/" target="_blank">contact@cerai.in</a> for more details.</p>
 </div>
+
+
