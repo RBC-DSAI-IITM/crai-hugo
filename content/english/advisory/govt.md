@@ -1,6 +1,6 @@
 ---
 title: "The Government of India"
-subtitle: " Principal Scientific Advisor "
+subtitle: "Member of PSA Committee"
 date: 2022-12-12
 image: "/images/govt.png"
 draft: false

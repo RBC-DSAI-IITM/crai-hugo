@@ -14,7 +14,7 @@
 
 </style>
 
-<section class="section">
+<section class="section" style="position:relative; z-index: 0;">
   <div class="container text-center collaborators-container">
     <div class="justify-content-center text-center">
       <section class="consortium" style="margin-bottom:10%;">
@@ -25,9 +25,9 @@
         {{ range (where .Site.RegularPages "Section" "advisory") }}
         <div class="col-md-4 mb-5 ">
           {{ if .Params.link }}
-          <a href="{{ .Params.link }}"><img class="mb-40" style="width: 45%; height: 40%;" src="{{ .Params.image | absURL }}" alt=""></a>
+          <a href="{{ .Params.link }}"><img class="mb-40" style="width: 45%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
           {{ else }}
-          <a href="{{ .Permalink }}"><img class="mb-40" style="width: 45%; height: 40%;" src="{{ .Params.image | absURL }}" alt=""></a>
+          <a href="{{ .Permalink }}"><img class="mb-40" style="width: 45%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
           {{ end }}
           <div class="content">
             {{ if .Params.link }}
