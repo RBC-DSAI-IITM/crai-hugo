@@ -7,7 +7,8 @@
 
 .button-box
 {
-  text-align:center;
+  display:flex;
+  margin-bottom:10%;
 }
 
 .link-button
@@ -44,6 +45,9 @@
 	{
 		margin-top:16%;
 	}
+  .button-box{
+    justify-content:center;
+  }
 
 }
 </style>
@@ -61,7 +65,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-center">
-          <img class="img-fluid banner-img" height="75%" src="{{ .Params.image }}" alt="">
+          <img class="img-fluid banner-img" height="75%" style="margin-top:10%; margin-bottom:10%;" src="{{ .Params.image }}" alt="">
         </div>
         <div class="col-md-6 align-self-center text-center text-md-left">
           <div class="block">
@@ -91,9 +95,7 @@
       </div>
     </div>
   </section>
-  <br>
-  <br>
-  <br>
+  
   {{ $index = add $index 1 }}
 {{ end }}
 {{end}}
