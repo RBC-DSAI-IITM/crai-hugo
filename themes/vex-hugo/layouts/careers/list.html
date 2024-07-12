@@ -26,50 +26,74 @@
         text-decoration: none; 
         color: black; 
     }
-    .link-button .button_text {
-        text-decoration: none; 
-        color: black; 
-        font-weight: bold;
-    }
 
+.header
+{
+  display:flex;
+  justify-content:center;
+}
 
+	.center-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width:200px) and (max-width:692px)
+{
+	.banner-section
+	{
+		margin-top:16%;
+	}
+
+}
 </style>
-
 <section class="section">
-  <div class="container">
-    <div class="button-box">
-      <button class="link-button">
-          <a class="button_text" href="/news/hiring-2024">We are hiring, join our team!</a>
-      </button>
-  </div>
-      <br>
-    <div class="row justify-content-center">
-      <div class="col-lg-5 col-sm-6 mb-5"> <!-- Moved col-lg-5 and col-sm-6 classes here -->
-        <div class="content-box text-center" style="background-color: #ECECEC; padding: 10%; width:100%;"> <!-- Added padding -->
-          {{ with .Params.office }}
-          <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
-          <p>{{ .desc | markdownify }}</p>
-          <ul class="list-unstyled contact-list">
-            {{with .address | markdownify}} <li class="mb-3"><a href="https://goo.gl/maps/MSGA3qZUNz2uH4fv8" target="_blank"><i class="tf-ion-ios-location mr-2"></i>
-              {{ . }}</a></li>{{ end }}
-            {{with .email}} <li class="mb-3"><a href="mailto:{{ . }}"><i class="tf-ion-email mr-2"></i>
-              {{ . }}</a></li>{{end }}
-            <!-- {{with .mobile}} <li class="mb-3"><a href="tel:{{ . }}"><i class="tf-ion-ios-telephone mr-2"></i>
-              {{ . }}</a></li>{{ end }} -->
-            {{with .twitter}} <li class="mb-3"><a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-2"></i>
-                {{ . }}</a></li>{{ end }}
-            {{with .linkedin}} <li class="mb-3"><a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-2"></i>
-              {{ . }}</a></li>{{ end }}
-          </ul>
-          {{ end }}
-        </div> <!-- End of content-box -->
-      </div> <!-- End of col-lg-5 and col-sm-6 -->
-    </div>
-    <div id="basicMap"></div>
+  <div class="header">
+    <h1 style="font-weight: 700 !important;">Careers:</h1>
   </div>
 </section>
+
+{{ $index := 1 }}
+{{ $sections := where .Site.RegularPages "Type" "careers" }}
+{{ $totalSections := len $sections }}
+{{ range $sections }}
+  <section class="banner-section" style="background-color: {{ if eq (mod $index 2) 0 }}#f4f4f4{{ else }}white{{ end }};">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-center">
+          <img class="img-fluid banner-img" height="75%" src="{{ .Params.image }}" alt="">
+        </div>
+        <div class="col-md-6 align-self-center text-center text-md-left">
+          <div class="block">
+            {{ if .Params.titlelink }}
+            <a href="{{ .Params.titlelink }}" style="text-decoration:none;"><h1 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h1></a>
+            {{ else }}
+            <h1 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h1>
+            {{ end }}
+            {{ if .Params.caption }}
+            <p>{{ .Params.caption }}</p>
+            {{ end }}
+            {{ if eq .Params.link "mailto:contact@cerai.in" }}
+            <div class="button-box" style="text-align:left;">
+              <button class="link-button">
+                  <a class="button_text" href={{.Params.link}} target="_blank">Please Write to contact@cerai.in to Apply</a>
+              </button>
+            </div>
+            {{ else }}
+            <div class="button-box" style="text-align:left;">
+              <button class="link-button">
+                  <a class="button_text" href={{.Params.link}} target="_blank">Click Here to Apply</a>
+              </button>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  {{ $index = add $index 1 }}
+{{ end }}
 {{end}}
-
-
-
-

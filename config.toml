@@ -115,7 +115,7 @@ weight = 5
 
 [[menu.main]]
 name = "Careers"
-url = "news/hiring-2024/"
+url = "careers/"
 weight = 8
 
 # footer menu
@@ -141,7 +141,7 @@ weight = 4
 
 [[menu.footer]]
 name = "Careers"
-url = "news/hiring-2024/"
+url = "careers/"
 weight = 5
 
 
