@@ -5,5 +5,4 @@ date: 2022-12-12
 image: "/images/shakthi.png"
 link: "https://projectshakti.in/"
 draft: false
-link: "https://projectshakti.in/"
 ---

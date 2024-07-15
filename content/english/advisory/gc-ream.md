@@ -1,5 +1,6 @@
 ---
-title: "GC-REAIM (Global Commission on Responsible Artificial Intelligence in the Military Domain)"
+title: "GC-REAIM"
+expansion: "(Global Commission on Responsible Artificial Intelligence in the Military Domain)"
 subtitle: "Commissioner"
 date: 2022-12-12
 image: "/images/gc-reaim.png"
