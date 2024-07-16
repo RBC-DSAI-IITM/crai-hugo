@@ -73,6 +73,12 @@ url = "activities/"
 weight = 2
 
 [[menu.main]]
+name = "Advisory"
+url = "advisory/"
+parent = "Activities"
+weight = 5
+
+[[menu.main]]
 name="Education"
 parent = "Activities"
 url = "education/"
