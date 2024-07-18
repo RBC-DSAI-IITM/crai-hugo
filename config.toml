@@ -62,6 +62,12 @@ parent = "Activities"
 weight = 4
 
 [[menu.main]]
+name = "Advisory"
+url = "advisory/"
+parent = "Activities"
+weight = 5
+
+[[menu.main]]
 name = "Blogs"
 url = "https://cerai.substack.com/"
 weight = 2

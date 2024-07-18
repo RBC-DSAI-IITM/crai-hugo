@@ -1,5 +1,5 @@
 ---
-title: "Principal Scientific Advisor's Office, Government of India"
+title: "Principal Scientific Advisor to the Government of India"
 subtitle: "Member"
 subsubtitle: "Advisory Group on AI for India Specific Regulatory AI Framework"
 date: 2022-12-12
