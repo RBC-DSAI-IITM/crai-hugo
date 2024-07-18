@@ -1,5 +1,5 @@
 ---
-title: "Principal Scientific Advisor to the Government of India"
+title: "Office of Principal Scientific Advisor to the Government of India"
 subtitle: "Chairman"
 subsubtitle: "Sub-Committee for AI Governance Guidelines Development"
 date: 2022-12-12
