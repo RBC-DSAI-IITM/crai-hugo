@@ -25,20 +25,28 @@
         {{ range (where .Site.RegularPages "Section" "advisory") }}
         <div class="col-md-4 mb-5 ">
           {{ if .Params.link }}
-          <a href="{{ .Params.link }}"><img class="mb-40" style="width: 45%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
-          {{ else }}
-          <a href="{{ .Permalink }}"><img class="mb-40" style="width: 45%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
-          {{ end }}
+  {{ if eq .Params.title "Emerging Technologies Wing, Govt. of Telangana" }}
+    <a href="{{ .Params.link }}"><img class="mb-40" style="width: 90%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
+  {{ else }}
+    <a href="{{ .Params.link }}"><img class="mb-40" style="width: 50%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
+  {{ end }}
+{{ else }}
+  {{ if eq .Params.title "Emerging Technologies Wing, Govt. of Telangana" }}
+    <a href="{{ .Permalink }}"><img class="mb-40" style="width: 90%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
+  {{ else }}
+    <a href="{{ .Permalink }}"><img class="mb-40" style="width: 50%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
+  {{ end }}
+{{ end }}
           <div class="content">
+            <h2 class="content"> {{ .Params.expansion | markdownify }}</h2>
+            <h2 class="content"> {{ .Params.subsubtitle | markdownify }}</h2>
+            <h3 class="content">{{ .Params.subtitle | markdownify }}</h3>
             {{ if .Params.link }}
-            <a href="{{ .Params.link }}" style="text-decoration:none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
+            <a href="{{ .Params.link }}" style="text-decoration:none;"><p style="color:black;">{{ .Title | markdownify }}</p></a>
             {{ else }}
-            <a href="{{ .Permalink }}" style="text-decoration:none;"><h4 class="subheading">{{ .Title | markdownify }}</h4></a>
+            <a href="{{ .Permalink }}" style="text-decoration:none;"><p style="color:black;">{{ .Title | markdownify }}</p></a>
             {{end}}
-
-            <h5 class="content">{{ .Params.subtitle | markdownify }}</h5>
-            <h6 class="content"> {{ .Params.expansion | markdownify }}</h6>
-            <h6 class="content"> {{ .Params.subsubtitle | markdownify }}</h6>
+            
           </div>
           <br>
           <br>

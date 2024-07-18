@@ -1,6 +1,6 @@
 ---
-title: "GC-REAIM"
-expansion: "(Global Commission on Responsible Artificial Intelligence in the Military Domain)"
+title: "Government of the Netherlands and Hague Centre for Strategic Studies"
+subsubtitle:  "Global Commission on Responsible Artificial Intelligence in the Military Domain (GC REAIM"
 subtitle: "Commissioner, Asia"
 date: 2022-12-12
 image: "/images/gc-reaim.png"
