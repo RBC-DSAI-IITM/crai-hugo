@@ -3,12 +3,12 @@
 title: "Participative AI Policy Framework"
 image: "images/participatory.png"
 draft: false
-reslinks: ["https://vidhilegalpolicy.in/research/participatory-ai-approaches-in-ai-development-and-governance/"]
+reslinks: ["https://vidhilegalpolicy.in/research/participatory-ai-approaches-in-ai-development-and-governance/", https://arxiv.org/abs/2407.13103, https://arxiv.org/abs/2407.13100]
 researchers: ["Balaraman Ravindran (IIT Madras)", "Harish Guruprasad (IIT Madras)", "Ameen Jauhar (Vidhi Centre for Legal Policy)"]
 filters: [ai-and-society]
 tags: ["artificial-intelligence", "responsible-ai"]
 collaborators: ["https://vidhilegalpolicy.in/wp-content/uploads/2020/07/Vector.svg"]
-reslinktitles: ["Participative AI Policy Framework: Vidhi Legal"]
+reslinktitles: ["Participative AI Policy Framework: Vidhi Legal", "Participatory Approaches in AI Development and Governance: Case Studies", "Participatory Approaches in AI Development and Governance: A Principled Approach"]
 ---
 
 <strong>Motivation:</strong>

@@ -2,7 +2,7 @@
 title: "Open Loop"
 subtitle: "Collaborator"
 type: collaborator
-image: "https://openloop.org/wp-content/uploads/2022/10/openloop2022.svg"
+image: "https://i.vimeocdn.com/video/991174169-87ad9d549384d4b12761eb8c42ac7db89c5bcf8ecc0739c93c4f9870513439c1-d_640?f=webp"
 draft: false
 
 ---
