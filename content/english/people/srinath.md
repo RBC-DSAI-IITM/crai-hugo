@@ -5,7 +5,7 @@ date: 2024-07-22
 image: "/images/people/researchers/srinath.jpg"
 
 designation : "Research Student"
-affiliation: CeRAI, IIT Madras
+affiliation: Dept. of DSAI, IIT Madras
 
 type: researcher
 draft: false
