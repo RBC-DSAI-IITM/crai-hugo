@@ -5,7 +5,7 @@ date: 20234-07-18
 image: "/images/people/researchers/sai-kiran.jpeg"
 
 designation : "Research Associate"
-affiliation: CeRAI, IIT Madras
+affiliation: Dept. of DSAI, IIT Madras
 
 type: researcher
 draft: false

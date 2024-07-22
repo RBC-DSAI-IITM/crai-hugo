@@ -5,7 +5,7 @@ date: 20234-04-01
 image: "/images/people/researchers/santhomjjoseph.jpeg"
 
 designation : "Research intern"
-affiliation: CeRAI, IIT Madras
+affiliation: Dept. of HSS, IIT Madras
 
 type: researcher
 draft: false

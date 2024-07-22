@@ -5,7 +5,7 @@ date: 20234-04-01
 image: "/images/people/researchers/nidan-basheer.jpg"
 
 designation : "Research intern"
-affiliation: CeRAI, IIT Madras
+affiliation: Dept. of HSS, IIT Madras
 
 type: researcher
 draft: false
