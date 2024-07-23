@@ -39,6 +39,11 @@
     margin-top: 2.5%;
     margin-bottom: 2.5%;
   }
+  .img-box
+  {
+    margin-top:5%;
+    margin-bottom:-5%;
+  }
   </style>
 
 
@@ -55,33 +60,33 @@
   <section class="section" style="background-color: {{ if eq (mod $index 2) 0 }}#f4f4f4{{ else }}white{{ end }}; padding:0px !important;">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-center">
-          {{ if .Params.link }}
-            <a href="{{ .Params.link }}"><img class="mb-40" style="width: 50%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
-            {{ else }}
-            <a href="{{ .Permalink }}"><img class="mb-40" style="width: 50%; height: 30%;" src="{{ .Params.image | absURL }}" alt=""></a>
-        {{ end }}
-        </div>
-        <div class="col-md-6 align-self-center text-center text-md-left content-col">
-          <div class="block">
+        <div class="col-md-6 text-center mb-5 mb-md-0 d-flex flex-column align-items-center justify-content-center">
+          <div class="img-box">
+          <a href="{{ .Permalink }}"><img class="mb-40" style="width: 60%; height: 60%;" src="{{ .Params.image | absURL }}" alt=""></a>
+          </div>
+          <div class="block mt-3">
             {{if .Params.link}}
-            <a href="{{.Params.link}}"><h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2></a>
+              <a href="{{.Params.link}}"><h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2></a>
             {{else}}
-            <h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2>
+              <h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2>
             {{end}}
             <div class="content">
               <h2 class="content"> {{ .Params.expansion | markdownify }}</h2>
               <h3 class="content"> {{ .Params.subsubtitle | markdownify }}</h3>
               <h4 class="content">{{ .Params.subtitle | markdownify }}</h4>
-              </div>
-              <br>
-              <div class="caption">
-                <p>{{.Params.caption}}</p>
-              </div>
-          </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center text-center text-md-left content-col">
           <br>
-  
+          <div class="caption">
+            <p>{{.Params.caption}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
   {{ $index = add $index 1 }}
 {{ end }}
 {{end}}
-
