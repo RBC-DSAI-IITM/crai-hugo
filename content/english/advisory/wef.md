@@ -6,6 +6,7 @@ date: 2022-12-12
 image: "/images/wef.png"
 draft: false
 weight: 5
+caption:
 ---
 
 

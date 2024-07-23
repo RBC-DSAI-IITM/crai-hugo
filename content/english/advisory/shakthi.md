@@ -7,4 +7,5 @@ image: "/images/shakthi.png"
 link: "https://projectshakti.in/"
 draft: false
 weight: 9
+caption:
 ---

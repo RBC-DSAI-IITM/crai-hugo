@@ -7,6 +7,7 @@ image: "/images/advisor-govt.png"
 draft: false
 link: "https://www.psa.gov.in/"
 weight: 1
+caption:
 ---
 
 

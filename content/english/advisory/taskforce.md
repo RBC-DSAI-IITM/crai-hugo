@@ -7,4 +7,5 @@ image: "/images/advisor-govt.png"
 link: "https://setsindia.in/wp-content/uploads/2024/06/taskforcereport.pdf"
 draft: false
 weight: 8
+caption:
 ---
