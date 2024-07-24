@@ -72,7 +72,7 @@
 {{ $sections := where .Site.RegularPages "Type" "careers" }}
 {{ $totalSections := len $sections }}
 {{ range $sections }}
-  <section class="section" style="background-color: {{ if eq (mod $index 2) 0 }}#f4f4f4{{ else }}white{{ end }}; padding:0px !important;">
+<section class="section" style="background-color: {{ if eq (mod $index 2) 1 }}#f4f4f4{{ else }}white{{ end }}; padding:0px !important;">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-center">
