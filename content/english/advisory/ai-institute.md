@@ -7,6 +7,6 @@ image: "/images/ai-safety-institute.png"
 draft: false
 link: "https://www.gov.uk/government/publications/international-scientific-report-on-advanced-ai-safety-expert-advisory-panel-and-principles-and-procedures/international-scientific-report-on-advanced-ai-safety-expert-advisory-panel-members"
 weight: 3
-caption: 
+caption: Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet
 ---
 

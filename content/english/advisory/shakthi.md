@@ -7,5 +7,5 @@ image: "/images/shakthi.png"
 link: "https://projectshakti.in/"
 draft: false
 weight: 9
-caption:
+caption:  Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor s
 ---

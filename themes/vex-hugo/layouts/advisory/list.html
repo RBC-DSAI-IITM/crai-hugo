@@ -44,6 +44,11 @@
     margin-top:5%;
     margin-bottom:-5%;
   }
+  .caption
+  {
+    margin-left:30%;
+    margin-top:2.5%;
+  }
   </style>
 
 
@@ -65,14 +70,9 @@
           <a href="{{ .Permalink }}"><img class="mb-40" style="width: 60%; height: 60%;" src="{{ .Params.image | absURL }}" alt=""></a>
           </div>
           <div class="block mt-3">
-            {{if .Params.link}}
-              <a href="{{.Params.link}}"><h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2></a>
-            {{else}}
-              <h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2>
-            {{end}}
+              <h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.subsubtitle }}</h2>
             <div class="content">
-              <h2 class="content"> {{ .Params.expansion | markdownify }}</h2>
-              <h3 class="content"> {{ .Params.subsubtitle | markdownify }}</h3>
+              <h3 class="content"> {{ .Params.title | markdownify }}</h2>
               <h4 class="content">{{ .Params.subtitle | markdownify }}</h4>
             </div>
           </div>

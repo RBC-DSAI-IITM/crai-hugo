@@ -7,5 +7,5 @@ image: "https://media.licdn.com/dms/image/C561BAQHUvXFm8t0SSQ/company-background
 link: "https://www.linkedin.com/posts/et-itec-gots_ai-telanganainnovation-responsibleai-activity-7158068445392080897-D4P_"
 draft: false
 weight: 7
-caption:
+caption:  Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor s
 ---
