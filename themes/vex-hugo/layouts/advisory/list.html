@@ -62,7 +62,7 @@
 {{ $sections := where .Site.RegularPages "Type" "advisory" }}
 {{ $totalSections := len $sections }}
 {{ range $sections }}
-  <section class="section" style="background-color: {{ if eq (mod $index 2) 0 }}#f4f4f4{{ else }}white{{ end }}; padding:0px !important;">
+<section class="section" style="background-color: {{ if eq (mod $index 2) 1 }}#f4f4f4{{ else }}white{{ end }}; padding:0px; padding-bottom:2%;">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center mb-5 mb-md-0 d-flex flex-column align-items-center justify-content-center">
@@ -72,8 +72,8 @@
           <div class="block mt-3">
               <h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.subsubtitle }}</h2>
             <div class="content">
-              <h3 class="content"> {{ .Params.title | markdownify }}</h2>
-              <h4 class="content">{{ .Params.subtitle | markdownify }}</h4>
+              <h3 class="content">{{ .Params.subtitle | markdownify }}</h3>
+              <h4 class="content"> {{ .Params.title | markdownify }}</h4>
             </div>
           </div>
         </div>
@@ -86,7 +86,6 @@
       </div>
     </div>
   </section>
-  <br>
   {{ $index = add $index 1 }}
 {{ end }}
 {{end}}
