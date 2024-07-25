@@ -5,29 +5,50 @@
 
 <style>
 
-.button-box
-{
-  display:flex;
-  margin-bottom:10%;
+.button-box {
+  
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.link-button
-{
-  padding: .6rem 1.2rem;
-  line-height: 2.1rem;
+.link-button {
+  padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   color: #000;
   border: 2px solid transparent;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
-  transition: all .3s ease-in;
-  background-color: #4eadec !important;
+  transition: all 0.3s ease-in;
+  background-color: #4eadec;
+  text-align: left;
+  margin-bottom: 10px;
+  display: inline-block;
 }
-    .link-button .button_text {
-        text-decoration: none; 
-        color: black; 
-    }
 
+.link-button .button_text {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight:bold;
+  
+}
+
+@media (max-width: 768px) {
+  .link-button {
+    width: 100%;
+    text-align: center;
+  }
+  .button-box{
+    flex-direction:column;
+  }
+}
+
+@media (min-width: 769px) {
+  .link-button {
+    width: auto;
+    text-align: left;
+  }
+}
 .header
 {
   display:flex;
@@ -80,22 +101,22 @@
         </div>
         <div class="col-md-6 align-self-center text-center text-md-left">
           <div class="block">
-            {{ if .Params.titlelink }}
-            <a href="{{ .Params.titlelink }}" style="text-decoration:none;"><h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2></a>
-            {{ else }}
             <h2 class="font-weight-bold mb-4 font-size-40">{{ .Params.title }}</h2>
-            {{ end }}
             {{ if .Params.caption }}
             <p>{{ .Params.caption }}</p>
             {{ end }}
             {{ if .Params.caption2}}
             <p>{{ .Params.caption2 }}</p>
             {{end}}
-            <div class="button-box" style="text-align:left;">
-              <button class="link-button">
-                  <a class="button_text" href={{.Params.link}} target="_blank">Click Here to Apply</a>
+            <div class="button-box" style="text-align: left;">
+              <button class="link-button" style="background-color: #2d9f7a; !important">
+                  <a class="button_text" href="{{.Params.titlelink}}" target="_blank">Read More</a>
               </button>
-            </div>
+              <br> <!-- Add a line break to create space between the buttons -->
+              <button class="link-button">
+                  <a class="button_text" href="{{.Params.link}}" target="_blank">Click Here to Apply</a>
+              </button>
+          </div>
           </div>
         </div>
       </div>
