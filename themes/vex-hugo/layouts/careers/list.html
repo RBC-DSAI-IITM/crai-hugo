@@ -108,11 +108,13 @@
             {{ if .Params.caption2}}
             <p>{{ .Params.caption2 }}</p>
             {{end}}
+            {{ if .Params.titlelink}}
             <div class="button-box" style="text-align: left;">
               <button class="link-button" style="background-color: #2d9f7a; !important">
                   <a class="button_text" href="{{.Params.titlelink}}" target="_blank">Read More</a>
               </button>
-              <br> <!-- Add a line break to create space between the buttons -->
+              <br> 
+              {{end}}
               <button class="link-button">
                   <a class="button_text" href="{{.Params.link}}" target="_blank">Click Here to Apply</a>
               </button>
