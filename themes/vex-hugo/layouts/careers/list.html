@@ -91,7 +91,7 @@
 {{ range $sections }}
 <section class="section" style="background-color: {{ if eq (mod $index 2) 1 }}#f4f4f4{{ else }}white{{ end }}; padding:0px !important;">
     <div class="container">
-      <div class="row">
+      <div class="row" style="padding-top:5%; padding-bottom:5%;">
         <div class="col-md-6 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-center">
           <img class="img-fluid banner-img" height="75%" style="margin-top:10%; margin-bottom:10%;" src="{{ .Params.image }}" alt="">
         </div>
