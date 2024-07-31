@@ -7,7 +7,7 @@ image: "/images/advisor-govt.png"
 draft: false
 link: "https://www.psa.gov.in/"
 weight: 1
-caption:  Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor si Amet Lorem Ipsum Dolor s
+caption:  
 ---
 
 

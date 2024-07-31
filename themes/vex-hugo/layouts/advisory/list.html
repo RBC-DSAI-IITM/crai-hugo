@@ -81,8 +81,10 @@
           <br>
           <div class="caption">
             <p>{{.Params.caption}}</p>
+            {{ if .Params.link}}
+            <h5 style="font-weight:bold;"><a href="{{.Params.link}}">Read More</a></h5>
+          {{end}}
           </div>
-        </div>
       </div>
     </div>
   </section>
