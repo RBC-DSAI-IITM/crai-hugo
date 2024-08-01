@@ -1,5 +1,37 @@
 <style>
 
+  .img-contain {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .img-contain a {
+    flex: 0 1 30%;
+    display: flex;
+    justify-content: center;
+    width: 90%; 
+  }
+  .img-contain img {
+    max-height: 55%;
+    max-width: 100%;
+  }
+  .image-row
+  {
+    display:flex;
+    justify-content:center;
+  }
+  .icons
+  {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+  .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 @media only screen and (max-width: 700px)
 {
   .desktop-footer
@@ -25,7 +57,7 @@
     border-bottom: 1px solid black;
   }
   .desktop-footer .container {
-    padding: 0; /* Remove padding to ensure the full-width border aligns correctly */
+    padding: 0; 
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1180px)
@@ -36,19 +68,34 @@
   .desktop-footer{
     display:none;
   }
+  .img-contain {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+  .img-contain a {
+    flex: 0 1 30%;
+    display: flex;
+    justify-content: center;
+    width: 90%; 
+  }
+  .img-contain img {
+    max-height: 50%;
+    max-width: 100%;
+  }
 }
 </style>
 
 <footer class="mobile-footer" style=background-color:aliceblue!important;>
   <div class="container text-center">
-      <div class="row" style="display: flex; align-items: center; flex-wrap: wrap; padding-left:13%;">
+      <div class="row" style="display: flex; justify-content:center;">
         <ul class="list-inline footer-menu">
           {{ $items := site.Menus.footer }}
           {{ $midpoint := div (add (len $items) 1) 2 }}
           {{ range $index, $element := $items }}
             {{ if eq $index $midpoint }}
               </ul>
-              <ul class="list-inline footer-menu" style="margin-top: auto; margin-bottom: auto; padding-left:17%">
+              <ul class="list-inline footer-menu" style="margin-top: auto; margin-bottom: auto;">
             {{ end }}
             <li class="list-inline-item">
               <a href="{{ $element.URL | absLangURL }}">{{ $element.Name }}</a>
@@ -58,30 +105,33 @@
       </div>
       <br>
 
-    <div class="row" style="display: flex; align-items: center; padding-left:29%;">
-      <a href="https://www.iitm.ac.in/" target="_blank">
-        <img src="/images/IIT_Madras_Logo.png" height="45px" />
-      </a>
-      <a href="https://rbcdsai.iitm.ac.in" target="_blank" style="padding-left: 10%;">
-        <img src="/images/rbcdsai-logo.svg" height="45px" />
-      </a>
-      <a href="https://dsai.iitm.ac.in/" target="_blank" style="padding-left: 6%;">
-        <img src="/images/wsai-logo.png" height="45px" />
-      </a>
-    </div>
+      <div class="row image-row">
+        <div class="img-contain">
+          <a href="https://www.iitm.ac.in/" target="_blank">
+            <img src="/images/IIT_Madras_Logo.png" alt="IIT Madras Logo" />
+          </a>
+          <a href="https://rbcdsai.iitm.ac.in" target="_blank">
+            <img src="/images/rbcdsai-logo.svg" alt="RBCDSAI Logo" />
+          </a>
+          <a href="https://dsai.iitm.ac.in/" target="_blank">
+            <img src="/images/wsai-logo.png" alt="DSAI Logo" />
+          </a>
+        </div>
+      </div>
     
-      <div class="row">
-      <div style="margin-top: 2rem; font-size: large; padding-left:35%;">
+      <div class="row image-row">
+      <div class="icons" style="font-size: 170%">
         <a href="mailto:contact@cerai.in" target="_blank"><i class="tf-ion-email mr-4"></i></a>
         <a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-4"></i></a>
         <a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-4"></i></a>
       </div>
     </div>
     
-    <div class="row" style="margin-top: 2rem;">
+    <div class="row" style="margin-top: 2rem; display:flex; justify-content:center;">
       <p style="font-size: 90% !important;">
-        <span class="copyright-text" style="float: left; padding-left:17%;">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>
-        <span class="copyright-text" style="float: left; padding-left:19%;">{{ site.Params.copyright | markdownify }}</span>
+        <span class="copyright-text">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>
+        <br>
+        <span class="copyright-text">{{ site.Params.copyright | markdownify }}</span>
       </p>
     </div>
   </div>
@@ -101,30 +151,36 @@
       </div>
       <br>
 
-    <div class="row" style="display: flex; align-items: center; justify-content:center;">
-      <a href="https://www.iitm.ac.in/" target="_blank">
-        <img src="/images/IIT_Madras_Logo.png" height="45px" />
-      </a>
-      <a href="https://rbcdsai.iitm.ac.in" target="_blank" style="padding-left: 5%;">
-        <img src="/images/rbcdsai-logo.svg" height="45px" />
-      </a>
-      <a href="https://dsai.iitm.ac.in/" target="_blank" style="padding-left: 3%;">
-        <img src="/images/wsai-logo.png" height="45px" />
-      </a>
-    </div>
+      <div class="row image-row">
+        <div class="img-contain">
+          <a href="https://www.iitm.ac.in/" target="_blank">
+            <img src="/images/IIT_Madras_Logo.png" alt="IIT Madras Logo" />
+          </a>
+          <a href="https://rbcdsai.iitm.ac.in" target="_blank">
+            <img src="/images/rbcdsai-logo.svg" alt="RBCDSAI Logo" />
+          </a>
+          <a href="https://dsai.iitm.ac.in/" target="_blank">
+            <img src="/images/wsai-logo.png" alt="DSAI Logo" />
+          </a>
+        </div>
+      </div>
     
-      <div class="row" style=" display: flex; justify-content:center;">
-      <div style="margin-top: 2rem; font-size: large;">
-        <a href="mailto:contact@cerai.in" target="_blank"><i class="tf-ion-email mr-4"></i></a>
-        <a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-4"></i></a>
-        <a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-4"></i></a>
+      <div class="row image-row">
+        <div class="icons" style="font-size: 170%">
+          <a href="mailto:contact@cerai.in" target="_blank"><i class="tf-ion-email mr-4"></i></a>
+          <a href="https://twitter.com/cerai_iitm" target="_blank"><i class="tf-ion-social-twitter mr-4"></i></a>
+          <a href="https://www.linkedin.com/company/cerai-iitm/" target="_blank"><i class="tf-ion-social-linkedin mr-4"></i></a>
+        </div>
+      </div>
+    
+      <div class="row" style="margin-top: 2rem; display:flex; justify-content:center;">
+        <p style="font-size: 90% !important;">
+          <span class="copyright-text">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>
+          <br>
+          <span class="copyright-text">{{ site.Params.copyright | markdownify }}</span>
+        </p>
       </div>
     </div>
-    
-    <div class="row" style="margin-top: 2rem; display: flex; justify-content: center;">
-      <span class="copyright-text" style="">Centre for Responsible AI | IIT Madras &copy; {{ now.Year }}</span>
-    </div>
-    <span class="copyright-text" style="">{{ site.Params.copyright | markdownify }}</span>
 </footer>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
   <footer class="text-center text-lg-start desktop-footer" style=background-color:aliceblue!important;>

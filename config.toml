@@ -145,6 +145,11 @@ name = "Careers"
 url = "careers/"
 weight = 5
 
+[[menu.footer]]
+name="Advisory"
+url = "advisory/"
+weight = 6
+
 
 ########################### Default parameters ##########################
 [params]
