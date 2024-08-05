@@ -7,4 +7,5 @@ image: "https://media.licdn.com/dms/image/C561BAQHUvXFm8t0SSQ/company-background
 link: "https://www.linkedin.com/posts/et-itec-gots_ai-telanganainnovation-responsibleai-activity-7158068445392080897-D4P_"
 draft: false
 weight: 7
+caption:  "Responsible AI Working Committee by Telangana State is a dynamic collaboration of industry leaders, researchers, policymakers, developers, and civil society which is headed by Jayesh Ranjan as Chairman. Objectives of the committee are to support the government in ethically adopting AI, foster awareness and compliance with legal norms, develop principles, frameworks, and tools for responsible AI practices, and explore AI use cases for societal well-being."
 ---
