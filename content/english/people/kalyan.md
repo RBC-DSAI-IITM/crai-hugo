@@ -7,7 +7,7 @@ image: "/images/people/researchers/Kalyan.png"
 designation : "Post-baccalaureate Fellow"
 affiliation: Dept. of DSAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

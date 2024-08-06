@@ -6,8 +6,7 @@ image: "/images/people/researchers/santhomjjoseph.jpeg"
 
 designation : "Research intern"
 affiliation: Dept. of HSS, IIT Madras
-
-type: researcher
+filter: researcher
 draft: false
 ---
 

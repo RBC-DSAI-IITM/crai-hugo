@@ -7,7 +7,7 @@ image: "/images/people/researchers/srinath.jpg"
 designation : "Research Student"
 affiliation: Dept. of DSAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

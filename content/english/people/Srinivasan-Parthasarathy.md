@@ -7,7 +7,7 @@ designation : "**Member**"
 weblink: "https://web.cse.ohio-state.edu/~parthasarathy.2/"
 affiliation: Professor, Dept. of Computer <br> Science and Engineering <br> Ohio State University, USA 
 
-type: advisor
+filter: advisor
 draft: false
 ---
 

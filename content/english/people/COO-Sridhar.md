@@ -7,7 +7,7 @@ image: "/images/people/staff/sr.jpg"
 designation : "Chief Operating Officer"
 affiliation: CeRAI, IIT Madras
 
-type: staff
+filter: staff
 draft: false
 ---
 

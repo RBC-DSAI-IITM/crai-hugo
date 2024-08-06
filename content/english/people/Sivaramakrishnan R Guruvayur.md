@@ -7,7 +7,7 @@ image: "/images/people/researchers/0.jpg"
 designation : "Research Advisor"
 affiliation: CeRAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

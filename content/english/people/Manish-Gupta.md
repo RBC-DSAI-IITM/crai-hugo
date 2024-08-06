@@ -7,7 +7,7 @@ designation : "**Member**"
 weblink: "https://research.google/people/106704/"
 affiliation: Director, Google Research India
 
-type: council
+filter: council
 draft: false
 ---
 

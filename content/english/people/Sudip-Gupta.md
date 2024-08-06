@@ -7,7 +7,7 @@ designation : "Associate Faculty Fellow"
 
 affiliation: "Associate Professor of Finance, JHU Carey Business School"
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

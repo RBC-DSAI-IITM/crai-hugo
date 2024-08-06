@@ -6,7 +6,7 @@ image: "https://acr.iitm.ac.in/wp-content/uploads/2020/01/GirijaVaidyanathan.jpg
 designation : "**Member**"
 weblink: "https://acr.iitm.ac.in/latestdaas/dr-girija-vaidyanathan/"
 affiliation: Professor of Practice,<br> Department of Humanities <br> and Social Sciences, IIT Madras
-type: advisor
+filter: advisor
 draft: false
 ---
 Dr Girija Vaidyanathan is a retired IAS officer of the Tamil Nadu cadre, and the fourth and longest-serving woman Chief Secretary to the Government of Tamil Nadu, having held the post from December 2016 to June 2019.

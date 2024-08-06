@@ -6,8 +6,8 @@ image: "https://vidhilegalpolicy.in/wp-content/uploads/2020/06/Ameen.jpg"
 designation : "Associate Research Fellow"
 
 affiliation: "Senior Resident Fellow, Vidhi Centre for Legal Policy"
-
-type: collaborator
+layout: "people/single.html"
+filter: collaborator
 draft: false
 ---
 

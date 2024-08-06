@@ -106,7 +106,7 @@
 
         <div class="tab-pane fade show active" id="pis" role="tabpanel" aria-labelledby="pis-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
-          {{ if eq .Params.type "head" }}
+          {{ if eq .Params.filter "head" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -118,7 +118,7 @@
             </div>
           </div>
           {{ end }}
-          {{ if eq .Params.type "core" }}
+          {{ if eq .Params.filter "core" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -135,7 +135,7 @@
 
         <div class="tab-pane fade" id="council" role="tabpanel" aria-labelledby="council-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
-          {{ if eq .Params.type "council" }}
+          {{ if eq .Params.filter "council" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -147,7 +147,7 @@
             </div>
           </div>
           {{ end }}
-          {{ if eq .Params.type2 "council" }}
+          {{ if eq .Params.filter2 "council" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -164,7 +164,7 @@
 
         <div class="tab-pane fade" id="advisor" role="tabpanel" aria-labelledby="advisor-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
-          {{ if eq .Params.type "advisor" }}
+          {{ if eq .Params.filter "advisor" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -182,7 +182,7 @@
 
         <div class="tab-pane fade" id="researcher" role="tabpanel" aria-labelledby="reseacher-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
-          {{ if eq .Params.type "researcher" }}
+          {{ if eq .Params.filter "researcher" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -200,7 +200,7 @@
 
         <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
-          {{ if eq .Params.type "staff" }}
+          {{ if eq .Params.filter "staff" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>
@@ -218,7 +218,7 @@
 
 	<div class="tab-pane fade" id="collab" role="tabpanel" aria-labelledby="collab-tab">
           {{ range (where .Site.RegularPages "Section" "people") }}
-          {{ if eq .Params.type "collaborator" }}
+          {{ if eq .Params.filter "collaborator" }}
           <div class="people mt-5">
             <div>
               <a href="{{.Permalink}}" class="people-img"><img class="people-img" src="{{ .Params.image }}" alt="{{.Title}}"></a>

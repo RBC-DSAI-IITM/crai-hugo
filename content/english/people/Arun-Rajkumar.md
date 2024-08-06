@@ -7,7 +7,7 @@ designation : "Assistant Professor"
 weblink: "https://sites.google.com/view/arun-rajkumar/home?authuser=0"
 affiliation: Dept. of DSAI, IIT Madras
 
-type: core
+filter: core
 draft: false
 ---
 

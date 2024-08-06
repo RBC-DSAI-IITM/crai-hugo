@@ -7,7 +7,7 @@ designation : "Assistant Professor"
 weblink: https://sites.google.com/view/chandrashekar-lakshminarayanan
 affiliation: Dept. of DSAI, IIT Madras
 
-type: core
+filter: core
 draft: false
 ---
 

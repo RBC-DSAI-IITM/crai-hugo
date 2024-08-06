@@ -7,7 +7,7 @@ image: "/images/people/researchers/sai-kiran.jpeg"
 designation : "Research Associate"
 affiliation: Dept. of DSAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

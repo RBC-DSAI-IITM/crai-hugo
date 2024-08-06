@@ -6,7 +6,7 @@ image: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Yoshua_Bengio_2019_c
 designation : "**Honorary Advisor**"
 weblink: "https://yoshuabengio.org"
 affiliation: Professor, Department of Computer Science and Operations Research, University of Montreal; Scientific Director, MILA
-type: advisor
+filter: advisor
 draft: false
 ---
 

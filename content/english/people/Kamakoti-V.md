@@ -7,7 +7,7 @@ designation : "**Chairman**"
 weblink: http://www.cse.iitm.ac.in/~ravi/
 affiliation: Director, IIT Madras
 
-type: council
+filter: council
 draft: false
 ---
 

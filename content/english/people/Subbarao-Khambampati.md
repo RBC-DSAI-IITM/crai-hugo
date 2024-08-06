@@ -7,7 +7,7 @@ designation : "**Member**"
 weblink: "https://rakaposhi.eas.asu.edu/"
 affiliation: Professor, Department of Computer <br> Science and Engineering, <br> Arizona State University, USA
 
-type: advisor
+filter: advisor
 draft: false
 ---
 Subbarao Kambhampati is a professor of computer science at Arizona State University. Kambhampati studies fundamental problems in planning and decision making, motivated in particular by the challenges of human-aware AI systems.

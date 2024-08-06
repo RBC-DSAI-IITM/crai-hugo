@@ -7,7 +7,7 @@ designation : "**Member**"
 weblink: "https://civil.iitm.ac.in/faculty/manus/"
 affiliation: Dean IC&SR, IIT Madras
 
-type: council
+filter: council
 draft: false
 ---
 

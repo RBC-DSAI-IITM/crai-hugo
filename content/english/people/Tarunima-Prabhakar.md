@@ -7,7 +7,7 @@ designation : "Associate Research Fellow"
 weblink: www.tarunima.com 
 affiliation: Co-founder, Tattle Civic Technologies
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

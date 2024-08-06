@@ -7,7 +7,7 @@ designation : "**Member**"
 weblink: "https://www.heinz.cmu.edu/faculty-research/profiles/krishnan-ramayya"
 affiliation: Dean, Heinz College Of Information <br> Systems And Public Policy, <br> Carnegie Mellon University, USA
 
-type: advisor
+filter: advisor
 draft: false
 ---
 Ramayya Krishnan is the W. W. Cooper and Ruth F. Cooper Professor of Management Science and Information Systems at Heinz College and the Department of Engineering and Public Policy at Carnegie Mellon University. A faculty member at CMU since 1988, Krishnan was appointed as Dean of the Heinz College of Information Systems and Public Policy in 2009.

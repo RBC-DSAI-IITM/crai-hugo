@@ -6,7 +6,7 @@ image: "/images/people/collaborators/v-mittal.jpg"
 designation : "Associate Research Fellow"
 affiliation: Associate Partner at Anand and Anand
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

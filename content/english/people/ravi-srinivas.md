@@ -7,7 +7,7 @@ designation : "Associate Faculty Fellow"
 
 affiliation: Adjunct professor at NALSAR University of Law
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

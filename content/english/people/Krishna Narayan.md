@@ -7,7 +7,7 @@ designation : PhD Student
 weblink:
 affiliation: Dept. of HSS / DSAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

@@ -7,7 +7,7 @@ designation : "Associate Research Fellow"
 
 affiliation: "Chief AI Officer & Chief Scientist, Fiddler AI"
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

@@ -7,7 +7,7 @@ designation : "**Member**"
 weblink: "https://iitm.irins.org/profile/51416"
 affiliation: Dean, Global Engagement, IIT Madras
 
-type: council
+filter: council
 draft: false
 ---
 

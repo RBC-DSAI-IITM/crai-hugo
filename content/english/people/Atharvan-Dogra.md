@@ -7,7 +7,7 @@ image: "/images/people/staff/adpbf.jpg"
 designation : "Post-baccalaureate Fellow"
 affiliation: CeRAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

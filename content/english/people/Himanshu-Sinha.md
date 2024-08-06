@@ -7,7 +7,7 @@ designation : "Associate Professor"
 weblink: "https://home.iitm.ac.in/sinha/people/himanshu_sinha.html"
 affiliation: Dept. of BioTech, IIT Madras 
 
-type:
+filter: researcher
 draft: false
 ---
 

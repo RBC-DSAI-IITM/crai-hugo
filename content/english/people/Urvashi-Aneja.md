@@ -7,7 +7,7 @@ designation : "Associate Research Fellow"
 weblink: https://twitter.com/urvashi_aneja
 affiliation: Founder and Executive Director, Digital Futures Lab
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

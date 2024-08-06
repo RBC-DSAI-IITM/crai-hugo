@@ -7,7 +7,7 @@ image: "/images/people/researchers/nidan-basheer.jpg"
 designation : "Research intern"
 affiliation: Dept. of HSS, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

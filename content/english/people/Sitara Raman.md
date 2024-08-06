@@ -7,6 +7,6 @@ image: "/images/people/staff/profile.jpg"
 designation : "Project Associate"
 affiliation: CeRAI, IIT Madras
 
-type: staff
+filter: staff
 draft: false
 ---

@@ -7,7 +7,7 @@ designation : Assistant Professor
 weblink: https://krishnap25.github.io/
 affiliation:  Dept. of DSAI, IIT Madras 
 
-type: core
+filter: core
 draft: false
 ---
 

@@ -7,7 +7,7 @@ designation : "Research Scientist"
 weblink: https://gsk1692.github.io
 affiliation: CeRAI, IIT Madras
 
-type: researcher
+filter: researcher
 draft: false
 ---
 

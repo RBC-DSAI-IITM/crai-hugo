@@ -7,7 +7,7 @@ designation : "Assistant Professor"
 weblink: "https://sites.google.com/site/harishguruprasad/"
 affiliation: Dept. of DSAI, IIT Madras
 
-type: core
+filter: core
 draft: false
 ---
 

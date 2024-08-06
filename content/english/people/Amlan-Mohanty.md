@@ -7,7 +7,7 @@ designation : "Associate Research Fellow"
 weblink: www.amlanmohanty.com
 affiliation: Independent Consultant
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 

@@ -7,7 +7,7 @@ designation : "Associate Faculty Fellow"
 weblink: http://www.cse.iitm.ac.in/~ravi/
 affiliation: Professor of Computer Science, IIIT Hyderabad
 
-type: collaborator
+filter: collaborator
 draft: false
 ---
 
