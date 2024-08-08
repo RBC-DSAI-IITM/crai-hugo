@@ -1,6 +1,6 @@
 ---
 title: "Talk: 'Commercial adoption of RAI: Roadblocks and opportunities' by  Mr. Sundar Narayanan, Ethics and Compliance Advisor at SIT"
-date: 2024-08-22
+date: 2024-08-07
 venue: "IIT Madras"
 image: "https://www.dasca.org/Content/images/main/responsible-ai.jpg"
 link: "/events/ai-tech"
