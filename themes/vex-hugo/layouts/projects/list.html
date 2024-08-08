@@ -162,7 +162,7 @@
       </div>
 
       <div class="tab-pane fade" id="society" role="tabpanel" aria-labelledby="society-tab">
-        <div class="row">
+        <div class="row" style="justify-content:center;">
           {{ range (where .Site.RegularPages "Section" "projects") }}
           {{ if in .Params.filters "ai-and-society" }}
           <div class="card mb-3 card-item" style="max-width: 540px;">
@@ -202,7 +202,7 @@
       </div>
 
       <div class="tab-pane fade" id="understandable" role="tabpanel" aria-labelledby="understand-tab">
-        <div class="row">
+        <div class="row" style="justify-content:center;">
           {{ range (where .Site.RegularPages "Section" "projects") }}
           {{ if in .Params.filters "making-ai-understandable" }}
           <div class="card mb-3 card-item" style="max-width: 540px;">
@@ -242,7 +242,7 @@
       </div>
 
       <div class="tab-pane fade" id="safe" role="tabpanel" aria-labelledby="safe-tab">
-        <div class="row">
+        <div class="row" style="justify-content:center;">
           {{ range (where .Site.RegularPages "Section" "projects") }}
           {{ if in .Params.filters "safe-ai" }}
           <div class="card mb-3 card-item" style="max-width: 540px;">
