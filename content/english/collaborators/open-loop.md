@@ -1,7 +1,7 @@
 ---
 title: "Open Loop"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "https://i.vimeocdn.com/video/991174169-87ad9d549384d4b12761eb8c42ac7db89c5bcf8ecc0739c93c4f9870513439c1-d_640?f=webp"
 draft: false
 

@@ -1,7 +1,7 @@
 ---
 title: "AI4Bharat"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "https://avatars.githubusercontent.com/u/69502895?s=200&v=4"
 draft: false
 

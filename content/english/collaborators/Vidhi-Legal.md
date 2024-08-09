@@ -1,7 +1,7 @@
 ---
 title: "Vidhi Legal"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "https://vidhilegalpolicy.in/wp-content/uploads/2020/07/Vector.svg"
 draft: false
 

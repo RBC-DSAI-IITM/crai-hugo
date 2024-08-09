@@ -1,7 +1,7 @@
 ---
 title: "IBSE"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/ibse-logo.png"
 draft: false
 

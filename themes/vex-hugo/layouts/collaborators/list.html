@@ -28,7 +28,7 @@
       <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
 
         {{ range (where .Site.RegularPages "Section" "collaborators") }}
-          {{ if eq .Params.type "consortium" }}
+          {{ if eq .Params.filter "consortium" }}
           <div class="col-md-4 mb-5 ">
             <a href="{{.Permalink}}"><img class="mb-40" style="width: 30%; height: 35%;" src="{{ .Params.image | absURL }}" alt=""></a>
             <div class="content">
@@ -50,7 +50,7 @@
         
         <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
           {{ range (where .Site.RegularPages "Section" "collaborators") }}
-            {{ if eq .Params.type "collaborator" }}
+            {{ if eq .Params.filter "collaborator" }}
             <div class="col-md-4 mb-5 ">
               <a href="{{.Permalink}}"><img class="mb-40" style="width: 30%; height: 35%;" src="{{ .Params.image | absURL }}" alt=""></a>
               <div class="content">

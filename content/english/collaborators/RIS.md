@@ -1,7 +1,7 @@
 ---
 title: "RIS"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/RIS.jpeg"
 draft: false
 

@@ -1,7 +1,7 @@
 ---
 title: "RAi - UK"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/rai-ac-uk.png"
 draft: false
 

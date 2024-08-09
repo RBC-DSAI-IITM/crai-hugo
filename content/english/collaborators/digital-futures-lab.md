@@ -1,7 +1,7 @@
 ---
 title: "Digital Futures Lab"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/future-labs.png"
 draft: false
 

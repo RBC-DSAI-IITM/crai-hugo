@@ -1,7 +1,7 @@
 ---
 title: "RBCDSAI"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "https://rbcdsai.iitm.ac.in/images/logo_main.svg"
 draft: false
 

@@ -1,7 +1,7 @@
 ---
 title: "NASSCOM"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "https://nasscom.in/themes/custom/nasscomtheme/logo.svg"
 draft: false
 

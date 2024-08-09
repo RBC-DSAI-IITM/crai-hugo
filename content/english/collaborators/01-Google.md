@@ -1,7 +1,7 @@
 ---
 title: "Google"
 subtitle: "Platinum Consortium Member"
-type: consortium
+filter: consortium
 date: 2022-12-12
 image: "/images/Google_Logo.png"
 draft: false

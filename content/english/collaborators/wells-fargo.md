@@ -1,7 +1,7 @@
 ---
 title: "Wells Fargo"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/wells-fargo.png"
 draft: false
 

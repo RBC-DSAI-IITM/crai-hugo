@@ -1,7 +1,7 @@
 ---
 title: "SICCI"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/SICCI.jpg"
 draft: false
 

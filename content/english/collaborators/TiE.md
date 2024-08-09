@@ -1,7 +1,7 @@
 ---
 title: "TiE Chennai"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "/images/tie-chennai.png"
 draft: false
 

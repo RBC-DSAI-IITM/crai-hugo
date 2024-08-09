@@ -1,7 +1,7 @@
 ---
 title: "CMC Vellore"
 subtitle: "Collaborator"
-type: collaborator
+filter: collaborator
 image: "https://vellorecmc.org/wp-content/uploads/2020/06/CMC-logo-1.jpg"
 draft: false
 
